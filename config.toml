@@ -1,0 +1,119 @@
+baseurl                 = "duinaru.netlify.app"
+DefaultContentLanguage  = "ko"
+title                   = "DuiNaru’s Blog | 개발과 경험을 담는 블로그"
+theme                   = "hugo-future-imperfect-slim"
+paginate                = 5
+disqusShortname         = ""
+googleAnalytics         = ""
+pluralizeListTitles     = false
+disableLanguages        = []
+
+[markup.goldmark.renderer]
+    unsafe                = true
+
+[outputs]
+    home                  = ["html", "json"]
+
+[params]
+    enableCDN             = false
+    cssFiles              = ["default"]
+    jsFiles               = ["default"]
+    highlightjs           = true
+    highlightjsTheme      = "default"
+    highlightjsLang       = []
+    viewMorePostsLink     = "/blog/"
+    readingTime           = true
+    imageStrech           = ""
+#    socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
+
+[params.meta]
+    description         = "Blog with development and experience."
+    author              = "DuiNaru"
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff"
+    iOSColor            = "#ffffff"
+
+[params.header]
+	navbarTitle         = "DuiNaru's Blog"
+	dynamicTitles       = true
+	searchMenu          = true
+#	shareMenu           = true
+	languageMenu        = true
+
+[params.intro]
+	header                = "DuiNaru's Blog"
+	paragraph             = "IT에 대한 이런저런 경험을 담아봅니다"
+	rssIntro              = false
+	socialIntro           = false
+	hideWhenSingleColumn  = false
+	alwaysOnHomepage      = false
+
+#	[params.intro.pic]
+#		src                 = "/img/main/logo.jpg"
+#		shape               = "circle"
+#		width               = ""
+#		alt                 = "Hugo Future Imperfect Slim"
+
+[params.sidebar]
+#    about               = "This theme was developed for Hugo static site generator."
+    postAmount          = 5
+    categories          = true
+    categoriesByCount   = true
+
+[params.footer]
+    rssFooter           = true
+    socialFooter        = true
+
+[params.staticman]
+    enabled             = false
+    api                 = ""  # No Trailing Slash
+    gitProvider         = "github"
+    username            = ""
+    repo                = ""
+    branch              = ""
+
+    [params.staticman.recaptcha]
+        siteKey           = ""
+        encryptedKey      = ""
+
+[menu]
+
+	[[menu.main]]
+		name              = "Home"
+		identifier        = "home"
+		url               = "/"
+		pre               = "<i class='fa fa-home'></i>"
+		weight            = 1
+
+	[[menu.main]]
+		name              = "About"
+		identifier        = "about"
+		url               = "/about/"
+		pre               = "<i class='far fa-id-card'></i>"
+		weight            = 2
+
+[Languages]
+
+	[Languages.ko]
+		LanguageCode        = "ko"
+		LanguageName        = "한국어"
+		weight              = 1
+
+	[Languages.ja]
+		LanguageCode        = "ja"
+		LanguageName        = "日本語"
+		title               = "DuiNaru’s Blog | 開発と経験を載せるブログ"
+		weight              = 2
+
+        [Languages.ja.params.intro]
+	        header                = "DuiNaru's Blog"
+            paragraph             = "ITについての色々な経験を載せます。"
+
+[social]
+	# Coding Communities
+	github                = "duinaru/duinaru.hugo"
+#	gitlab                = ""
+#	stackoverflow         = "" # User Number
+#	bitbucket             = ""
