@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on DuiNaru | 개발과 경험을 담는 블로그</title>
+    <link>duinaru.netlify.app/blog/</link>
+    <description>Recent content in Blog on DuiNaru | 개발과 경험을 담는 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Wed, 12 Aug 2020 01:12:27 +0900</lastBuildDate>
+    
+	<atom:link href="duinaru.netlify.app/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>duinaru.netlify.app/blog/2020-08-12-my-first-post/</link>
+      <pubDate>Wed, 12 Aug 2020 01:12:27 +0900</pubDate>
+      
+      <guid>duinaru.netlify.app/blog/2020-08-12-my-first-post/</guid>
+      <description>한글 입니다.
+한글 입니다.
+한글 입니다.
+한글 입니다.
+한글 입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

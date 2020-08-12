@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>duinaru.netlify.app/blog/</loc>
+    <lastmod>2020-08-12T01:12:27+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="duinaru.netlify.app/ja/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="duinaru.netlify.app/blog/"
+                />
+  </url>
+  
+  <url>
+    <loc>duinaru.netlify.app/</loc>
+    <lastmod>2020-08-12T01:12:27+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="duinaru.netlify.app/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="duinaru.netlify.app/"
+                />
+  </url>
+  
+  <url>
+    <loc>duinaru.netlify.app/blog/2020-08-12-my-first-post/</loc>
+    <lastmod>2020-08-12T01:12:27+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="duinaru.netlify.app/ja/blog/2020-08-12-my-first-post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="duinaru.netlify.app/blog/2020-08-12-my-first-post/"
+                />
+  </url>
+  
+  <url>
+    <loc>duinaru.netlify.app/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="duinaru.netlify.app/ja/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="duinaru.netlify.app/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>duinaru.netlify.app/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="duinaru.netlify.app/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="duinaru.netlify.app/tags/"
+                />
+  </url>
+  
+</urlset>

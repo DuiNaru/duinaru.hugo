@@ -1,6 +1,6 @@
 baseurl                 = "duinaru.netlify.app"
 DefaultContentLanguage  = "ko"
-title                   = "DuiNaru’s Blog | 개발과 경험을 담는 블로그"
+title                   = "DuiNaru | 개발과 경험을 담는 블로그"
 theme                   = "hugo-future-imperfect-slim"
 paginate                = 5
 disqusShortname         = ""
@@ -36,25 +36,25 @@ disableLanguages        = []
     iOSColor            = "#ffffff"
 
 [params.header]
-	navbarTitle         = "DuiNaru's Blog"
+	navbarTitle         = "DuiNaru"
 	dynamicTitles       = true
 	searchMenu          = true
 #	shareMenu           = true
 	languageMenu        = true
 
 [params.intro]
-	header                = "DuiNaru's Blog"
+	header                = "DuiNaru"
 	paragraph             = "IT에 대한 이런저런 경험을 담아봅니다"
 	rssIntro              = false
 	socialIntro           = false
 	hideWhenSingleColumn  = false
 	alwaysOnHomepage      = false
 
-#	[params.intro.pic]
-#		src                 = "/img/main/logo.jpg"
-#		shape               = "circle"
-#		width               = ""
-#		alt                 = "Hugo Future Imperfect Slim"
+	[params.intro.pic]
+		src                 = "/img/main/logo.jpg"
+		shape               = "circle"
+		width               = ""
+		alt                 = "DuiNaru's Blog"
 
 [params.sidebar]
 #    about               = "This theme was developed for Hugo static site generator."
@@ -104,11 +104,11 @@ disableLanguages        = []
 	[Languages.ja]
 		LanguageCode        = "ja"
 		LanguageName        = "日本語"
-		title               = "DuiNaru’s Blog | 開発と経験を載せるブログ"
+		title               = "DuiNaru | 開発と経験を載せるブログ"
 		weight              = 2
 
         [Languages.ja.params.intro]
-	        header                = "DuiNaru's Blog"
+	        header                = "DuiNaru"
             paragraph             = "ITについての色々な経験を載せます。"
 
 [social]
