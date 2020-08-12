@@ -17,7 +17,7 @@ disableLanguages        = []
 [params]
     enableCDN             = false
     cssFiles              = ["default"]
-    jsFiles               = ["default"]
+    jsFiles               = ["default", "https://identity.netlify.com/v1/netlify-identity-widget.js"]
     highlightjs           = true
     highlightjsTheme      = "default"
     highlightjsLang       = []
