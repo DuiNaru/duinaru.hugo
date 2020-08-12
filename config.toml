@@ -110,6 +110,12 @@ disableLanguages        = []
         [Languages.ja.params.intro]
 	        header                = "DuiNaru"
             paragraph             = "ITについての色々な経験を載せます。"
+            
+            [Languages.ja.params.intro.pic]
+                src                 = "/img/main/logo.jpg"
+                shape               = "circle"
+                width               = ""
+                alt                 = "DuiNaru's Blog"
 
 [social]
 	# Coding Communities
