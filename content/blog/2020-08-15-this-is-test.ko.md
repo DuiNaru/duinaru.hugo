@@ -10,6 +10,8 @@ description: 테스트 설명
 images:
   - src: /img/uploads/65x65.jpg
     alt: 포스트 이미지
+  - src: /img/uploads/3698941707_216c80b0_01886_2560x1440.jpg_f.jpg
+    alt: 포스트 이미지2
 i18n: ko
 ---
 테스트 내용
