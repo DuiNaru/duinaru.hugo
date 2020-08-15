@@ -1,0 +1,12 @@
+categories = ["테스트 카테고리"]
+tags = ["테스트 태그"]
+title = "테스트 타이틀"
+permalink = "this is test post"
+date = 2020-08-15T17:20:19.256Z
+description = "테스트 설명"
+i18n = "ko"
+body = "테스트 설명\n\n![테스트](/img/uploads/3698941707_216c80b0_01886_2560x1440.jpg_f.jpg \"테스트\")"
+
+[[images]]
+src = "/img/uploads/love_island.jpg_f.jpg"
+alt = "테스트 포스트 이미지 1"
