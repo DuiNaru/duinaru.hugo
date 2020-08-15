@@ -13,7 +13,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}.{{i18n}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Author", name: "author", widget: "hidden", default: "duinaru"}
+#      - {label: "Author", name: "author", widget: "hidden", default: "duinaru"}
 #      - {label: "Type", name: "type", widget: "hidden", default: "post"}
       - {label: "Categories", name: "categories", widget: "list", required: false}
       - {label: "Tags", name: "tags", widget: "list", required: false}
