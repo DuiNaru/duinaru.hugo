@@ -21,7 +21,7 @@ disableLanguages        = []
     highlightjs           = true
     highlightjsTheme      = "default"
     highlightjsLang       = []
-    viewMorePostsLink     = "/blog/"
+    viewMorePostsLink     = "/posts/"
     readingTime           = true
     imageStrech           = "vertical"
 #    socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
@@ -87,12 +87,12 @@ disableLanguages        = []
 		pre               = "<i class='fa fa-home'></i>"
 		weight            = 1
 
-	[[menu.main]]
-		name              = "About"
-		identifier        = "about"
-		url               = "/about/"
-		pre               = "<i class='far fa-id-card'></i>"
-		weight            = 2
+#	[[menu.main]]
+#		name              = "About"
+#		identifier        = "about"
+#		url               = "/about/"
+#		pre               = "<i class='far fa-id-card'></i>"
+#		weight            = 2
 
 [Languages]
 

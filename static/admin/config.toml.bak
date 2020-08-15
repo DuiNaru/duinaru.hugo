@@ -1,0 +1,63 @@
+[backend]
+name = "git-gateway"
+branch = "dev" # Branch to update (optional; defaults to master)
+publish_mode = "editorial_workflow"
+media_folder = "/static/img/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder = "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
+[collections]
+label = "post" # Used in the UI
+name = "post" # Used in routes, e.g., /admin/collections/blog
+folder = "content/blog" # The path to the folder where the documents are stored
+create = true # Allow users to create new documents in this collection
+slug = "{{year}}-{{month}}-{{day}}-{{permalink}}.{{i18n}}" # Filename template, e.g., YYYY-MM-DD-title.md
+# The fields for each document, usually in front matter
+[[collections.fields]]
+label = "Categories"
+name = "categories"
+widget = "list"
+required = false
+[[collections.fields]]
+label = "Tags"
+name = "tags"
+widget = "list"
+required = false
+[[collections.fields]]
+label = "Title"
+name = "title"
+widget = "string"
+[[collections.fields]]
+label = "Permalink"
+name = "permalink"
+widget = "string"
+[[collections.fields]]
+label = "Publish Date"
+name = "date"
+widget = "datetime"
+[[collections.fields]]
+label = 'Description'
+name = 'description'
+widget = 'string'
+required = false
+[[collections.fields]]
+label = "Images"
+name = "images"
+widget = "list"
+  [[collections.fields.fields]] 
+  label = "Image"
+  name = "src"
+  widget = "image"
+  [[collections.fields.fields]] 
+  label = "Alt"
+  name = "alt"
+  widget = "string"
+[[collections.fields]]
+label = "Language"
+name = "i18n"
+widget = "select"
+options = ["ko", "ja"]
+default = ["ko"]
+[[collections.fields]]
+label = "Body"
+name = "body"
+widget = "markdown"
+            
