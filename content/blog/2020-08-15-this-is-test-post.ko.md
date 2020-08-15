@@ -7,8 +7,11 @@ title: 테스트 제목
 permalink: this-is-test-post
 date: 2020-08-15T16:04:31.767Z
 description: 테스트 포스트 입니다.
-featured: uploads/love_island.jpg_f.jpg
-featuredalt: 테스트 포스트 그림
+featured: ""
+featuredalt: ""
+images:
+  - src: /img/uploads/65x65.jpg
+    alt: dlalwl
 i18n: ko
 ---
 테스트를 위한 포스트 입니다.
