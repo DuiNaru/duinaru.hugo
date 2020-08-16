@@ -3,7 +3,7 @@ categories = ["programming"]
 tags = ["ruby", "rails", "aws", "ec2"]
 title = "ruby on railsをec2に実装してみました。"
 permalink = "2019-11-14-set-up-ruby-on-rails-ec2"
-date = 2020-08-16T11:18:53.247Z
+date = 2019-11-11T11:18:53.247Z
 i18n = "ja"
 +++
 rubyを知りましたので、rubyでウェブサイトを開発したくてruby on railsを始めました。
