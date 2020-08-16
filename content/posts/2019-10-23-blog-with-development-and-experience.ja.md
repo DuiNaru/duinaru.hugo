@@ -6,20 +6,6 @@ permalink = "2019-10-23-blog-with-development-and-experience"
 date = 2019-10-23T10:29:05.918Z
 i18n = "ja"
 +++
-- - -
-
-title: 
-layout: single
-author_profile: true
-comments: true
-related: true
-category: 
-tags: \[]
-lang: ja
-permalink: "/:year/:month/:day/blog-with-development-and-experience"
-
-- - -
-
 普段考えていた色々なものを書こうとブログを作ることにしました。
 
 ブログを運営するならブログサービスを利用した方が簡単で便利だろうと思っていた時にgithub.ioというドメインを見つけました。
