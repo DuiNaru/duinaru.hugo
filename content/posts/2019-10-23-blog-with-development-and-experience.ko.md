@@ -3,7 +3,7 @@ categories = ["programming"]
 tags = ["jekyll", "ruby"]
 title = "개발과 경험이 함께 하는 블로그"
 permalink = "2019-10-23-blog-with-development-and-experience"
-date = 2020-08-16T10:34:49.212Z
+date = 2019-10-23T10:34:49.212Z
 i18n = "ko"
 +++
 평소에 생각하던 이것저것을 적어볼까 하다가 블로그를 만들게 되었습니다.
