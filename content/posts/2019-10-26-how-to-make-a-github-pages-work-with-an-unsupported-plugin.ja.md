@@ -74,7 +74,7 @@ git commit -am 'jekyll build'
 git push
 ```
 
-[build時、エラー](/2019/10/23/blog-with-development-and-experience#%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA)を解決するための`chcp 65001`とjekyllをproduction環境でbuildするための`$env:JEKYLL_ENV = 'production'`が含まれています。
+[build時、エラー](2019-10-23-blog-with-development-and-experience)を解決するための`chcp 65001`とjekyllをproduction環境でbuildするための`$env:JEKYLL_ENV = 'production'`が含まれています。
 
 jekyllをproduction環境でbuildをして上げる理由については次に説明します。
 
