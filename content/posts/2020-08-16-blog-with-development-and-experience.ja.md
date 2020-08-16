@@ -3,7 +3,7 @@ categories = ["programming"]
 tags = ["jekyll", "ruby"]
 title = "開発と経験があるブログ"
 permalink = "blog-with-development-and-experience"
-date = 2020-08-16T08:31:02.815Z
+date = 2019-10-23T08:38:11.674Z
 i18n = "ja"
 +++
 普段考えていた色々なものを書こうとブログを作ることにしました。
