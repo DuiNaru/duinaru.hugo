@@ -11,7 +11,7 @@ collections:
     label: "post" # Used in the UI
     folder: "content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{permalink}}.{{i18n}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{permalink}}.{{i18n}}" # Filename template, e.g., YYYY-MM-DD-title.md
     extension: "md"
     format: "toml-frontmatter"
     fields: # The fields for each document, usually in front matter
