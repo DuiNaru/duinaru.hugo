@@ -3,7 +3,7 @@ categories = ["programming"]
 tags = ["ruby", "rails", "aws", "ec2"]
 title = "ruby on rails를 ec2에 구축해보았습니다"
 permalink = "2019-11-14-set-up-ruby-on-rails-ec2"
-date = 2020-08-16T11:29:08.502Z
+date = 2019-11-14T11:29:08.502Z
 i18n = "ko"
 +++
 ruby를 알게 되었으니 ruby를 이용한 웹 사이트 한번 만들어보고싶어서  ruby on rails로 개발을 시작하였습니다.
