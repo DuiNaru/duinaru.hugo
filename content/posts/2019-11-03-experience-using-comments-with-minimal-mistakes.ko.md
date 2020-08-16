@@ -3,7 +3,7 @@ categories = ["programming"]
 tags = ["jekyll", "ruby"]
 title = "Blog에 댓글 기능을 추가하였습니다"
 permalink = "2019-11-03-experience-using-comments-with-minimal-mistakes"
-date = 2020-08-16T11:12:30.872Z
+date = 2019-11-03T11:12:30.872Z
 i18n = "ko"
 +++
 사용하고 있는 Minimal Mistakes 테마는 여러 댓글 서비스를 사용할 수 있게 [설정](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#comments) 할 수 있어서, 사용해보았습니다.
