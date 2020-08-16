@@ -3,7 +3,7 @@ categories = ["programming"]
 tags = ["jekyll", "ruby"]
 title = "GitHub PagesでサポートされないPluginを使う方法"
 permalink = "2019-10-26-how-to-make-a-github-pages-work-with-an-unsupported-plugin"
-date = 2020-08-16T10:45:48.945Z
+date = 2019-10-26T10:45:48.945Z
 i18n = "ja"
 +++
 jekyllを公式的にサポートするGitHub Pagesですが、全てのjekyllのpluginまでサポートすることではありません。
