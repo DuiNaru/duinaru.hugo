@@ -117,7 +117,7 @@ SSHでアクセスすればどんなIDEも使用可能ですが、AWSのEC2で�
 
 Cloud9は最初からすぐにEC2で環境構築が可能ですが、今回は作ったEC2を使用します。
 
-[Creating an SSH Environment](https://docs.aws.amazon.com/ko_kr/cloud9/latest/user-guide/create-environment-ssh.html)
+[Creating an SSH Environment](https://docs.aws.amazon.com/ja_jp/cloud9/latest/user-guide/create-environment-ssh.html)
 
 接続するipが変わらないようにelastic ipを割り当て、上のリンクにある`~/.ssh/authorized_keys`を作成しました。
 
