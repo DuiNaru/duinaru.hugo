@@ -3,8 +3,8 @@ DefaultContentLanguage  = "ko"
 title                   = "DuiNaru | 개발과 경험을 담는 블로그"
 theme                   = "hugo-future-imperfect-slim"
 paginate                = 5
-disqusShortname         = ""
-googleAnalytics         = ""
+disqusShortname         = "duinaru"
+googleAnalytics         = "UA-175500005-1"
 pluralizeListTitles     = false
 disableLanguages        = []
 
@@ -24,6 +24,7 @@ disableLanguages        = []
     viewMorePostsLink     = "/posts/"
     readingTime           = true
     imageStrech           = "vertical"
+    socialShare           = ["twitter", "facebook", "email"]
 #    socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
 
 [params.meta]
@@ -37,9 +38,9 @@ disableLanguages        = []
 
 [params.header]
 	navbarTitle         = "DuiNaru"
-	dynamicTitles       = true
+	dynamicTitles       = false
 	searchMenu          = true
-#	shareMenu           = true
+	shareMenu           = true
 	languageMenu        = true
 
 [params.intro]
@@ -63,7 +64,7 @@ disableLanguages        = []
     categoriesByCount   = true
 
 [params.footer]
-    rssFooter           = true
+    rssFooter           = false
     socialFooter        = true
 
 [params.staticman]
@@ -118,6 +119,7 @@ disableLanguages        = []
                 alt                 = "DuiNaru's Blog"
 
 [social]
+    email                 = "duinaru@gmail.com"
 	# Coding Communities
 	github                = "duinaru/duinaru.hugo"
 #	gitlab                = ""
