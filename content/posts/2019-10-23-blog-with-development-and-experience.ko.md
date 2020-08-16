@@ -66,7 +66,7 @@ jekyll 공식 홈페이지에 사용 방법이 친절히 적혀있어서 별 어
 
 ruby를 windows환경에서 쓰려다 보니 발생하는 에러 였습니다.
 
-> ![빌드 에러](\assets\images\2019-10-23-blog-with-development-and-experience\build-error.png)
+> ![빌드 에러](/img/uploads/build-error.png)
 
 vscode에서 cmd로 빌드 하고 있었기에, `chcp 65001` 을 이용해서 UTF-8로 바꿔서 해결했습니다.
 
@@ -84,7 +84,7 @@ jekyll를 3.8.6으로 사용하니, polyglot plugin과 함께 작동합니다.
 
 *polyglot plugin의 _config.xml설정*
 
-> ![polyglot setting](\assets\images\2019-10-23-blog-with-development-and-experience\polyglot-setting.png)
+> ![polyglot setting](/img/uploads/polyglot-setting.png)
 
 languages의 언어 설정 순서를 default_lang에서 설정한 언어를 먼저 오게 설정하니 polyglot plugin이 잘 작동합니다.
 
