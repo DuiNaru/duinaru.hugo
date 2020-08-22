@@ -25,7 +25,7 @@ Jekyll 역시 정적 사이트 생성기 이지만, 비교적 최신이기도 �
 
 ### Jekyll
 
-Jekyll에서의 다국어 지원은 plugin을 통해서 지원합니다. 
+Jekyll에서의 다국어 지원은 주로 plugin을 통해서 지원합니다. 
 
 [개발과 경험이 함께 하는 블로그 - 만들기](/posts/2019-10-23-blog-with-development-and-experience/#만들기)
 
