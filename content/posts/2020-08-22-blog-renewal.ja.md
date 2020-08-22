@@ -39,7 +39,7 @@ Hugoの場合は多言語がサポートされています。
 
 [Hugo - Multilingual Mode](https://gohugo.io/content-management/multilingual/)
 
-もともとサポートされていたので、便利そうですね。
+もともとサポートされて、便利そうですね。
 
 # [Netlify](https://www.netlify.com/)
 
