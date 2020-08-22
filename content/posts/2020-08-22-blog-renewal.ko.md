@@ -11,7 +11,7 @@ i18n = "ko"
 src = "/img/uploads/netlify.webp"
 alt = "netlify logo"
 +++
-기존에는 Jekyll로 만들어서 Github Pages에 배포하였지만, Jekyll의 다국어 지원에 불편해서 고민하던 중에 Hugo 로 바꾸어 쓰기로 하였습니다. 그러면서 Netlify + Netlify CMS 을 넣어보기로 하고요.
+기존에는 Jekyll로 만들어서 Github Pages에 배포하였지만, Jekyll의 다국어 지원이 불편해서 고민하던 중에 Hugo 로 바꾸어 쓰기로 하였습니다. 그러면서 Netlify + Netlify CMS 을 넣어보기로 하고요.
 
 이 글에서는 리뉴얼 후기 및 과정에 대해 적어볼까 합니다.
 
