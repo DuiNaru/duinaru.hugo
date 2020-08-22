@@ -30,11 +30,20 @@ jobs:
       
     - name: Build hugo
       run: hugo --gc --minify
-
-    - name: Push public to branch
+      
+    - name: Git init
       run: |
           git config --global user.name 'DuiNaru'
           git config --global user.email 'DuiNaru@users.noreply.github.com'
+          
+    - name: Git add
+      run: git add .
+    
+    - name: Git commit
+      run: git commit -m "publish"
+
+    - name: Push public to branch
+      run: |
           git subtree split --branch public --prefix public/
           git push -f origin public:public
           git branch -D public
