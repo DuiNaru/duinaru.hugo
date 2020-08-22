@@ -135,7 +135,7 @@ disableLanguages        = []
 [social]
     email                 = "duinaru@gmail.com"
 	# Coding Communities
-	github                = "duinaru/duinaru.hugo"
+	github                = "duinaru/duinaru.github.io"
 #	gitlab                = ""
 #	stackoverflow         = "" # User Number
 #	bitbucket             = ""
