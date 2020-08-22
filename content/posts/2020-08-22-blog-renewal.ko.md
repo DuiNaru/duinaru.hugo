@@ -43,7 +43,7 @@ Jekyll에서의 다국어 지원은 주로 plugin을 통해서 지원합니다.
 
 # [Netlify](https://www.netlify.com/)
 
-CI/CD 도구 중에 하나입니다. Git repository에서 배포까지 자동화 할 수 있게 되죠.
+CI/CD 도구 중에 하나로, 배포까지 자동화 할 수 있게 되죠.
 
 Netlify CMS에서 글을 작성하게 되면, Git repository에 추가 되는데, 즉시 Hugo를 사용하여 빌드를 하고, 웹에서 볼 수 있게 할 수 있습니다. 글 작성할 마다 수동으로 빌드해주고 배포할 필요가 없어지게 되죠.
 
