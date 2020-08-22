@@ -11,7 +11,7 @@ i18n = "ja"
 src = "/img/uploads/renewal.png"
 alt = "post image"
 +++
-既存のブログはJekyllで作成し、Github Pagesでサービスしていましたが、Jekyllの多言語対応で悩み、Hugoに変えることにしました。合わせてNetlify + Netlify CMS も入れました。
+既存のブログはJekyllで作成し、Github Pagesでサービスしていましたが、Jekyllの多言語対応で不便でHugoに変えることにしました。合わせてNetlify + Netlify CMS も入れました。
 
 この記事ではリニューアルの時に考えたことについて書こうと思います。
 
