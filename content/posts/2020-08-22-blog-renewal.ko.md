@@ -29,7 +29,7 @@ Jekyll에서의 다국어 지원은 주로 plugin을 통해서 지원합니다.
 
 [개발과 경험이 함께 하는 블로그 - 만들기](/posts/2019-10-23-blog-with-development-and-experience/#만들기)
 
-[](/posts/2019-10-23-blog-with-development-and-experience/#만들기)[](2019-10-23-blog-with-development-and-experience/#만들기)polyglot 이나 jekyll-multiple-languages-plugin 이 대표적이지만, 둘다 플러그인 이기에 다른 플러그인과 함께 쓰거나 관리에 있어 불편함이 생기기 마련이죠.
+polyglot 이나 jekyll-multiple-languages-plugin 이 대표적이지만, 둘다 플러그인 이기에 다른 플러그인과 함께 쓰거나 관리에 있어 불편함이 생기기 마련이죠.
 
 아니면 플러그인을 사용하지 않고 Jekyll 의 코드를 직접 작성해서 만들어도 되지만, 불편함은 여전하죠.
 
