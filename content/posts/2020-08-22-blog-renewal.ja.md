@@ -11,9 +11,9 @@ i18n = "ja"
 src = "/img/uploads/renewal.png"
 alt = "post image"
 +++
-既存のブログはJekyllで作成し、Github Pagesでサービスしていましたが、Jekyllの多言語対応が不便でHugoに変えることにしました。合わせてNetlify + Netlify CMS も入れました。
+既存のブログはJekyllで作成し、Github Pagesでサービスしていましたが、多言語対応の改善などでHugoに変え、Netlify + Netlify CMS も入れました。
 
-この記事ではリニューアルの時に考えたことについて書こうと思います。
+この記事ではリニューアルの時に考えたことについて書きたいと思います。
 
 # [Hugo](https://gohugo.io/about/what-is-hugo/)
 
@@ -67,8 +67,8 @@ Netlify CMSで投稿すると、Git repositoryにコミットされます。そ�
 
 # ドメイン
 
-<https://duinaru.netlify.app/>
+<https://duinaru.netlify.app/ja/>
 
-ドメイン名はカスタムしなく、Netlifyデフォルトで設定しておきました。ドメインをカスタムすることになってもNetlifyにドメイン追加設定をすればいいですので、運営しながら考えてみようと思います。
+ドメイン名はカスタムしなく、Netlifyデフォルトで設定しておきました。ドメインをカスタムすることになってもNetlifyにドメイン追加設定をすればいいですので、ブログを運営しながら考えてみようと思います。
 
 次は、リニューアルの過程や悩みなどについて投稿してみます。
