@@ -7,7 +7,7 @@ Blog with development and experience
 
 Static blog site made with Hugo
 
-https://duinaru.netlify.app/
+https://duinaru.github.io/
 
 ## Theme
 [Hugo Future Imperfect Slim](https://github.com/pacollins/hugo-future-imperfect-slim)
