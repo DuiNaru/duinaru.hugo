@@ -9,5 +9,5 @@ Static blog site made with Hugo
 
 https://duinaru.netlify.app/
 
-## Using Theme
+## Theme
 [Hugo Future Imperfect Slim](https://github.com/pacollins/hugo-future-imperfect-slim)
