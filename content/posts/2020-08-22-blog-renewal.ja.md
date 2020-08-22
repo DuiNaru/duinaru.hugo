@@ -11,7 +11,7 @@ i18n = "ja"
 src = "/img/uploads/renewal.png"
 alt = "post image"
 +++
-既存のブログはJekyllで作成され、Github Pagesにでデプロイしていましたが、Jekyllの多言語対応で悩み、Hugoに変えることにしました。合わせてNetlify + Netlify CMS も入れました。
+既存のブログはJekyllで作成され、Github Pagesにでサービスしていましたが、Jekyllの多言語対応で悩み、Hugoに変えることにしました。合わせてNetlify + Netlify CMS も入れました。
 
 この記事ではリニューアルの時に考えたことについて書こうと思います。
 
@@ -19,7 +19,7 @@ alt = "post image"
 
 Hugoはgo言語で作成された静的サイトジェネレータです。一般的な動的サイトのようにサーバーからウェブページを作って見せることとは異なり、予め作成されたウェブページを見せることになります。サーバーのリソースを節約できることが魅力的です。
 
-Jekyllも静的サイトジェネレータですが、Hugoは比較的に最新で、多言語対応も便利で変えました。
+Jekyllも静的サイトジェネレータではありますが、Hugoは比較的に最新で、多言語対応も便利で選びました。
 
 ## 多言語対応 - Jekyll vs Hugo
 
@@ -29,7 +29,7 @@ Jekyllで多言語対応は主にpluginでサポートされます。
 
 [開発と経験があるブログ- 作る](../2019-10-23-blog-with-development-and-experience/#作る)
 
-polyglotやjekyll-multiple-languages-pluginなどがありますが、どちらもプラグインですので、他のプラグインと互換性を考えるなど、気を付けなければならないところがあります。
+polyglotやJekyll Multiple Languages Pluginなどがありますが、どちらもプラグインですので、他のプラグインと互換性を考えるなど、気を付けなければならないところがあります。
 
 また、プラグインを使用しなく、Jekyllのコードを書いて作ってもいいですが、不便ということは変わらなさそうです。
 
@@ -39,13 +39,13 @@ Hugoの場合は多言語がサポートされています。
 
 [Hugo - Multilingual Mode](https://gohugo.io/content-management/multilingual/)
 
-もともとサポートされていましたので、便利そうなので使うことにしました。
+もともとサポートされているので、便利そうですね。
 
 # [Netlify](https://www.netlify.com/)
 
 NetlifyはCI/CDツールなのでデプロイまで自動化することができます。
 
-Netlify CMSで投稿したら、Git repositoryにコミットされます。その直後にHugoでビルドされ、ウェブで見ることができるようになります。投稿するたびに手作業ビルドとデプロイ作業をしなくてもよくなります。
+Netlify CMSで投稿すると、Git repositoryにコミットされます。その直後にNetlifyでビルドされ、ウェブで見ることができるようになります。投稿するたびに手作業ビルドとデプロイ作業をしなくてもよくなります。
 
 # [Netlify CMS](https://www.netlifycms.org/)
 
@@ -53,9 +53,9 @@ Netlify CMSで投稿したら、Git repositoryにコミットされます。そ�
 
 [Frontend Interfaces with Hugo](https://gohugo.io/tools/frontends/)
 
-その中でNetlifyと使いやすく見えるNetlify CMSがありました。
+その中でNetlifyと併せて使いやすく見えるNetlify CMSを選びました。
 
-投稿や修正、削除をGitで管理できて、Gitのメリットも得られるようになります。投稿リストの確認や作成中にプレビューなどもあって便利です。
+投稿や修正、削除がGitで管理され、Gitのメリットも得られるようになります。投稿リストの確認や作成中のプレビューなどもあって便利です。
 
 # Theme
 
@@ -65,7 +65,7 @@ Netlify CMSで投稿したら、Git repositoryにコミットされます。そ�
 
 きれいでいいですし、アップデートも続いているので問題があっても対応が早そうです。
 
-# ブログ
+# ドメイン
 
 <https://duinaru.netlify.app/>
 
