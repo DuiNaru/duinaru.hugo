@@ -37,7 +37,7 @@ jobs:
           git config --global user.email 'DuiNaru@users.noreply.github.com'
           
     - name: Git add
-      run: git add .
+      run: git add --force public/
     
     - name: Git commit
       run: git commit -m "publish"
