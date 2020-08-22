@@ -49,7 +49,7 @@ Netlify CMS에서 글을 작성하게 되면, Git repository에 추가 되는데
 
 # [Netlify CMS](https://www.netlifycms.org/)
 
-[](https://www.netlifycms.org/)기존에는 jekyll-admin 플러그인으로 글을 관리 했었으나, hugo로 바꾸면서 다른 방법을 찾아야 했습니다.
+기존에는 jekyll-admin 플러그인으로 글을 관리 했었으나, hugo로 바꾸면서 다른 방법을 찾아야 했습니다.
 
 [Frontend Interfaces with Hugo](https://gohugo.io/tools/frontends/)
 
