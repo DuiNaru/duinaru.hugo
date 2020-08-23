@@ -10,7 +10,7 @@ i18n = "ko"
 src = "/img/uploads/hugo-logo-wide.svg"
 alt = "hugo image"
 +++
-Hugo를 사용하여 블로그를 만들어 보았습니다. Hugo를 설치하고 테마를 적용하는 것만으로도 바로 만들 수 있습니다.
+# Hugo를 사용하여 블로그를 만들어 보았습니다. Hugo를 설치하고 테마를 적용하는 것만으로도 바로 만들 수 있습니다.
 
 # Hugo
 
@@ -20,13 +20,13 @@ Hugo를 사용하여 블로그를 만들어 보았습니다. Hugo를 설치하�
 
 [Install Hugo](https://gohugo.io/getting-started/installing/)
 
-Hugo는 기본 버전과 extended버전이 있습니다. extended버전은 SCSS/SASS를 지원하는 버전으로, SCSS/SASS를 만들어 사용하고자 하실 분은 extended버전으로 설치해야 한다네요.
+Hugo는 기본 버전과 extended버전이 있습니다. extended버전은 SCSS/SASS를 지원하는 버전으로, SCSS/SASS를 사용하고자 하실 분은 extended버전으로 설치해야 한다네요.
 
 > [And Now: Hugo Pipes!](https://gohugo.io/news/0.43-relnotes/#notes)
 >
 > Hugo is now released with two binary version: One with and one without SCSS/SASS support. At the time of writing, this is only available in the binaries on the GitHub release page. Brew, Snap builds etc. will come. But note that you **only need the extended version if you want to edit SCSS**. For your CI server, or if you don’t use SCSS, you will most likely want the non-extended version.
 
-단순히 테마만 적용해서 사용할 생각이라서 기본 버전으로 설치해 주었습니다. 물론 extended버전도 상관없지만요.
+이번 글에서 사용할 테마가 SCSS를 사용하는 듯 하여, extended버전을 설치해주었습니다.
 
 ### 패키지 매니저 설치
 
@@ -47,13 +47,13 @@ Windows환경에 설치할 생각이라 [chocolatey](https://chocolatey.org/)를
 > [Install Hugo - Chocolatey (Windows)](https://gohugo.io/getting-started/installing/#chocolatey-windows)
 >
 > ```powershell
-> choco install hugo -confirm
+> choco install hugo-extended -confirm
 > ```
 
 `hugo version`으로 설치된 것을 확인 할 수 있습니다. 0.74.3버전이 설치되었네요.
 
 ```powershell
-Hugo Static Site Generator v0.74.3-DA0437B4 windows/amd64 BuildDate: 2020-07-23T16:23:30Z
+Hugo Static Site Generator v0.74.3/extended windows/amd64
 ```
 
 # 블로그 생성
@@ -66,7 +66,9 @@ hugo new site new-site-name
 
 지정한 이름의 하위 디렉토리가 생기고, hugo 폴더 구조로 만들어 진것을 확인 할 수 있습니다.
 
-해당 폴더에서 `hugo `명령어를 실행시키면 public 폴더가 생기고, 빌드된 파일이 안에 들어있게 됩니다.
+## 빌드
+
+해당 폴더에서 `hugo`명령어를 실행시키면 public 폴더가 생기고, 빌드된 파일이 안에 들어있게 됩니다.
 
 ```powershell
 hugo
@@ -83,10 +85,13 @@ hugo
   Cleaned          |  0
 ```
 
+## 실행
+
 그리고 `hugo serve` 로 로컬 환경에서 웹 사이트에 접속 해 볼수 있습니다.
 
 ```powershell
 hugo serve
+
                    | EN
 -------------------+-----
   Pages            |  3
@@ -109,3 +114,164 @@ Press Ctrl+C to stop
 ```
 
 <http://localhost:1313/> 로 접속하면 빈 화면이 나오는 것을 확인 할 수 있을 것입니다.
+
+# 테마 설치
+
+빈 화면에서 만들어 나갈 수도 있지만, 이미 만들어진 여러 테마들이 있습니다. 
+
+[Hugo Themes](https://themes.gohugo.io/)
+
+테마를 하나 선택하여 다운로드 해 보겠습니다.
+
+## 다운로드
+
+[Hugo Future Imperfect Slim](https://themes.gohugo.io/hugo-future-imperfect-slim/)
+
+다운로드한 테마를 방금 만든 웹 사이트 폴더 안의 themes 폴더 안에 넣어주면 됩니다.
+
+```powershell
+cd C:\Hugo\Sites\my-blog\themes
+git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
+```
+
+다른 테마라도, themes 폴더 안 에 넣어주면 됩니다.
+
+이제, 테마 설정을 하면 블로그 완성입니다.
+
+## 설정
+
+테마 설정은 테마별로 각각 다르나,  모든 설정은 웹 사이트 폴더 안의 config.toml 의 파일에 설정하게 됩니다. 해당 파일은 hugo의 설정 파일로, 웹 사이트의 타이틀이나 사용할 테마 등을 설정할 수 있습니다.
+
+> [Hugo Future Imperfect Slim - config.toml](https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml)
+>
+> ```
+> baseurl                 = "example.com"
+> DefaultContentLanguage  = "en"
+> title                   = "Hugo Future Imperfect Slim"
+> theme                   = "hugo-future-imperfect-slim"
+> paginate                = 3
+> disqusShortname         = ""
+> googleAnalytics         = ""
+> pluralizeListTitles     = false
+> disableLanguages        = []
+>
+> [markup.goldmark.renderer]
+>   unsafe                = true
+>
+> [outputs]
+>   home                  = ["html", "json"]
+>   
+> [params]
+>   enableCDN             = false
+>   cssFiles              = ["default"]
+>   jsFiles               = ["default"]
+>   highlightjs           = true
+>   highlightjsTheme      = "default"
+>   highlightjsLang       = []
+>   viewMorePostsLink     = "/blog/"
+>   readingTime           = true
+>   imageStrech           = ""
+>   socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
+>   
+> [params.meta]
+> 	description         = "A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo."
+> 	author              = "HTML5UP and Hugo"
+> 	favicon             = false
+> 	svg                 = true
+> 	faviconVersion      = "1"
+> 	msColor             = "#ffffff"
+> 	iOSColor            = "#ffffff"
+>     
+> [params.header]
+> 	navbarTitle         = "Future Imperfect"
+> 	dynamicTitles       = true
+> 	searchMenu          = true
+> 	shareMenu           = true
+> 	languageMenu        = true
+>
+> [params.intro]
+> 	header                = "Hugo Future Imperfect Slim"
+> 	paragraph             = "Another fine, responsive site template by <a href='http://html5up.net'>HTML5 UP</a>."
+> 	rssIntro              = true
+> 	socialIntro           = true
+> 	hideWhenSingleColumn  = false
+> 	alwaysOnHomepage      = false
+>
+> 	[params.intro.pic]
+> 		src                 = "/img/main/logo.jpg"
+> 		shape               = "circle"
+> 		width               = ""
+> 		alt                 = "Hugo Future Imperfect Slim"
+>         
+> [params.sidebar]
+>   about               = "This theme was developed for Hugo static site generator."
+>   postAmount          = 5
+>   categories          = true
+>   categoriesByCount   = true
+>  
+> [params.footer]
+>   rssFooter           = true
+>   socialFooter        = true
+>   
+> [params.staticman]
+>   enabled             = false
+>   api                 = ""  # No Trailing Slash
+>   gitProvider         = "github"
+>   username            = ""
+>   repo                = ""
+>   branch              = ""
+>
+>   [params.staticman.recaptcha]
+>     siteKey           = ""
+>     encryptedKey      = ""
+>     
+> [menu]
+>
+> 	[[menu.main]]
+> 		name              = "Home"
+> 		identifier        = "home"
+> 		url               = "/"
+> 		pre               = "<i class='fa fa-home'></i>"
+> 		weight            = 1
+>
+> 	[[menu.main]]
+> 		name              = "About"
+> 		identifier        = "about"
+> 		url               = "/about/"
+> 		pre               = "<i class='far fa-id-card'></i>"
+> 		weight            = 2
+>         
+> [Languages]
+>
+> 	[Languages.en]
+> 		LanguageCode        = "en"
+> 		LanguageName        = "English"
+> 		weight              = 1
+>
+> 	[Languages.fr]
+> 		LanguageCode        = "fr"
+> 		LanguageName        = "Français"
+> 		title               = "Hugo Future Imperfect Slim en français"
+> 		description         = "Un thème par HTML5 UP, porté par Julio Pescador. Simplifié et amélioré par Patrick Collins. Multilingue par StatnMap. Propulsé par Hugo."
+> 		weight              = 2
+>
+> 		[[Languages.fr.menu.main]]
+> 		name              = "Accueil"
+> 		identifier        = "home"
+> 		url               = "/"
+> 		pre               = "<i class='fas fa-home'></i>"
+> 		weight            = 1
+>         
+> [social]
+> 	# Coding Communities
+> 	github                = "pacollins/hugo-future-imperfect-slim"
+> 	gitlab                = ""
+> 	stackoverflow         = "" # User Number
+> 	bitbucket             = ""
+> ```
+
+## 확인
+
+필요한 설정을 해주고, 다시 `hugo serve`를 실행 시켜서 <http://localhost:1313/> 에 접속해 봅시다.
+
+![hugo-future-imperfect-slim main](/img/uploads/hugo-future-imperfect-slim.png)
