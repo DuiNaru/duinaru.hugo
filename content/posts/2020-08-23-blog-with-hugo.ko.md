@@ -127,7 +127,7 @@ Press Ctrl+C to stop
 
 [Hugo Future Imperfect Slim](https://themes.gohugo.io/hugo-future-imperfect-slim/)
 
-다운로드한 테마를 방금 만든 웹 사이트 폴더 안의 themes 폴더 안에 넣어주면 됩니다.
+Hugo Future Imperfect Slim라는 테마를 다운로드 하였습니다. 테마는 방금 만든 웹 사이트 폴더 안의 themes 폴더 안에 넣어주면 됩니다.
 
 ```powershell
 cd C:\Hugo\Sites\my-blog\themes
