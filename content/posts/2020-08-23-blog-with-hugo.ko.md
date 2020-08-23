@@ -282,7 +282,7 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 
 # 글 작성
 
-아래 처럼 파일을 만들면 됩니다. 해당 파일은 markdown형식의 파일이며, 글 하나에 해당합니다.
+아래 처럼 만들면 됩니다. 해당 파일은 markdown형식의 파일이며, 글 하나에 해당합니다.
 
 ```powershell
 hugo new posts/new-post.md
