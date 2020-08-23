@@ -1,4 +1,4 @@
-baseurl                 = ""
+baseurl                 = "https://duinaru.github.io/"
 DefaultContentLanguage  = "ko"
 title                   = "DuiNaru | 개발과 경험을 담는 블로그"
 theme                   = "hugo-future-imperfect-slim"
