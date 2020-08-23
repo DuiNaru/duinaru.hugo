@@ -121,7 +121,7 @@ Press Ctrl+C to stop
 
 [Hugo Themes](https://themes.gohugo.io/)
 
-테마 중에 하나 선택하여 다운로드 해 보겠습니다.
+테마 중에 하나 선택하여 적용 해 보겠습니다.
 
 ## 다운로드
 
