@@ -1,7 +1,7 @@
 +++
 categories = ["blog"]
 tags = ["hugo"]
-title = "Hugoでブログサイト立ち上げ"
+title = "Hugoでブログサイトの構築"
 permalink = "2020-08-23-blog-with-hugo"
 date = 2020-08-23T09:34:31.309Z
 i18n = "ko"
@@ -10,7 +10,7 @@ i18n = "ko"
 src = "/img/uploads/hugo-logo-wide.svg"
 alt = "hugo image"
 +++
-Hugoでブログサイトを立ち上げてみました。Hugoをインストールし、テーマを入れることですぐに創れます。
+Hugoでブログサイトを構築してみました。Hugoをインストールし、テーマを入れることですぐに創れます。
 
 # Hugo
 
