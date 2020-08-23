@@ -140,7 +140,7 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 
 # 設定
 
-テーマの設定はテーマごとに異なりますが、全ての設定はブログサイトディレクトリの下、config.tomlのファイルに設定します。該当ファイルはhugoの設定ファイルで、ブログサイトのタイトルや使用するテーマの設定などを指定できます。
+テーマの設定はテーマごとに異なりますが、全ての設定はブログサイトディレクトリの下、config.tomlのファイルに設定します。該当ファイルはhugoの設定ファイルで、ブログサイトのタイトルや使用するテーマの設定などが指定できます。
 
 筆者の場合は[Hugo Future Imperfect Slim](https://themes.gohugo.io/hugo-future-imperfect-slim/) を入れましたので、下記のように設定しました。
 
