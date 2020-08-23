@@ -278,7 +278,7 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 
 ![hugo-future-imperfect-slim main](/img/uploads/hugo-future-imperfect-slim.png)
 
-아무 글도 없으니, 허전하네요. 글 하나 작성해봅시다.
+테마가 적용된 것을 확인 할 수 있습니다. 다만, 아무 글도 없으니 허전하네요. 글 하나 작성해봅시다.
 
 # 글 작성
 
