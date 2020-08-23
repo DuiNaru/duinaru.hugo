@@ -26,7 +26,7 @@ Hugoは基本バージョンとextendedバージョンの二つがあります�
 >
 > Hugo is now released with two binary version: One with and one without SCSS/SASS support. At the time of writing, this is only available in the binaries on the GitHub release page. Brew, Snap builds etc. will come. But note that you **only need the extended version if you want to edit SCSS**. For your CI server, or if you don’t use SCSS, you will most likely want the non-extended version.
 
-今回で入れるテーマがSCSSを使っているようで、extendedバージョンをインストールします。
+今回に入れるテーマがSCSSを使っているようで、extendedバージョンをインストールします。
 
 ### パッケージマネージャーインストール
 
@@ -44,13 +44,13 @@ Windows環境でインストールしまして、[chocolatey](https://chocolatey
 
 ### Hugoのインストール
 
-### [Install Hugo - Chocolatey (Windows)](https://gohugo.io/getting-started/installing/#chocolatey-windows)
-
+> [Install Hugo - Chocolatey (Windows)](https://gohugo.io/getting-started/installing/#chocolatey-windows)
+>
 > ```powershell
 > choco install hugo-extended -confirm
 > ```
 
-`hugo version`でインストールされたことを確認できます。0.74.3バージョンがインストールされましたね。
+`hugo version`でインストールされたことが確認できます。0.74.3バージョンがインストールされましたね。
 
 ```powershell
 Hugo Static Site Generator v0.74.3/extended windows/amd64
@@ -58,13 +58,13 @@ Hugo Static Site Generator v0.74.3/extended windows/amd64
 
 # ブログサイト作成
 
-ブログサイトを作成するディレクトリで、次のコマンドーを実行すれば作成完了です。`new-site-name`はブログサイトが格納されるフォルダー名で変更できます。
+次のコマンドーを実行すればブログサイト作成完了です。`new-site-name`はブログサイトが格納されるフォルダー名で、変更できます。
 
 ```powershell
 hugo new site new-site-name
 ```
 
-指定したフォルダーが作成され、hugoのストラクチャーでできていることが確認できます。
+指定したフォルダーが作成され、hugoのディレクトリ構造になっていることが確認できます。
 
 ## ビルド
 
