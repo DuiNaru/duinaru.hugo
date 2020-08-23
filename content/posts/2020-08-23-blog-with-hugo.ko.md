@@ -279,3 +279,23 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 아무 글도 없으니, 허전하네요. 글 하나 작성해봅시다.
 
 # 글 작성
+
+content/posts의 폴더 안에 아래 처럼 파일을 만들면 됩니다. 해당 파일은 markdown형식의 파일이며, 글 하나에 해당합니다.
+
+```powershell
+hugo new posts/new-post.md
+```
+
+`hugo new` 명령어도 만들어도 되고, 직접 만들어도 됩니다. 명령어도 만들 경우, draft 설정으로 만들어 지므로 확인하기 위해서는 다음 명령어로 실행합니다.
+
+```powershell
+hugo serve -D
+```
+
+<http://localhost:1313/> 에 접속하면 글이 하나 생긴 것을 확인 할 수 있습니다.
+
+![new post](/img/uploads/hugo-future-imperfect-slim_new-post.png)
+
+새로 생긴 파일에 내용을 적음으로써 블로그 글을 작성할 수 있게 됩니다.
+
+그러나, 파일 하나하나를 직접 수정하고 관리하는 것은 불편함이 따르기 마련입니다. 그래서 다음에는 글을 작성하거나 관리하는 것을 보다 편하게 하기 위해 CMS을 설정하는 글을 적어보려 합니다.
