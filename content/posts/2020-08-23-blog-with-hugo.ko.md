@@ -87,7 +87,7 @@ hugo
 
 ## 실행
 
-그리고 `hugo serve` 로 로컬 환경에서 웹 사이트에 접속 해 볼수 있습니다.
+그리고 `hugo serve` 로 로컬 환경에서 블로그 사이트에 접속 해 볼수 있습니다.
 
 ```powershell
 hugo serve
@@ -127,7 +127,7 @@ Press Ctrl+C to stop
 
 [Hugo Future Imperfect Slim](https://themes.gohugo.io/hugo-future-imperfect-slim/)
 
-Hugo Future Imperfect Slim라는 테마를 다운로드 하였습니다. 다운로드한 테마는 웹 사이트 폴더 안의 themes 폴더 안에 넣어주면 됩니다.
+Hugo Future Imperfect Slim라는 테마를 다운로드 하였습니다. 다운로드한 테마는 블로그 사이트 폴더 안의 themes 폴더 안에 넣어주면 됩니다.
 
 ```powershell
 cd C:\Hugo\Sites\my-blog\themes
@@ -140,7 +140,7 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 
 ## 설정
 
-테마 설정은 테마별로 각각 다르나,  모든 설정은 웹 사이트 폴더 안의 config.toml 의 파일에 설정하게 됩니다. 해당 파일은 hugo의 설정 파일로, 웹 사이트의 타이틀이나 사용할 테마 등을 설정할 수 있습니다.
+테마 설정은 테마별로 각각 다르나,  모든 설정은 블로그 사이트 폴더 안의 config.toml 의 파일에 설정하게 됩니다. 해당 파일은 hugo의 설정 파일로, 블로그 사이트의 타이틀이나 사용할 테마 등을 설정할 수 있습니다.
 
 필자는 [Hugo Future Imperfect Slim](https://themes.gohugo.io/hugo-future-imperfect-slim/) 를 사용하였기에, 아래와 같이 설정해주었습니다.
 
