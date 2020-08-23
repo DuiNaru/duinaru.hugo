@@ -87,7 +87,7 @@ hugo
 
 ## 確認
 
-そして、`hugo serve` でローカル環境でもブログサイトが確認できます。
+そして、`hugo serve` でローカル環境からブログサイトを確認することもできます。
 
 ```powershell
 hugo serve
