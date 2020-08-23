@@ -4,7 +4,7 @@ tags = ["hugo"]
 title = "Hugoでブログサイトの構築"
 permalink = "2020-08-23-blog-with-hugo"
 date = 2020-08-23T09:34:31.309Z
-i18n = "ko"
+i18n = "ja"
 
 [[images]]
 src = "/img/uploads/hugo-logo-wide.svg"
