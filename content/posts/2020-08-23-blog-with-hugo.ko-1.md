@@ -134,7 +134,7 @@ cd C:\Hugo\Sites\my-blog\themes
 git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 ```
 
-他のテーマであっても、themesのフォルダーに入れればいいです。
+他のテーマであっても、themesのフォルダーに入れれば大丈夫です。
 
 あとは、テーマの設定をすれば完成です。
 
