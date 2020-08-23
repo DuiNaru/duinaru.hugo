@@ -20,7 +20,7 @@ Hugoでブログサイトを構築してみました。Hugoをインストール
 
 [Install Hugo](https://gohugo.io/getting-started/installing/)
 
-Hugoはベーシックバージョンとextendedバージョンの二つがあります。extendedバージョンはSCSS/SASSをサポートし、SCSS/SASSを使おうとしたらextendedバージョンのインストールが必要のようです。
+Hugoは基本バージョンとextendedバージョンの二つがあります。extendedバージョンはSCSS/SASSをサポートし、SCSS/SASSを使おうとしたらextendedバージョンのインストールが必要のようです。
 
 > [And Now: Hugo Pipes!](https://gohugo.io/news/0.43-relnotes/#notes)
 >
