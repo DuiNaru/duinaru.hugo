@@ -1,7 +1,7 @@
 +++
 categories = ["blog"]
 tags = ["hugo"]
-title = "Hugoでブログサイトの構築"
+title = "Hugoでブログサイトを構築"
 permalink = "2020-08-23-blog-with-hugo"
 date = 2020-08-23T11:08:50.027Z
 i18n = "ja"
