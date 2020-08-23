@@ -142,6 +142,8 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 
 테마 설정은 테마별로 각각 다르나,  모든 설정은 웹 사이트 폴더 안의 config.toml 의 파일에 설정하게 됩니다. 해당 파일은 hugo의 설정 파일로, 웹 사이트의 타이틀이나 사용할 테마 등을 설정할 수 있습니다.
 
+필자는 [Hugo Future Imperfect Slim](https://themes.gohugo.io/hugo-future-imperfect-slim/) 를 사용하였기에, 아래와 같이 설정해주었습니다.
+
 > [Hugo Future Imperfect Slim - config.toml](https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml)
 >
 > ```
