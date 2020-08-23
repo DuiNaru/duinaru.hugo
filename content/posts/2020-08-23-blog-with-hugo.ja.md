@@ -30,7 +30,7 @@ Hugoは基本バージョンとextendedバージョンの二つがあります�
 
 ### パッケージマネージャーインストール
 
-Windows環境でインストールしまして、[chocolatey](https://chocolatey.org/)を利用し、インストールしました。別の環境でのインストールは[Install Hugo](https://gohugo.io/getting-started/installing/)を参考してください。
+Windows環境にインストールしまして、[chocolatey](https://chocolatey.org/)を利用し、インストールしました。別の環境でのインストールは[Install Hugo](https://gohugo.io/getting-started/installing/)を参考してください。
 
 > [Installing Chocolatey](https://chocolatey.org/install)
 >
