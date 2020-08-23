@@ -30,7 +30,7 @@ Hugo는 기본 버전과 extended버전이 있습니다. extended버전은 SCSS/
 
 ### 패키지 매니저 설치
 
-Windows환경에 설치할 생각이라 [chocolatey](https://chocolatey.org/)를 이용해서 설치해 주었습니다.
+Windows환경에 설치할 생각이라 [chocolatey](https://chocolatey.org/)를 이용해서 설치해 주었습니다. 다른 환경에 설치 할 생각이시라면, [Install Hugo](https://gohugo.io/getting-started/installing/) 을 참고해주세요.
 
 > [Installing Chocolatey](https://chocolatey.org/install)
 >
