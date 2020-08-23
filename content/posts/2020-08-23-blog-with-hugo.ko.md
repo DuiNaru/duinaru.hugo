@@ -20,13 +20,13 @@ Hugo를 사용하여 블로그를 만들어 보았습니다. Hugo를 설치하�
 
 [Install Hugo](https://gohugo.io/getting-started/installing/)
 
-Hugo는 기본 버전과 extended버전이 있습니다. extended버전은 SCSS/SASS를 지원하는 버전으로, SCSS/SASS를 사용하고자 하실 분은 extended버전으로 설치해야 한다네요.
+Hugo는 기본 버전과 extended버전이 있습니다. extended버전은 SCSS/SASS를 지원하는 버전으로, SCSS/SASS를 사용하고자 하실 분은 extended버전으로 설치해야 한다고 하네요.
 
 > [And Now: Hugo Pipes!](https://gohugo.io/news/0.43-relnotes/#notes)
 >
 > Hugo is now released with two binary version: One with and one without SCSS/SASS support. At the time of writing, this is only available in the binaries on the GitHub release page. Brew, Snap builds etc. will come. But note that you **only need the extended version if you want to edit SCSS**. For your CI server, or if you don’t use SCSS, you will most likely want the non-extended version.
 
-이번 글에서 사용할 테마가 SCSS를 사용하는 듯 하여, extended버전을 설치해주었습니다.
+이번 글에서 사용할 테마가 SCSS를 사용하는 듯 하여, extended버전을 설치하겠습니다.
 
 ### 패키지 매니저 설치
 
