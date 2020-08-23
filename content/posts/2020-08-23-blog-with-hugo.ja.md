@@ -58,7 +58,7 @@ Hugo Static Site Generator v0.74.3/extended windows/amd64
 
 # ブログサイト作成
 
-次のコマンドーを実行すればブログサイト作成ができます。`new-site-name`はブログサイトが格納されるフォルダー名で、変更できます。
+次のコマンドーを実行すればブログサイトが作成できます。`new-site-name`はブログサイトが格納されるフォルダー名で、変更できます。
 
 ```powershell
 hugo new site new-site-name
