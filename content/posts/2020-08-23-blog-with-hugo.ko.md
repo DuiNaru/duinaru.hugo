@@ -282,13 +282,13 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 
 # 글 작성
 
-content/posts의 폴더 안에 아래 처럼 파일을 만들면 됩니다. 해당 파일은 markdown형식의 파일이며, 글 하나에 해당합니다.
+아래 처럼 파일을 만들면 됩니다. 해당 파일은 markdown형식의 파일이며, 글 하나에 해당합니다.
 
 ```powershell
 hugo new posts/new-post.md
 ```
 
-`hugo new` 명령어도 만들어도 되고, 직접 만들어도 됩니다. 명령어도 만들 경우, draft 설정으로 만들어 지므로 확인하기 위해서는 다음 명령어로 실행합니다.
+content/posts의 폴더 안에 new-post.md파일이 만들어 진 것을 확인 할 수 있습니다. 파일은 `hugo new` 명령어도 만들어도 되고, 직접 만들어도 됩니다. 명령어도 만들 경우, draft 설정으로 만들어 지므로 확인하기 위해서는 다음 명령어로 실행합니다.
 
 ```powershell
 hugo serve -D
