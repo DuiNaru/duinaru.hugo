@@ -38,7 +38,7 @@ Windows環境にインストールしまして、[chocolatey](https://chocolatey
 > Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 > ```
 
-管理者権限でPowershellに上記のコマンドーを実行させます。セキュリティー設定があるかということでBypassを設定してインストールするらしいです。
+管理者権限でPowershellに上記のコマンドーを実行します。セキュリティー設定があるかということでBypassを設定してインストールするらしいです。
 
 `choco`や`choco -?`でインストールされたことを確認したら、Hugoをインストールします。
 
