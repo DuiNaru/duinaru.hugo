@@ -288,7 +288,7 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 hugo new posts/new-post.md
 ```
 
-content/postsの下にnew-post.mdというファイルが作成されていることが確認できます。投稿は`hugo new` のコマンドを実行してもいいですし、.mdファイルを直接作成してもいいです。コマンドで作成する場合はdraftをtrueに設定して作られますので、次のコマンドでブログサイトを起動しましょう。
+content/postsの下にnew-post.mdというファイルが作成されていることが確認できます。投稿は`hugo new` のコマンドを実行してもいいですし、.mdファイルを直接作成してもいいです。コマンドで作成する場合はdraftをtrueに設定して作られますので、-Dのオプションを付け、ブログサイトを起動しましょう。
 
 ```powershell
 hugo serve -D
