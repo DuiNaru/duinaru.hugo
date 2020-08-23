@@ -278,7 +278,7 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 
 ![hugo-future-imperfect-slim main](/img/uploads/hugo-future-imperfect-slim.png)
 
-テーマが適用慣れていることが確認できます。しかし、投稿がないので一つ作成してみましょう。
+テーマが適用されていることが確認できます。しかし、何もないので一つ投稿してみましょう。
 
 # 投稿
 
