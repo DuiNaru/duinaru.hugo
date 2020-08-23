@@ -275,3 +275,7 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 필요한 설정을 해주고, 다시 `hugo serve`를 실행 시켜서 <http://localhost:1313/> 에 접속해 봅시다.
 
 ![hugo-future-imperfect-slim main](/img/uploads/hugo-future-imperfect-slim.png)
+
+아무 글도 없으니, 허전하네요. 글 하나 작성해봅시다.
+
+# 글 작성
