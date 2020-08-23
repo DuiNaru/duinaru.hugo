@@ -282,13 +282,13 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 
 # 投稿
 
-下記のようにコマンドを実行します。投稿で作るファイルはmarkdown形式で、ファイル一つがポスト一つになります。
+下記のようにコマンドを実行します。投稿で作るファイルはmarkdown形式で、ファイル1個がポスト1個になります。
 
 ```powershell
 hugo new posts/new-post.md
 ```
 
-content/postsの下にnew-post.mdというファイルが作成されていることを確認できます。投稿は`hugo new` のコマンドでしてもいいですし、.mdファイルを直接作成してもいいです。コマンドで作成する場合はdraftをtrueに設定して作られますので、次のコマンドでブログサイトを起動しましょう。
+content/postsの下にnew-post.mdというファイルが作成されていることが確認できます。投稿は`hugo new` のコマンドを実行してもいいですし、.mdファイルを直接作成してもいいです。コマンドで作成する場合はdraftをtrueに設定して作られますので、次のコマンドでブログサイトを起動しましょう。
 
 ```powershell
 hugo serve -D
@@ -298,6 +298,6 @@ hugo serve -D
 
 ![new post](/img/uploads/hugo-future-imperfect-slim_new-post.png)
 
-投稿はそのファイルに内容を書くことでできます。
+投稿や修正などはそのファイルを変更することでできます。
 
-しかし、ファイルを一個づつ修正したり管理することは不便さがつきものです。そこで、CMSを入れれば、投稿や管理がしやすくなるので、次はそれについて投稿しようと思います。
+しかし、ファイルを一個づつの修正などの管理は不便さがつきものです。そこで、CMSを入れれば、投稿や管理がしやすくなりますので、次はCMSについて投稿しようと思います。
