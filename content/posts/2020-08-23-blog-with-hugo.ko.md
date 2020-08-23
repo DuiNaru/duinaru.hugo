@@ -10,7 +10,7 @@ i18n = "ko"
 src = "/img/uploads/hugo-logo-wide.svg"
 alt = "hugo image"
 +++
-# Hugo를 사용하여 블로그를 만들어 보았습니다. Hugo를 설치하고 테마를 적용하는 것만으로도 바로 만들 수 있습니다.
+Hugo를 사용하여 블로그를 만들어 보았습니다. Hugo를 설치하고 테마를 적용하는 것만으로도 바로 만들 수 있습니다.
 
 # Hugo
 
