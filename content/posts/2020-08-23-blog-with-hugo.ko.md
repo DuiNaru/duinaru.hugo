@@ -288,7 +288,7 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 hugo new posts/new-post.md
 ```
 
-content/posts의 폴더 안에 new-post.md파일이 만들어 진 것을 확인 할 수 있습니다. 파일은 `hugo new` 명령어도 만들어도 되고, 직접 만들어도 됩니다. 명령어도 만들 경우, draft 설정으로 만들어 지므로 확인하기 위해서는 다음 명령어로 실행합니다.
+content/posts의 폴더 안에 new-post.md파일이 만들어 진 것을 확인 할 수 있습니다. 파일은 `hugo new` 명령어도 만들어도 되고, 직접 만들어도 됩니다. 명령어로 만들 경우, draft 설정으로 만들어 지므로 확인하기 위해서는 다음 명령어로 실행합니다.
 
 ```powershell
 hugo serve -D
