@@ -292,7 +292,7 @@ URL이 아래와 비슷할텐데, 중간에 admin을 넣어서 CMS 페이지로 
 
 ![](/img/uploads/netlifycms_main_page.png)
 
-이제 New Blog 를 눌러서 글을 쓸 수 있게 되었습니다.
+이제 New Blog 를 눌러서 글을 쓰는 등의 Netlify CMS를 사용 할 수 있게 되었습니다.
 
 # 후기
 
