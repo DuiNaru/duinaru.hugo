@@ -15,6 +15,8 @@ disableLanguages        = []
     home                  = ["html", "json"]
 
 [params]
+	description           = "IT에 대한 이런저런 경험을 담아봅니다"
+	images                = ["/img/main/logo.jpg"]
     enableCDN             = false
     cssFiles              = ["default"]
     jsFiles               = ["default", "https://identity.netlify.com/v1/netlify-identity-widget.js"]
@@ -122,15 +124,18 @@ disableLanguages        = []
 		title               = "DuiNaru | 開発と経験を載せるブログ"
 		weight              = 2
 
-        [Languages.ja.params.intro]
-	        header                = "DuiNaru"
-            paragraph             = "ITについての色々な経験を載せます。"
-            
-            [Languages.ja.params.intro.pic]
-                src                 = "/img/main/logo.jpg"
-                shape               = "circle"
-                width               = ""
-                alt                 = "DuiNaru's Blog"
+        [Languages.ja.params]
+			description = "ITについての色々な経験を載せます。"
+
+			[Languages.ja.params.intro]
+				header                = "DuiNaru"
+				paragraph             = "ITについての色々な経験を載せます。"
+				
+				[Languages.ja.params.intro.pic]
+					src                 = "/img/main/logo.jpg"
+					shape               = "circle"
+					width               = ""
+					alt                 = "DuiNaru's Blog"
 
 [social]
     email                 = "duinaru@gmail.com"
