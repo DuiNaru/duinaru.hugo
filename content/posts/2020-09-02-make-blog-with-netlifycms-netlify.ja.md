@@ -10,7 +10,7 @@ i18n = "ja"
 src = "/img/uploads/netlifycms.png"
 alt = "netlifycms+netlify"
 +++
-静的サイトジェネレータので構築したブログはmarkdown形式で管理され、投稿の度にビルドしデプロイしなければなりません。これをしやすくするためにNetlify CMSとNetlifyを入れました。
+静的サイトジェネレータで構築したブログはmarkdown形式で管理され、投稿の度にビルドとデプロイをしなければなりません。これをしやすくするためにNetlify CMSとNetlifyを入れました。
 
 # [Netlify CMS](https://www.netlifycms.org/)
 
@@ -26,7 +26,7 @@ Netlify CMSやForestry.ioのように静的サイトジェネレータのcmsは�
 
 ウェブベース、多くの静的サイトジェネレータのサポートなどの特徴があります。
 
-その中ではGitベースで管理することかと思います。投稿するとcommitされ、投稿完了にpull request、修正で新しくcommitされることですが、プログラミングを似ていますね。投稿を完了するまでbranchを別に作って管理することもできます。
+特にGitベースで管理することがいいと思います。投稿するとcommitされ、投稿完了にpull request、修正で新しくcommitされることですが、プログラミングを似ていますね。投稿の完了するまでbranchを別に作って管理することもできます。
 
 ## インストール
 
@@ -66,7 +66,7 @@ Netlify CMSやForestry.ioのように静的サイトジェネレータのcmsは�
 
 静的サイトジェネレータ別にビルドする際にstaticなウェブページがデプロイされる場所です。hugoで構築したブログですので、staticのフォルダーに格納すればいいです。
 
-該当のフォルダーにadminというフォルダーを作成し、次の二つのファイルを作成します。
+上記のフォルダーにadminというフォルダーを作成し、次の二つのファイルを作成します。
 
 > index.html
 >
@@ -103,14 +103,14 @@ Netlify CMSやForestry.ioのように静的サイトジェネレータのcmsは�
 > backend:
 >   name: git-gateway
 >   branch: master # Branch to update (optional; defaults to master)
-> 
+>
 > # This line should *not* be indented
 > publish_mode: editorial_workflow
-> 
+>
 > # These lines should *not* be indented
 > media_folder: "/static/img/uploads" # Media files will be stored in the repo under static/images/uploads
 > public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
-> 
+>
 > collections:
 >   - name: "blog" # Used in routes, e.g., /admin/collections/blog
 >     label: "Blog" # Used in the UI
@@ -134,15 +134,15 @@ index.htmlはNetlfiy CMSにアクセスするためのページで、config.yml�
 
 #### 確認
 
-netlfiy cmsのページを確認しましょう。
+netlfiy cmsのページを確認します。
 
-`hugo -serve`で駆動し、http://localhost:1313/adminにアクセスするとログイン画面が表示されます。
+ローカルから`hugo -serve`で駆動し、http://localhost:1313/adminにアクセスするとログイン画面が表示されます。
 
 ![netlfy cms login page](blob:https://duinaru.netlify.app/1b34d952-263b-4cee-8ea3-f5d8b84a9fb2)
 
-#### Netlifyの設定ファイル作成
+#### Netlifyの設定ファイルの作成
 
-これからはNetlifyにデプロイすることになります。その設定をするためにブログサイトのルートにnetlify.tomlのファイルを作成します。該当のファイルにNetlifyの設定ができ、ビルドコマンドや環境変数などを指定することができます。
+Netlifyにデプロイするための設定ファイルと作成します。ブログサイトのルートにnetlify.tomlのファイルを作成します。該当のファイルにNetlifyの設定ができ、ビルドコマンドや環境変数などを指定することができます。
 
 ```toml
 #/my-blog/netlify.toml
@@ -191,29 +191,31 @@ Netlifyは[GitHub](https://github.com/)、[GitLab](https://about.gitlab.com/)、
 
 Netlifyにアクセスし、ログインします。
 
-https://www.netlify.com/
+<https://www.netlify.com/>
 
-後はNew site from Gitのボタンで新規サイトを作成します。初めにアカウントを作成した場合は作成後、新規サイト作成画面が表示される場合もあります。
+New site from Gitのボタンで新規サイトを作成します。初めてアカウントを作成した場合は作成後、新規サイト作成画面が表示される場合もあります。
 
 ![New site from Git](blob:https://duinaru.netlify.app/f4b5a5ce-bddd-48f0-ba75-9e8e052940ad)
 
 ### サイト作成
 
-ブログRepositoryがあるGitを設定しましす。
+ブログRepositoryがあるGitを設定します。
 
 ![create a new site](blob:https://duinaru.netlify.app/8435fdfb-608e-40d8-89e1-7eaea5e0dbf2)
 
-そうするとRepositoryを選択する画面が表示されますが、ブログサイトのRepositoryを選びます。
+GitのボタンをクリックするとRepositoryを選択する画面が表示されますので、ブログサイトのRepositoryを選びます。
 
 ![choose repository](blob:https://duinaru.netlify.app/f6478c53-12be-41b6-936b-8bba56585359)
 
-後は、Branchをビルドコマンドを設定すれば終わります。
+次はBranchやビルドコマンドを設定します。デフォルトで設定されていますのでこのまま進みましょう。
 
 ![deploy site](blob:https://duinaru.netlify.app/75c6d7a9-22f3-46b5-8eb0-33c1be370a5a)
 
 Deploy siteボタンをクリックし、Siteを作成します。
 
-筆者の場合はHugo Future Imperfect Slimをcloneで入れまして、画像のようにFailedと失敗しました。submoduleで入れた場合は成功するはずです。
+### 作成確認
+
+筆者の場合はHugo Future Imperfect Slimをcloneで入れまして、画像のようにFailedと失敗しました。submoduleで入れた場合は成功すると思います。
 
 ![create site fail](blob:https://duinaru.netlify.app/fb065094-b280-4082-b196-1673cb50f71b)
 
@@ -226,8 +228,6 @@ Submodule Pathがないというエラーで、.gitmodulesのファイルをブ�
 >     path = themes/hugo-future-imperfect-slim
 >     url = https://github.com/pacollins/hugo-future-imperfect-slim.git
 > ```
-
-### 作成確認
 
 成功すると以下のようにPublishedが確認できます。
 
@@ -245,13 +245,13 @@ Netlify CMSの使用のため、Netlifyでログイン関連の設定をしま�
 
 ### Identity
 
-メニューからIdentityをアクティブします。この機能を使用することによって、会員登録などの認証機能が使えるようになります。
+メニューからIdentityをEnableします。この機能を使用することによって、会員登録などの認証機能が使えるようになります。
 
 ![enable identity](blob:https://duinaru.netlify.app/5652e7d0-0368-4c43-9368-d641a0840f73)
 
 ### Enable Git Gateway
 
-Netlify CMSでGitを処理するためにGit GatewayをEnableします。Settings - Identityで、Services - Git GatewayにあるEnable Git Gatewayボタンをクリックします。
+Netlify CMSでGitを処理するためにGit GatewayをEnableします。Settings - Identityで、Services - Git GatewayにあるEnable Git Gatewayのボタンをクリックします。
 
 ![enable git gateway](blob:https://duinaru.netlify.app/719a14a4-a135-498b-9638-5c1897d6cb67)
 
@@ -271,7 +271,7 @@ Invite usersをクリックし、e-mailを記入してSendボタンをクリッ�
 
 記入したe-mailに認証メールが届きます。メールのAccept the inviteをクリックするとブログサイトに遷移されます。
 
-クリックしたURLは以下と似ていますが、adminを入れ修正し、CMSページになるようにします。
+クリックしたURLは以下と似ていますが、adminを入れて修正し、CMSページになるようにします。
 
 変更前
 
@@ -299,8 +299,8 @@ New Blogで投稿するなどのNetlify CMSの機能を使用できるように�
 
 # 感想
 
-長くなりましたね。Netlify CMSを設定しておけば、ウェブで直接投稿できて便利です。
+終わりました。Netlify CMSを設定しておけば、ウェブで直接投稿できて便利です。
 
-しかし、日本語や韓国語のタイピングがたまに無視される現象があります。英語は問題ないことでCMSが英語に合わせて作られているようです。
+しかし、日本語や韓国語のタイピングがたまに無視されることがあります。英語は問題ないことでCMSが英語に合わせて作られているかもしれません。
 
-画像アップロードが便利でいいですが、タイピングは工夫の必要がありそうです。
+画像アップロードも便利でいいですが、タイピングは工夫の必要がありそうです。
