@@ -64,7 +64,7 @@ Netlify CMSやForestry.ioのように静的サイトジェネレータのcmsは�
 >
 > https://www.netlifycms.org/docs/add-to-your-site/#app-file-structure
 
-静的サイトジェネレータ別にビルドする際にstaticなウェブページがデプロイされる場所です。hugoで構築したブログですので、staticのフォルダーに格納すればいいです。
+静的サイトジェネレータ別にstaticなウェブページがデプロイされる場所です。hugoで構築したブログですので、staticのフォルダーに格納すればいいです。
 
 上記のフォルダーにadminというフォルダーを作成し、次の二つのファイルを作成します。
 
