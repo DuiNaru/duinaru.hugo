@@ -229,6 +229,8 @@ Submodule Path가 없다는 에러여서 .gitmodules 파일을 블로그 사이�
 > 	url = https://github.com/pacollins/hugo-future-imperfect-slim.git
 > ```
 
+### 확인
+
 성공하면 다음처럼 Published를 확인 할 수 있습니다.
 
 ![](/img/uploads/netlify_create_site_success.png "create site success")
