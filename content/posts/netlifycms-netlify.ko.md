@@ -219,7 +219,7 @@ Hugo Future Imperfect Slim를 clone으로 넣었더니, 화면처럼 Failed로 �
 
 ![](/img/uploads/netlify_create_site_fail.png "create site fail")
 
-Submodule Path가 없다는 에러여서 .gitmodules 파일을 블로그 사이트 경로에 만들고, Push해주었습니.
+Submodule Path가 없다는 에러여서 .gitmodules 파일을 블로그 사이트 경로에 만들고, Push해주었습니다.
 
 > .gitmodules
 >
