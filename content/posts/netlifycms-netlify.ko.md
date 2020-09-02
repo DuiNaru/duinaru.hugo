@@ -139,13 +139,13 @@ index.html은 Netlfiy CMS에 접속하기 한 페이지이고, config.yml은 설
 
 netlfiy cms 페이지를 확인해 봅시다.
 
-`hugo -serve -D` 로 구동 후, <http://localhost:1313/admin> 에 접속하면 로그인 화면이 나올 것 입니다.
+`hugo -serve` 로 구동 후, <http://localhost:1313/admin> 에 접속하면 로그인 화면이 나올 것 입니다.
 
 ![](/img/uploads/netlfiy_cms_login_page.png "netlfy cms login page")
 
 #### Netlify 설정 파일 생성
 
-이후로부터는 Netlify에 배포하고 사용하게 됩니다. 그러기 위해서 블로그 사이트 경로에 netlify.toml 파일을 작성해줍니다. 해당 파일은 Netlify 설정파일로써, 빌드 명령어나 환경 변수 등을 지정할 수 있습니다.
+이후부터는 Netlify에 배포하고 사용하게 됩니다. 그러기 위해서 블로그 사이트 경로에 netlify.toml 파일을 작성해줍니다. 해당 파일은 Netlify 설정파일로써, 빌드 명령어나 환경 변수 등을 지정할 수 있습니다.
 
 ```
 #/my-blog/netlify.toml
