@@ -216,7 +216,7 @@ Repository를 만든 Git을 연결해줍니다.
 
 Deploy site버튼을 눌러서 Site를 생성해줍니다.
 
-Hugo Future Imperfect Slim를 clone넣었더니, 화면처럼 Failed로 실패라고 나왔습니다. submodule로 넣은 경우에는 나오지 않을 것입니다.
+Hugo Future Imperfect Slim를 clone으로 넣었더니, 화면처럼 Failed로 실패라고 나왔습니다. submodule로 넣은 경우에는 나오지 않을 것입니다.
 
 ![](/img/uploads/netlify_create_site_fail.png "create site fail")
 
