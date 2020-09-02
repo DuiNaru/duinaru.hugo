@@ -10,8 +10,6 @@ i18n = "ko"
 src = "/img/uploads/netlifycms.png"
 alt = "netlifycms+netlify"
 +++
-![]()
-
 정적 사이트 생성기로 만든 블로그는 markdown형식의 파일로 글을 관리하고 매번 빌드해서 배포 해주어야 하죠. 이를 쉽게 하기위해 Netlify CMS 와 Netlify 를 넣어보았습니다.
 
 # [Netlify CMS](https://www.netlifycms.org/)
@@ -86,6 +84,18 @@ Netlify CMS, Forestry.io와 같이 정적 사이트의 cms는 여러 가지가 �
 > <body>
 >   <!-- Include the script that builds the page and powers Netlify CMS -->
 >   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+>   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+>   <script>
+>   if (window.netlifyIdentity) {
+>     window.netlifyIdentity.on("init", user => {
+>       if (!user) {
+>         window.netlifyIdentity.on("login", () => {
+>           document.location.href = "/admin/";
+>         });
+>       }
+>     });
+>   }
+> </script>
 > </body>
 > </html>
 > ```
@@ -133,7 +143,7 @@ netlfiy cms 페이지를 확인해 봅시다.
 
 ![](/img/uploads/netlfiy_cms_login_page.png "netlfy cms login page")
 
-#### Netlify 설정 파일 생
+#### Netlify 설정 파일 생성
 
 이후로부터는 Netlify에 배포하고 사용하게 됩니다. 그러기 위해서 블로그 사이트 경로에 netlify.toml 파일을 작성해줍니다. 해당 파일은 Netlify 설정파일로써, 빌드 명령어나 환경 변수 등을 지정할 수 있습니다.
 
@@ -170,16 +180,17 @@ HUGO_VERSION = "0.74.3"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
-
 ```
 
 #### Repository 생성
 
 Netlify에 배포하기 위해 [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), [Bitbucket ](https://bitbucket.org/) 중 하나에 지금까지 작성한 블로그 사이트 Repository를 만들어서 Push해줍니다.
 
-#### Netlify 배포
+# Netlify
 
-##### ﻿로그인
+## Netlify 배포
+
+### ﻿로그인
 
 Netlify에 접속해서 로그인을 합니다.
 
@@ -189,7 +200,7 @@ Netlify에 접속해서 로그인을 합니다.
 
 ![](/img/uploads/netlify_my_sites.png "New site from Git")
 
-##### 사이트 생성
+### 사이트 생성
 
 Repository를 만든 Git을 연결해줍니다.
 
@@ -209,8 +220,6 @@ Deploy site버튼을 눌러서 Site를 생성해줍니다.
 
 ![](/img/uploads/netlify_create_site_fail.png "create site fail")
 
-
-
 Submodule Path가 없다는 에러여서 .gitmodules 파일을 블로그 사이트 경로에 만들고, Push해 줍니다.
 
 > .gitmodules
@@ -224,3 +233,65 @@ Submodule Path가 없다는 에러여서 .gitmodules 파일을 블로그 사이�
 성공하면 다음처럼 Published를 확인 할 수 있습니다.
 
 ![](/img/uploads/netlify_create_site_success.png "create site success")
+
+## 사이트 확인
+
+화면에 표시된 URL에 접속하면 블로그 사이트를 확인 할 수 있습니다.
+
+![](/img/uploads/hugo-future-imperfect-slim.png "main page")
+
+## Netlify 설정
+
+### Identity
+
+메뉴에서 Identity을 활성해 줍니다.
+
+![](/img/uploads/netlify_enable_identity.png "enable identity")
+
+### Enable Git Gateway
+
+Netlify CMS 에서 Git 을 처리하기 위해 사용 설정을 해 줍니다. Settings - Identity 메뉴에 Services - Git Gateway 에 있는 Enable Git Gateway 버튼을 클릭합니다.
+
+![](/img/uploads/netlify_enable_git_gateway.png "enable git gateway")
+
+### 초대 전용으로 설정
+
+Settings - Identity - Registration 에서 Edit 버튼을 눌러서 Invite only로 바꿔줍시다. 이 설정으로 누구나 아이디를 생성할 수 없게 됩니다.
+
+![](/img/uploads/netlify_invite_registration.png "registration invite only")
+
+### 아이디 추가
+
+이제 아이디를 추가해 줄 것입니다.
+
+Invite users를 클릭하여, 이메일을 적어주고 Send를 눌러줍시다.
+
+![](/img/uploads/netlify_invite_users.png "invite_users")
+
+해당 이메일로 인증메일이 도착해 있을 것입니다. Accept the invite 를 클릭하면 블로그 사이트로 이동됩니다.
+
+URL이 아래와 비슷할텐데, 중간에 admin/을 넣어서 CMS 페이지로 바꿔 줍니다.
+
+변경 전
+
+`https://trusting-curran-e13b73.netlify.app/#invite_token=-W5a_7Eao-GCIMVEpr97Vw`
+
+변경 후
+
+`https://trusting-curran-e13b73.netlify.app/admin#invite_token=-W5a_7Eao-GCIMVEpr97Vw`
+
+그러면, 비밀번호를 설정하는 화면이 나옵니다.
+
+![](/img/uploads/netlifycms_signup.png "sign up")
+
+# 확인
+
+비밀번호를 설정하고 나면 자동으로 로그인이 되고 아래와 같은 페이지가 나옵니다.
+
+![](/img/uploads/netlifycms_main_page.png)
+
+이제 New Blog 를 눌러서 글을 쓸 수 있게 되었습니다.
+
+# 후기
+
+글을 쓰다보니 꽤 길어졌네요. Netlify CMS를 설정해두면 웹에서 바로 글을 작성할 수 있어서 편합니다.
