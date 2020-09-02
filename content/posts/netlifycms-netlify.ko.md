@@ -40,8 +40,7 @@ Netlify CMS, Forestry.io와 같이 정적 사이트의 cms는 여러 가지가 �
 
 ### 기존 사이트에 추가하기
 
-[netlify cms - Add to Your Site
-](https://www.netlifycms.org/docs/add-to-your-site/)
+[netlify cms - Add to Your Site](https://www.netlifycms.org/docs/add-to-your-site/)
 
 이미 운영하고 있는 블로그 사이트가 있거나, 처음부터 설정해 나가고 싶으시면 직접 설치 할 수 있습니다.
 
@@ -297,8 +296,6 @@ URL이 아래와 비슷할텐데, 중간에 admin을 넣어서 CMS 페이지로 
 # 후기
 
 글을 쓰다보니 꽤 길어졌네요. Netlify CMS를 설정해두면 웹에서 바로 글을 작성할 수 있어서 편합니다.
-
-
 
 그러나, 한국어나 일본어 작성이 중간중간 씹히는 현상이 생기는 군요. 영어는 문제 없는 걸로 보아 CMS 스크립트가 영어 위주로 생각해서 만들어 진 모양입니다. 
 
