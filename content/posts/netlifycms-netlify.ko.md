@@ -246,7 +246,7 @@ Submodule Path가 없다는 에러여서 .gitmodules 파일을 블로그 사이�
 
 ### Identity
 
-메뉴에서 Identity을 활성해 줍니다.
+메뉴에서 Identity을 활성해 줍니다. 이 기능을 사용함으로써, 가입 등의 인증 관련 기능을 사용 할 수 있습니다.
 
 ![](/img/uploads/netlify_enable_identity.png "enable identity")
 
