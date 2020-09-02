@@ -138,7 +138,7 @@ netlfiy cmsのページを確認します。
 
 ローカルから`hugo -serve`で駆動し、http://localhost:1313/adminにアクセスするとログイン画面が表示されます。
 
-![netlfy cms login page](https://duinaru.netlify.app/1b34d952-263b-4cee-8ea3-f5d8b84a9fb2)
+![netlfy cms login page](/img/uploads/netlfiy_cms_login_page.png)
 
 #### Netlifyの設定ファイルの作成
 
@@ -195,21 +195,21 @@ Netlifyにアクセスし、ログインします。
 
 New site from Gitのボタンで新規サイトを作成します。初めてアカウントを作成した場合は作成後、新規サイト作成画面が表示される場合もあります。
 
-![New site from Git](https://duinaru.netlify.app/f4b5a5ce-bddd-48f0-ba75-9e8e052940ad)
+![New site from Git](/img/uploads/netlify_my_sites.png)
 
 ### サイト作成
 
 ブログRepositoryがあるGitを設定します。
 
-![create a new site](https://duinaru.netlify.app/8435fdfb-608e-40d8-89e1-7eaea5e0dbf2)
+![create a new site](/img/uploads/netlify_create_site_1.png)
 
 GitのボタンをクリックするとRepositoryを選択する画面が表示されますので、ブログサイトのRepositoryを選びます。
 
-![choose repository](https://duinaru.netlify.app/f6478c53-12be-41b6-936b-8bba56585359)
+![choose repository](/img/uploads/netlify_create_site_2.png)
 
 次はBranchやビルドコマンドを設定します。デフォルトで設定されていますのでこのまま進みましょう。
 
-![deploy site](https://duinaru.netlify.app/75c6d7a9-22f3-46b5-8eb0-33c1be370a5a)
+![deploy site](/img/uploads/netlify_create_site_3.png)
 
 Deploy siteボタンをクリックし、Siteを作成します。
 
@@ -217,7 +217,7 @@ Deploy siteボタンをクリックし、Siteを作成します。
 
 筆者の場合はHugo Future Imperfect Slimをcloneで入れまして、画像のようにFailedと失敗しました。submoduleで入れた場合は成功すると思います。
 
-![create site fail](https://duinaru.netlify.app/fb065094-b280-4082-b196-1673cb50f71b)
+![create site fail](/img/uploads/netlify_create_site_fail.png)
 
 Submodule Pathがないというエラーで、.gitmodulesのファイルをブログサイトのルートに作成し、Pushしました。
 
@@ -231,13 +231,13 @@ Submodule Pathがないというエラーで、.gitmodulesのファイルをブ�
 
 成功すると以下のようにPublishedが確認できます。
 
-![create site success](https://duinaru.netlify.app/14fa5dec-b0f1-4a0e-befa-e8b27e09c34a)
+![create site success](/img/uploads/netlify_create_site_success.png)
 
 ## サイト確認
 
 画面に表示されたURLにアクセスすればブログサイトが確認できます。
 
-![main page](https://duinaru.netlify.app/908f4ee6-ae68-4c56-a41a-15633e8a1127)
+![main page](/img/uploads/hugo-future-imperfect-slim.png)
 
 ## Netlify設定
 
@@ -247,19 +247,19 @@ Netlify CMSの使用のため、Netlifyでログイン関連の設定をしま�
 
 メニューからIdentityをEnableします。この機能を使用することによって、会員登録などの認証機能が使えるようになります。
 
-![enable identity](https://duinaru.netlify.app/5652e7d0-0368-4c43-9368-d641a0840f73)
+![enable identity](/img/uploads/netlify_enable_identity.png)
 
 ### Enable Git Gateway
 
 Netlify CMSでGitを処理するためにGit GatewayをEnableします。Settings - Identityで、Services - Git GatewayにあるEnable Git Gatewayのボタンをクリックします。
 
-![enable git gateway](https://duinaru.netlify.app/719a14a4-a135-498b-9638-5c1897d6cb67)
+![enable git gateway](/img/uploads/netlify_enable_git_gateway.png)
 
 ### 招待専用に設定
 
 Settings - Identity - RegistrationからEditボタンをクリックし、Invite onlyを選びます。この設定で管理者の招待のみでアカウントを登録することになります。
 
-![registration invite only](https://duinaru.netlify.app/cd2f980c-0432-48c0-abf2-06d6b863e6da)
+![registration invite only](/img/uploads/netlify_invite_registration.png)
 
 ### アカウント登録
 
@@ -267,7 +267,7 @@ Settings - Identity - RegistrationからEditボタンをクリックし、Invite
 
 Invite usersをクリックし、e-mailを記入してSendボタンをクリックします。
 
-![invite_users](https://duinaru.netlify.app/f331e6a8-b589-4280-8e37-9074997f2753)
+![invite_users](/img/uploads/netlify_invite_users.png)
 
 記入したe-mailに認証メールが届きます。メールのAccept the inviteをクリックするとブログサイトに遷移されます。
 
@@ -287,13 +287,13 @@ https://trusting-curran-e13b73.netlify.app/admin#invite_token=-W5a_7Eao-GCIMVEpr
 
 そうしたらパスワードを設定する画面が出ます。
 
-![sign up](https://duinaru.netlify.app/7a2bbe95-190f-465c-964f-9d86979372d9)
+![sign up](/img/uploads/netlifycms_signup.png)
 
 # 確認
 
 パスワードを設定した後、自動的にログインされてNetlify CMSのメイン画面が表示されます。
 
-![img](https://duinaru.netlify.app/fcbf6cba-2239-418f-82ee-40d813865261)
+![img](/img/uploads/netlifycms_main_page.png)
 
 New Blogで投稿するなどのNetlify CMSの機能を使用できるようになりました。
 
