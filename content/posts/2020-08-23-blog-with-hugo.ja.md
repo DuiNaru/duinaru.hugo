@@ -147,7 +147,7 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
 > [Hugo Future Imperfect Slim - config.toml](https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml)
 >
 > ```toml
-> baseurl                 = "example.com"
+> baseurl                 = ""
 > DefaultContentLanguage  = "en"
 > title                   = "Hugo Future Imperfect Slim"
 > theme                   = "hugo-future-imperfect-slim"
