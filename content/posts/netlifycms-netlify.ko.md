@@ -24,7 +24,7 @@ Netlify CMS, Forestry.io와 같이 정적 사이트의 cms는 여러 가지가 �
 
 [netlify cms - overview](https://www.netlifycms.org/docs/intro/)
 
-웹 베이스, 많은 정적 사이트 생성기와 같이 사용과 같이 좋은 특징이 많습니다.
+웹 베이스, 많은 정적 사이트 생성기와 같이 사용할 수 있는 등의 좋은 특징이 많습니다.
 
 가장 큰 특징이라하면 Git을 베이스로 관리한 다는 점이라고 생각되네요. 글 작성하면 commit이 되고, 작성 완료하면 pull request가 되고, 완료한 글을 다시 수정하려면 새로 commit이 되는 것인데, 개발하고 똑같네요. 글 작성 완료하기 전까지 branch를 따로 만들어서 관리할 수도 있습니다.
 
