@@ -10,7 +10,7 @@ i18n = "ja"
 src = "/img/uploads/netlifycms.png"
 alt = "netlifycms+netlify"
 +++
-静的サイトジェネレータで構築したブログはmarkdown形式で管理され、投稿の度にビルドとデプロイをしなければなりません。これをしやすくするためにNetlify CMSとNetlifyを入れました。
+静的サイトジェネレータで構築したブログはmarkdown形式のファイルで管理され、投稿の度にビルドとデプロイをしなければなりません。これをしやすくするためにNetlify CMSとNetlifyを入れました。
 
 # [Netlify CMS](https://www.netlifycms.org/)
 
