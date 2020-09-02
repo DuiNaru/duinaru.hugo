@@ -242,6 +242,8 @@ Submodule Path가 없다는 에러여서 .gitmodules 파일을 블로그 사이�
 
 ## Netlify 설정
 
+이제 Netlify CMS를 사용하기 위해 Netlify에서 로그인 관련 설정을 해 줄 것입니다.
+
 ### Identity
 
 메뉴에서 Identity을 활성해 줍니다.
