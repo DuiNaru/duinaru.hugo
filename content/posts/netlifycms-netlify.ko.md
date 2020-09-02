@@ -216,11 +216,11 @@ Repository를 만든 Git을 연결해줍니다.
 
 Deploy site버튼을 눌러서 Site를 생성해줍니다.
 
-만일 Hugo Future Imperfect Slim를 clone으로 넣어주신 분이라면, 화면처럼 Failed로 실패라고 나올 것입니다.
+Hugo Future Imperfect Slim를 clone넣었더, 화면처럼 Failed로 실패라고 나왔습니다. submodule로 넣은 경우에는 나오지 않을 것입니다.
 
 ![](/img/uploads/netlify_create_site_fail.png "create site fail")
 
-Submodule Path가 없다는 에러여서 .gitmodules 파일을 블로그 사이트 경로에 만들고, Push해 줍니다.
+Submodule Path가 없다는 에러여서 .gitmodules 파일을 블로그 사이트 경로에 만들고, Push해주었습니.
 
 > .gitmodules
 >
