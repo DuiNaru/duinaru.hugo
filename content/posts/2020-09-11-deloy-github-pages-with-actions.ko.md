@@ -106,6 +106,8 @@ GitHub의 모든 이벤트(commit, pull 등) 에서 실행시키는 것이 가�
 
 0.74.3 버전의 Hugo를 사용하였기에 Setup Hugo에서 Hugo를 설치하고, Build Hugo에서 Hugo로 빌드, Git add 및 Push public to branch에서 빌드된 public 폴더를 배포 대상으로 하였지만, 다른 정적 사이트 생성기를 사용하신다면 이 부분을 알맞게 바꿔주시면 됩니다.
 
+또한, Hugo를 extended 버전을 사용할 경우에 해당 주석을 해제하시면 됩니다.
+
 ## Repository 설정
 
 repository의 Settings에서 GitHub Pages의 Source Branch를 설정해줍니다.
