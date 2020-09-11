@@ -114,7 +114,7 @@ GitHub Actionsでpublicのbranchにデプロイするようにしましたので
 
 # 終わり
 
-pushイベントが発生してしばらく、GitHub Pagesにブログサイトがサービスされているはずです。
+pushイベントが発生してしばらく経つと、GitHub Pagesにブログサイトがサービスされているはずです。
 
 筆者が利用しているNetlify CMSは投稿の度にPull Requestが発生され、master branchにpushします。その都度、GitHub Actionsが実行され、自動的にデプロイしますので、Netlifyと同じ感覚でGitHub Pagesをサービスすることができるようになりました。
 
