@@ -4,18 +4,20 @@ tags = ["CI", "CD", "Github", "Blog"]
 title = "GitHub Actions으로 GitHub Pages에 배포하기"
 permalink = "2020-09-11-deloy-github-pages-with-actions"
 date = 2020-09-11T13:13:36.621Z
-description = "Github Actions을 이용하여 블로그 사이트를 배포하였습니다."
+description = "GitHub Actions을 이용하여 GitHub Pages에 블로그 사이트를 배포하였습니다."
 i18n = "ko"
 
 [[images]]
 src = "/img/uploads/githubactions.png"
 alt = "GitHub Actions"
 +++
-GitHub Actions도 사용해서 블로그 사이트를 배포하기로 하였습니다. 이전까지 사용하던 GitHub Pages를 버리기는 아까운 생각이 들더군요.
+GitHub Pages도 사용해서 블로그 사이트를 서비스하기로 하였습니다. 이전까지 사용하던 GitHub Pages를 버리기는 아까운 생각이 들더군요.
 
-GitHub Pages는 기본적으로 jekyll 소스로 부터 자동 빌드해서 배포하는 서비스 이지만, 정적 웹 페이지를 그대로 서비스하는 것도 가능합니다.
+GitHub Pages는 기본적으로 jekyll 소스를 자동으로 빌드해서 배포하는 서비스 이지만, 정적 웹 페이지를 그대로 서비스하는 것도 가능합니다.
 
 그렇기에, Hugo로 만든 블로그라고 할지라도 GitHub Pages에서 서비스가 가능합니다.
+
+단순히 빌드 결과물을 배포하면 되는 단순한 작업이라서 GitHub Actions로 자동으로 하도록 하였습니다. 이 글에서는 그 방법을 적어보려고 합니다.
 
 # GitHub Actions이란?
 
