@@ -37,7 +37,7 @@ GitHub의 모든 이벤트(commit, pull 등) 에서 실행시키는 것이 가�
 
 * GitHub Pages Repository
 
-  {*자신의 GitHub 아이디*}.github.io 의 이름의 repository를 만듭니다.
+  *{자신의 GitHub 아이디}*.github.io 의 이름의 repository를 만듭니다.
 * 정적 블로그 사이트 소스
 
   위의 repository의 master branch에 넣어둡시다.
