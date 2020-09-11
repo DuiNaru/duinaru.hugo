@@ -98,7 +98,7 @@ GitHubのすべてのイベント（commitやpullなど）で実行させるこ�
 >
 > <https://github.com/DuiNaru/duinaru.github.io/blob/master/.github/workflows/main.yml>
 
-そうすると、master branchにpushがある度に上記のコードが実行され、ビルドの結果物であるpublicのフォルダーを全てpublic branchにpushすることになります。強制的にpushしていますので、もしもpublicというbranchが使用中であればPush public to branchで--branchとpublic:publicのところを異なるbranchに変えてください。
+そうすることで、master branchにpushがある度に上記のコードが実行されてビルドの結果物であるpublicのフォルダーを全てpublic branchにpushすることになります。強制的にpushしていますので、もしもpublicというbranchが使用中であればPush public to branchで--branchとpublic:publicのところを異なるbranchに変えてください。
 
 また、0.74.3のHugoを使用していまして、Setup HugoでHugoをインストールし、Build HugoでHugoでビルド、Git addとPush public to branchでビルドされたpublicのフォルダーをデプロイの対象としましたが、別の静的サイトジェネレータを使用した場合はこの部分を合わせて変えましょう。
 
