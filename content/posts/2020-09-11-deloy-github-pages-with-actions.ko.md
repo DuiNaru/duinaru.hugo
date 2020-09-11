@@ -118,6 +118,6 @@ GitHub Actions에서 public이라는 branch로 배포하게 해두었기 때문�
 
 push 이벤트가 발생하고 잠시 기다리면, GitHub Pages에 블로그 사이트가 서비스 되고 있을 것입니다.
 
-필자가 사용하고 있는 Netlify CMS는 글을 작성할때마다 Pull Request가 발생하게 되어, master branch에 push하게 됩니다. 그 때, GitHub Actions이 실행되어 자동으로 배포 되기에 Netlify와 동일한 느낌으로 GitHub Pages로 서비스 할 수 있게 되었습니다.
+필자가 사용하고 있는 Netlify CMS는 글을 작성할때마다 Pull Request가 발생하게 되어, master branch에 push하게 됩니다. 그 때마다, GitHub Actions이 실행되어 자동으로 배포 되기에 Netlify와 동일한 느낌으로 GitHub Pages로 서비스 할 수 있게 되었습니다.
 
 이번에는 빌드-배포만 있는 정적 사이트라서 간단하지만, 추후에 구체적인 설정까지 사용하게 될 경우에는 어떻게 할 지 생각해봐야 할 듯합니다.
