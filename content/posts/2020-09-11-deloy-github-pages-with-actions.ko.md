@@ -98,7 +98,7 @@ GitHub의 모든 이벤트(commit, pull 등) 에서 실행시키는 것이 가�
 >
 > <https://github.com/DuiNaru/duinaru.github.io/blob/master/.github/workflows/main.yml>
 
-그러면, master branch에 push가 있을 때 마다 위의 코드가 자동 실행되어서 빌드 결과인 public 폴더의 내용을 전부 public branch에 push하게 됩니다. 강제로 push하기 때문에, 혹시 public이라는 branch를 사용하신다면 바꿔주세요.
+그러면, master branch에 push가 있을 때 마다 위의 코드가 자동 실행되어서 빌드 결과인 public 폴더의 내용을 전부 public branch에 push하게 됩니다. 강제로 push하기 때문에, 혹시 public이라는 branch를 사용하신다면 Push public to branch에서 --branch 부분과 public:public 부분을 다른 branch로 바꿔주세요.
 
 0.74.3 버전의 Hugo를 사용하였기에 Setup Hugo에서 Hugo를 설치하고, Build Hugo에서 Hugo로 빌드, Git add 및 Push public to branch에서 빌드된 public 폴더를 배포 대상으로 하였지만, 다른 정적 사이트 생성기를 사용하신다면 이 부분을 알맞게 바꿔주시면 됩니다.
 
