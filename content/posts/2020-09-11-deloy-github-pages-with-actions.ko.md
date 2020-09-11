@@ -31,8 +31,6 @@ GitHub Pages는 기본적으로 jekyll 소스를 자동으로 빌드해서 배�
 
 GitHub의 모든 이벤트(commit, pull 등) 에서 실행시키는 것이 가능하다고 하는 군요.
 
-이번 글에서는 GitHub Actions를 사용하여 push 될 때, GitHub Pages에 배포 되도록 해보겠습니다.
-
 # 준비
 
 * GitHub Pages Repository
