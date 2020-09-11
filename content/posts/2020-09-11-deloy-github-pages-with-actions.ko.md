@@ -46,7 +46,7 @@ GitHub의 모든 이벤트(commit, pull 등) 에서 실행시키는 것이 가�
 
 ## GitHub Actions 소스
 
-다음 파일을 repository에 넣어두면 됩니다.
+다음 파일을 repository의 /.github/workflows 넣어두면 됩니다.
 
 > ```yaml
 > # This is a basic workflow to help you get started with Actions
@@ -99,8 +99,6 @@ GitHub의 모든 이벤트(commit, pull 등) 에서 실행시키는 것이 가�
 > ```
 >
 > <https://github.com/DuiNaru/duinaru.github.io/blob/master/.github/workflows/main.yml>
-
-위 파일을 /.github/workflows에 넣어두면 됩니다.
 
 그러면, master branch에 push가 있을 때 마다 위의 코드가 자동 실행되어서 빌드 결과인 public 폴더의 내용을 전부 public branch에 push하게 됩니다.
 
