@@ -11,7 +11,7 @@ i18n = "ja"
 src = "/img/uploads/githubactions.png"
 alt = "GitHub Actions"
 +++
-GitHub Pagesも利用してブログサイトをサービスすることにしました。利用していたGitHub Pagesがもったいないと思いました。
+GitHub Pagesにもブログサイトをサービスすることにしました。
 
 GitHub Pagesは基本的にjekyllから自動でビルドしてサービスになりますが、静的ウェブページをそのままサービスすることも可能です。
 
