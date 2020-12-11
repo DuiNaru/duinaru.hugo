@@ -2,7 +2,7 @@
 categories = ["event"]
 tags = ["github", "github universe 2020"]
 title = "GitHub Universe 2020 후기"
-permalink = "2020-12-11-GithubUniverse2020"
+permalink = "2020-12-11-GitubUniverse2020"
 date = 2020-12-11T14:33:03.404Z
 i18n = "ko"
 
