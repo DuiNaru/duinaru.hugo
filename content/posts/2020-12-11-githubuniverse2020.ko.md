@@ -14,6 +14,10 @@ alt = "GitHub Universe 2020"
 
 개발자라면 모를리 없는 GitHub... 커서가 이끌려 가는건 어찌보면 본능이였다고 생각되네요. (YouTube알고리즘님 감사합니다.)
 
+그곳에는 하나의 URL과 무언가 특이한 영상이 나오고 있었으며, URL을 클릭하였더니 개발자스러운 검은 배경의 홈페이지가 등장합니다.
+
+***GitHub Universe 2020***
+
 3일간 YouTube를 통해서 중계되며, 4개의 각각 다른 테마로 진행하더군요.
 
 > Developer, Enterprise, Play 그리고 Univers(ity)
