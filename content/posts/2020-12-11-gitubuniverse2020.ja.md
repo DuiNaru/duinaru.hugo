@@ -18,7 +18,7 @@ alt = "GitHub Universe 2020"
 
 ***[GitHub Universe 2020](https://githubuniverse.com/)***
 
-3日の間、オンライン生中継されて4つのテーマで放送されるようでした。
+3日の間、オンライン生中継で、4つのテーマに分けて放送されるようでした。
 
 > Developer、Enterprise、PlayそしてUnivers(ity)
 
