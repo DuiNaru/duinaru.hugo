@@ -16,7 +16,7 @@ alt = "GitHub Universe 2020"
 
 그곳에는 하나의 URL과 무언가 특이한 영상이 나오고 있었으며, URL을 클릭하였더니 개발자스러운 검은 배경의 홈페이지가 등장합니다.
 
-***GitHub Universe 2020***
+***[GitHub Universe 2020](https://githubuniverse.com/)***
 
 3일간 온라인으로 중계되며, 4개의 각각 다른 테마로 진행하더군요.
 
