@@ -18,7 +18,7 @@ alt = "GitHub Universe 2020"
 
 ***GitHub Universe 2020***
 
-3일간 온라인으 중계되며, 4개의 각각 다른 테마로 진행하더군요.
+3일간 온라인으로 중계되며, 4개의 각각 다른 테마로 진행하더군요.
 
 > Developer, Enterprise, Play 그리고 Univers(ity)
 
