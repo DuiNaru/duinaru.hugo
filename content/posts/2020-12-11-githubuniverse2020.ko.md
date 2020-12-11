@@ -10,8 +10,6 @@ i18n = "ko"
 src = "/img/uploads/github-universe-2020.jpg"
 alt = "GitHub Universe 2020"
 +++
-GitHub Universe 2020 이라는 이벤트가 개최하고 있어서, 한번 참가해보았습니다.
-
 2020년 12월 9일, 평소와 다를 바 없이 YouTube를 들락거리던 필자는 알 수 없는 YouTube의 알고리즘에 의해 GitHub Universe 2020을 목격합니다.
 
 개발자라면 모를리 없는 GitHub... 커서가 이끌려 가는건 어찌보면 본능이였다고 생각되네요. (YouTube알고리즘님 감사합니다.)
