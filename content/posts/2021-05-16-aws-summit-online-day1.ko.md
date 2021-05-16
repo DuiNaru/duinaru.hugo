@@ -17,7 +17,7 @@ alt = "aws summit online japan"
 
 [aws summit online japan](https://aws.amazon.com/jp/events/summits/online/japan/)
 
-필자는 라이브로 진행되는 양일간에 걸쳐 참가하여, 각 내용을 정리해 볼까 합니다.
+필자는 라이브로 진행되는 양일간에 걸쳐 참가하였으며, 각 내용을 정리해 볼까 합니다.
 
 # 1일차
 
