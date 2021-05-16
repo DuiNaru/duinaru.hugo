@@ -13,7 +13,7 @@ alt = "aws summit online japan"
 +++
 毎年開かれるAWS summit、去年からはCOVID-19でオンライン配信されている状況です。
 
-今年は5月12日から13日まで両日の間にライブ配信された後、31日まで開催されます。
+今年は5月12日から13日まで両日の間にライブ配信され、31日まで開催されます。
 
 [aws summit online japan](https://aws.amazon.com/jp/events/summits/online/japan/)
 
