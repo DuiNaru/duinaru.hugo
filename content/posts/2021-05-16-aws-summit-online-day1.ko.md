@@ -1,6 +1,6 @@
 +++
 categories = ["aws"]
-tags = ["event", "aws"]
+tags = ["event", "aws", ""]
 title = "AWS summit online japan 2021 1일차 후기"
 permalink = "2021-05-16-aws-summit-online-day1"
 date = 2021-05-16T07:41:06.376Z
