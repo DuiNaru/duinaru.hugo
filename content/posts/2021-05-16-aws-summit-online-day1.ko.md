@@ -77,7 +77,7 @@ AI로 코드리뷰를 하는 서비스, Amazon CodeGuru에 대한 설명이 있�
 
 AWS에서 제공하는 데이터베이스 서비스는 어떠한 것이 있고, 각 서비스에 대한 설명이 있었습니다.
 
-> Purpose-build databases
+> Purpose-built databases
 
 각 상황에 알맞는 데이터베이스를 선택해서 사용할 수 있다는 것을 알 수 있는 세션이였습니다.
 
