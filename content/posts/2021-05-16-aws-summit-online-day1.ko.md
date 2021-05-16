@@ -91,7 +91,7 @@ CircleCI는 일본에서 알려져있는 CI 서비스이기도 하고, 어느정
 
 ### Build modern applications with purpose-built databases
 
-이전 세션에서 들었던 purpose-build databases 에 대해 더 궁금해져서 참가하였습니다.
+이전 세션에서 들었던 purpose-built databases 에 대해 더 궁금해져서 참가하였습니다.
 
 모던 어플리케이션이랑 Microservices에 대한 설명과 purpose-built databases가 왜 필요한지, 그리고 여러 회사에서 어떻게 사용하고 있는지 발표가 있었습니다.
 
