@@ -136,7 +136,7 @@ OSS인 Fluentd, Fluentd Bit, Prometheus, Cortex, OpenTelemetry과 AWS X-Ray. Fir
 
 ## 특별강연
 
-AWS summit online의 막을 내리는 강연, 미래는 어떻게 바뀌고 바뀌어 나갈건지 등에 대해 관계자들이 나와서 서로 이야기를 주고받는 방식으로 진행되었습니다.
+AWS summit online의 막을 내리는 시간, 미래는 어떻게 바뀌고 바뀌어 나갈건지 등에 대해 관계자들이 나와서 서로 이야기를 주고받는 방식으로 진행되었습니다.
 
 # 2일차 후기
 
