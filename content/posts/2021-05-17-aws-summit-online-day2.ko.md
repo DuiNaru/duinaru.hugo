@@ -61,7 +61,7 @@ SYN floods나 SQL인젝션, 크롤러 등 보안에 위험이 될 수 있는 요
 
 ### AWS로 시작하는 Infrastructure as Code
 
-제목을 부터 AWS CloudFormation이 느껴지는 세션이였습니다. AWS CloudFormation의 설명이 있더군요.
+제목을 부터 AWS CloudFormation이 느껴지는 세션이였습니다. 역시나 AWS CloudFormation의 설명이 있더군요.
 
 AWS 환경을 코드로 관리하는 것에 대한 설명, 필요성, 목적등에 대해 이야기 한 다음에 CloudFormation의 설명과 예제로 이어졌습니다.
 
