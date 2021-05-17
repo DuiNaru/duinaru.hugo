@@ -128,7 +128,7 @@ Chaos Engineering？？なんでしょう。参加！
 
 一目で理解できれば、多くの時間を節約することもできるでしょう。
 
-これを手伝ってくれるAWSのサービスとOSSを紹介するセッションです。
+これを手伝ってくれるAWSのサービスとOSSが紹介されたセッションです。
 
 OSSのFluentd、Fluentd Bit、Prometheus、Cortex、OpenTelemetryとAWS X-Ray、FireLens for ECS/EKS、Amazon Managed Service for Prometheus/Grafana、AWS Distro for OpenTelemetryなど、可観測性を支えるサービスの興味を持っていたら、参加してみる価値はあると考えられました。
 
