@@ -59,7 +59,7 @@ SYN floodsやSQL injection、クローラーなど、セキュリティーを害
 
 ### AWS で始める Infrastructure as Code
 
-タイトルからAWS CloudFormationが思いつくセッションで参加、思った通りにAWS CloudFormationの説明がありました。
+タイトルからAWS CloudFormationが思いつくセッションでして参加、思った通りにAWS CloudFormationの説明がありました。
 
 AWSの環境をコードで管理することについて説明と必要性、目的などを話し、CloudFormationの紹介とサンプルが続きました。
 
