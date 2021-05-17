@@ -105,7 +105,7 @@ Chaos Engineering？？なんでしょう。参加！
 
 これを実際にやってみることがChaos Engineering！簡単に言うとサービス中のインスタンスを落としてどうなるか確認する実験です。
 
-現在のシステムがWell-ArchitectedになっていてObservabiltyがある状況で実行してこそ価値があるといいます。
+現在のシステムがWell-ArchitectedになっていてObservabiltyがある状況で実行してこそ価値があると言われます。
 
 > Without observability,\
 > you don't have chaos engineering.\
