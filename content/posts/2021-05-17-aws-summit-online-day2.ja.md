@@ -47,7 +47,7 @@ alt = "aws summit online japan"
 
 AWS Amplifyに続き、AWS AppSyncを使った具体的な開発事例の紹介セッションです。
 
-AWS AmplifyとAWS AppSyncを利用したアーキテクチャをもとに、認証方法、Graph APIの作成方法、reactコードの自動生成などをビデオチャットアプリケーションの開発をサンプルに見せながら説明されました。
+AWS AmplifyとAWS AppSyncを利用したアーキテクチャをもとに、認証方法、Graph APIの作成方法、reactコードの自動生成などについてビデオチャットアプリケーションの開発サンプルを見せながら説明されました。
 
 これは創ってみたくなりますね。
 
