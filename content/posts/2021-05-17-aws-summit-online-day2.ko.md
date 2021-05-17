@@ -116,7 +116,7 @@ Chaos Engineering?? 뭘까요? 참가!!
 > Charity Majors\
 > Cofounder/CTO honeycomb.io
 
-발표의 일부를 인용해봤습니다. Chaos Engineering를 해보겠다고 Chaos를 해서는 안되겠지요.
+세션의 일부를 인용해봤습니다. Chaos Engineering를 해보겠다고 Chaos를 해서는 안되겠지요.
 
 제목처럼 내일부터 시작할 수 있을지는 잘 모르겠지만, 흥미로운 세션이였습니다.
 
