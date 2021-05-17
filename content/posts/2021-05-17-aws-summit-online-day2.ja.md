@@ -55,7 +55,7 @@ AWS AmplifyとAWS AppSyncを利用したアーキテクチャをもとに、認�
 
 今回のセッションでは主にセキュリティーの説明でした。
 
-SYN floodsやSQL injection、クローラーなど、セキュリティーを害する要素をAWSではAWS Network Firewall、AWS WAF、AWS Shield Advancedで保護することができるようです。
+SYN floodsやSQL injection、クローラーなど、セキュリティーを害する要素をAWSではAWS Network Firewall、AWS WAF、AWS Shield Advancedでアプリケーションを保護することができるようです。
 
 ### AWS で始める Infrastructure as Code
 
