@@ -53,7 +53,7 @@ AWS Amplify와 AWS AppSync를 사용한 아키텍쳐를 바탕으로 인증방�
 
 ### AWS에서의 네트워크 & 어플리케이션 보호의 단계
 
-이번 세션에서는 시큐리티 위주로 설명이 주로 되었습니다.
+이번 세션에서는 시큐리티 위주의 설명이 주로 되었습니다.
 
 SYN floods나 SQL인젝션, 크롤러 등 보안에 위험이 될 수 있는 요소를 AWS에서는 AWS Network Firewall, AWS WAF, AWS Shield Advanced로 보호할 수 있다고 합니다.
 
