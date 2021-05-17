@@ -114,7 +114,7 @@ Chaos Engineering？？なんでしょう。参加！
 > Charity Majors\
 > Cofounder/CTO honeycomb.io
 
-セッションの一部を持ってきました。Chaos EngineeringであってChaosになってはならないでしょう。
+セッションの一部を引用しました。Chaos EngineeringであってChaosになってはならないでしょう。
 
 タイトルのように明日から始めるかは疑問ですが、興味深いセッションでした。
 
