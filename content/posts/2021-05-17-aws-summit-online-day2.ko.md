@@ -3,7 +3,7 @@ categories = ["aws"]
 tags = ["aws", "event"]
 title = "AWS summit online japan 2021 2일차 후기"
 permalink = "2021-05-17-aws-summit-online-day2"
-date = 2021-05-17T10:22:47.821Z
+date = 2021-05-17T14:52:17.254Z
 description = "2021년 5월 11일 부터 2일간 개최된 AWS summit online japan에 참가해보았습니다."
 i18n = "ko"
 
