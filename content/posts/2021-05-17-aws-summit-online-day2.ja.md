@@ -134,7 +134,7 @@ OSSのFluentd、Fluentd Bit、Prometheus、Cortex、OpenTelemetryとAWS X-Ray、
 
 ## 特別講演
 
-AWS summit onlineの幕を閉じる時間です。未来はどう変わり、変えていくのかについて関係者の議論の形で進みました。
+AWS summit onlineの幕を閉じる時間です。未来はどう変わり、どう変えていくのかについて関係者の議論の形で進みました。
 
 # 2日目感想
 
