@@ -61,7 +61,7 @@ SYN floodsやSQL injection、クローラーなど、セキュリティーを害
 
 タイトルからAWS CloudFormationが思いつくセッションで参加、思った通りにAWS CloudFormationの説明がありました。
 
-AWSの環境をコードで管理することについて説明と必要性、目的などを話し、CloudFormationの紹介とサンプルに続きました。
+AWSの環境をコードで管理することについて説明と必要性、目的などを話し、CloudFormationの紹介とサンプルが続きました。
 
 ただ、ymlで知っていたCloudFormationが、Cloud Develop Kitを利用してプログラミング言語で作成できるということも新しかったです。
 
