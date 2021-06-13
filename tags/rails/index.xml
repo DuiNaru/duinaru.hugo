@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>rails on DuiNaru | 개발과 경험을 담는 블로그</title><link>https://duinaru.github.io/tags/rails/</link><description>Recent content in rails on DuiNaru | 개발과 경험을 담는 블로그</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 16 Nov 2019 11:42:23 +0000</lastBuildDate><atom:link href="https://duinaru.github.io/tags/rails/index.xml" rel="self" type="application/rss+xml"/><item><title>Rails 화면 띄우기 및 Cloud9 사용</title><link>https://duinaru.github.io/posts/2019-11-16-develop-using-cloud9/</link><pubDate>Sat, 16 Nov 2019 11:42:23 +0000</pubDate><guid>https://duinaru.github.io/posts/2019-11-16-develop-using-cloud9/</guid><description>샘플 화면 하나를 띄우고, 본격적인 개발에 앞서 IDE를 사용하기로 하였습니다.
+blog 생성 blog라는 이름의 rails 어플을 생성하였습니다.
+rails new blog 해당 명령어로 미리 설정되어 있는 blog 어플리케이션을 가져와서 다운로드한다네요.
+에러 발생 설치는 되었는데, 중간에 에러가 나왔네요. 역시 한번에 되는건 없나봅니다.
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension. current directory: /tmp/bundler20191116-12860-iie6sqlite3-1.4.1/gems/sqlite3-1.4.1/ext/sqlite3 /usr/bin/ruby2.5 -r ./siteconf20191116-12860-3nvvhf.rb extconf.rb checking for sqlite3.h... no sqlite3.h is missing. Try 'brew install sqlite3', 'yum install sqlite-devel' or 'apt-get install libsqlite3-dev' and check your shared library search path (the location where your sqlite3 shared library is located).</description></item><item><title>ruby on rails를 ec2에 구축해보았습니다</title><link>https://duinaru.github.io/posts/2019-11-14-set-up-ruby-on-rails-ec2/</link><pubDate>Thu, 14 Nov 2019 11:29:08 +0000</pubDate><guid>https://duinaru.github.io/posts/2019-11-14-set-up-ruby-on-rails-ec2/</guid><description>ruby를 알게 되었으니 ruby를 이용한 웹 사이트 한번 만들어보고싶어서 ruby on rails로 개발을 시작하였습니다.
+개발을 하면서 동시에 ruby on rails를 익히려는 목적이므로 기본적인 환경 구축부터 시작하였습니다.
+EC2 생성 AMI
+편하게 ubuntu(Ubuntu Server 18.04 LTS (HVM), SSD Volume Type)를 선택하였습니다.
+나머지 설정은 free-tier 가능한 설정으로 생성했습니다.
+Security groups
+SSH 접속 가능하게 22포트는 열어두고, 나머지는 나중에 설정하면서 열어주었습니다.
+클릭 몇 번에 생성이 끝났습니다. 고마워요. AWS
+설치 SSH로 접속해서, 차근차근 설치를 진행합니다.
+Ruby on Rails 의 Getting Started with Rails 를 바탕으로 진행하였습니다.</description></item></channel></rss>

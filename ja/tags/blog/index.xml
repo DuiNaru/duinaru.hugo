@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog on DuiNaru | 開発と経験を載せるブログ</title><link>https://duinaru.github.io/ja/tags/blog/</link><description>Recent content in blog on DuiNaru | 開発と経験を載せるブログ</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 11 Sep 2020 13:52:18 +0000</lastBuildDate><atom:link href="https://duinaru.github.io/ja/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>GitHub ActionsでGitHub Pagesにデプロイ</title><link>https://duinaru.github.io/ja/posts/2020-09-11-deloy-github-pages-with-actions/</link><pubDate>Fri, 11 Sep 2020 13:52:18 +0000</pubDate><guid>https://duinaru.github.io/ja/posts/2020-09-11-deloy-github-pages-with-actions/</guid><description>GitHub Pagesにもブログサイトをサービスすることにしました。
+GitHub Pagesは基本的にjekyllから自動でビルドしてサービスになりますが、静的ウェブページをそのままサービスすることも可能です。
+そのため、Hugoで作成したブログサイトであってもGitHub Pagesでサービスが可能になります。
+ビルドした結果物をデプロイする単純な作業ですので、GitHub Actionsから自動的に行われるようにしました。この投稿ではその方法を書きたいと思います。
+GitHub Actionsとは? Automate your workflow from idea to production
+GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. Make code reviews, branch management, and issue triaging work the way you want.
+https://github.com/features/actions
+ホームページの紹介ですが、アイディアから制作までの作業の流れを自動化！素晴らしいです。
+GitHubのすべてのイベント（commitやpullなど）で実行させることができるようです。
+準備 GitHub Pages Repository
+{GitHubのID}.github.io の名前のrepositoryを作成します。
+静的ブログサイトソース</description></item></channel></rss>

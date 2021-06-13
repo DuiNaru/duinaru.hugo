@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog on DuiNaru | 開発と経験を載せるブログ</title><link>https://duinaru.github.io/ja/categories/blog/</link><description>Recent content in blog on DuiNaru | 開発と経験を載せるブログ</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 11 Sep 2020 13:52:18 +0000</lastBuildDate><atom:link href="https://duinaru.github.io/ja/categories/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>GitHub ActionsでGitHub Pagesにデプロイ</title><link>https://duinaru.github.io/ja/posts/2020-09-11-deloy-github-pages-with-actions/</link><pubDate>Fri, 11 Sep 2020 13:52:18 +0000</pubDate><guid>https://duinaru.github.io/ja/posts/2020-09-11-deloy-github-pages-with-actions/</guid><description>GitHub Pagesにもブログサイトをサービスすることにしました。
+GitHub Pagesは基本的にjekyllから自動でビルドしてサービスになりますが、静的ウェブページをそのままサービスすることも可能です。
+そのため、Hugoで作成したブログサイトであってもGitHub Pagesでサービスが可能になります。
+ビルドした結果物をデプロイする単純な作業ですので、GitHub Actionsから自動的に行われるようにしました。この投稿ではその方法を書きたいと思います。
+GitHub Actionsとは? Automate your workflow from idea to production
+GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. Make code reviews, branch management, and issue triaging work the way you want.
+https://github.com/features/actions
+ホームページの紹介ですが、アイディアから制作までの作業の流れを自動化！素晴らしいです。
+GitHubのすべてのイベント（commitやpullなど）で実行させることができるようです。
+準備 GitHub Pages Repository
+{GitHubのID}.github.io の名前のrepositoryを作成します。
+静的ブログサイトソース</description></item><item><title>Netlify CMS + Netlifyでブログサイト管理とデプロイを自動化</title><link>https://duinaru.github.io/ja/posts/2020-09-02-make-blog-with-netlifycms-netlify/</link><pubDate>Wed, 02 Sep 2020 16:00:24 +0000</pubDate><guid>https://duinaru.github.io/ja/posts/2020-09-02-make-blog-with-netlifycms-netlify/</guid><description>静的サイトジェネレータで構築したブログはmarkdown形式のファイルで管理され、投稿の度にビルドとデプロイをしなければなりません。これをしやすくするためにNetlify CMSとNetlifyを入れました。
+Netlify CMS Netlify CMSやForestry.ioのように静的サイトジェネレータのcmsは色々あります。
+Frontend Interfaces with Hugo
+どのサービスでも管理の良さは同じと思いますが、Netlifyと併せて使いやすそうなNetlify CMSを入れました。
+特徴 netlify cms - overview
+ウェブベース、多くの静的サイトジェネレータのサポートなどの特徴があります。
+特にGitベースで管理することがいいと思います。投稿するとcommitされ、投稿完了にpull request、修正で新しくcommitされることですが、プログラミングを似ていますね。投稿の完了するまでbranchを別に作って管理することもできます。
+インストール テンプレートから始める netlify cms - Start with a Template
+最も早く始める方法です。予めサイトを作成しておく必要がなく、全ての設定が終わっているテンプレートから始めることです。
+新しく始めようとする方や早く見てみたいと思う方にお勧めです。
+既存のサイトに追加 netlify cms - Add to Your Site
+創ってあったブログサイトがある方や初めから設定していきたい方は直接インストールすることもできます。
+ファイル作成 管理ページと設定ファイルを作ります。ファイルの格納場所が以下になります。
+These generators &amp;hellip; store static files in Jekyll, GitBook / (project root) Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper /static Next /public Hexo, Middleman, Jigsaw /source Spike /views Wyam /input Pelican /content VuePress /.</description></item><item><title>Hugoでブログサイトを構築</title><link>https://duinaru.github.io/ja/posts/2020-08-23-blog-with-hugo/</link><pubDate>Sun, 23 Aug 2020 11:08:50 +0000</pubDate><guid>https://duinaru.github.io/ja/posts/2020-08-23-blog-with-hugo/</guid><description>Hugoでブログサイトを構築してみました。Hugoをインストールし、テーマを入れることですぐに創れます。
+Hugo インストール まずは、Hugoをインストールします。
+Install Hugo
+Hugoは基本バージョンとextendedバージョンの二つがあります。extendedバージョンはSCSS/SASSをサポートし、SCSS/SASSを使おうとしたらextendedバージョンのインストールが必要のようです。
+And Now: Hugo Pipes!
+Hugo is now released with two binary version: One with and one without SCSS/SASS support. At the time of writing, this is only available in the binaries on the GitHub release page. Brew, Snap builds etc. will come. But note that you only need the extended version if you want to edit SCSS. For your CI server, or if you don’t use SCSS, you will most likely want the non-extended version.</description></item><item><title>ブログをリニューアルしました</title><link>https://duinaru.github.io/ja/posts/2020-08-22-blog-renewal/</link><pubDate>Sat, 22 Aug 2020 13:19:47 +0000</pubDate><guid>https://duinaru.github.io/ja/posts/2020-08-22-blog-renewal/</guid><description>既存のブログはJekyllで作成し、Github Pagesでサービスしていましたが、多言語対応の改善などでHugoに変え、Netlify + Netlify CMS も入れました。
+この記事ではリニューアルの時に考えたことについて書きたいと思います。
+Hugo Hugoはgo言語で作成された静的サイトジェネレータです。一般的な動的サイトのようにサーバーからウェブページを作って見せることとは異なり、予め作成されたウェブページを見せることになります。サーバーのリソースを節約できることが魅力的です。
+Jekyllも静的サイトジェネレータではありますが、Hugoは比較的に最新で、多言語対応も便利で選びました。
+多言語対応 - Jekyll vs Hugo Jekyll Jekyllで多言語対応は主にpluginでサポートされます。
+開発と経験があるブログ- 作る
+polyglotやJekyll Multiple Languages Pluginなどがありますが、どちらもプラグインですので、他のプラグインと互換性を考えるなど、気を付けなければならないところがあります。
+また、プラグインを使用しなく、Jekyllのコードを書いて作ってもいいですが、不便ということは変わらなさそうでした。
+Hugo Hugoの場合は多言語がサポートされています。
+Hugo - Multilingual Mode
+もともとサポートされて、便利そうですね。
+Netlify NetlifyはCI/CDツールなのでデプロイまで自動化することができます。
+Netlify CMSで投稿すると、Git repositoryにコミットされます。その直後にNetlifyでビルドされ、ウェブで見ることができるようになります。投稿するたびに手作業ビルドとデプロイ作業をしなくてもよくなります。
+Netlify CMS 前はjekyll-adminのプラグインで管理してきましたが、hugoに変えることで他の方法を探さなければなりませんでした。
+Frontend Interfaces with Hugo
+その中でNetlifyと併せて使いやすく見えるNetlify CMSを選びました。
+投稿や修正、削除がGitで管理され、Gitのメリットも得られるようになります。投稿リストの確認や作成中のプレビューなどもあって便利です。
+Theme テーマは色々ありますが、Hugo Future Imperfect Slimを入れてみました。
+Hugo Future Imperfect Slim
+きれいでいいですし、アップデートも続いているので問題があっても対応が早そうです。
+ドメイン https://duinaru.netlify.app/ja/
+ドメイン名はカスタムしなく、Netlifyデフォルトで設定しておきました。ドメインをカスタムすることになってもNetlifyにドメイン追加設定をすればいいですので、ブログを運営しながら考えてみようと思います。
+次は、リニューアルの過程や悩みなどについて投稿してみます。</description></item></channel></rss>

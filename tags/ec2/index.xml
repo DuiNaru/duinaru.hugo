@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ec2 on DuiNaru | 개발과 경험을 담는 블로그</title><link>https://duinaru.github.io/tags/ec2/</link><description>Recent content in ec2 on DuiNaru | 개발과 경험을 담는 블로그</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 01 Dec 2019 12:08:35 +0000</lastBuildDate><atom:link href="https://duinaru.github.io/tags/ec2/index.xml" rel="self" type="application/rss+xml"/><item><title>CloudWatch를 이용하여 일정 시간 동안 SSH 연결이 없을 때, EC2 자동 종료 시키기</title><link>https://duinaru.github.io/posts/2019-12-01-stop-ec2-when-no-ssh-connection-for-a-while/</link><pubDate>Sun, 01 Dec 2019 12:08:35 +0000</pubDate><guid>https://duinaru.github.io/posts/2019-12-01-stop-ec2-when-no-ssh-connection-for-a-while/</guid><description>주로 Cloud9로 사용하는 EC2가 SSH 연결이 없을 때는 사용할 일이 없어서, 일정 시간 대기 한 뒤에 자동 종료가 되도록 만들어 보았습니다.
+EC2에서 실행되는 스크립트 만으로도 가능할 듯 하지만, AWS에서 SSH의 연결 수도 모니터링할 수 있게 하도록 CloudWatch를 이용하였습니다.
+IAM User 작성 CloudWatch로 SSH의 연결 수를 보내는 역할을 하는 User가 필요합니다.
+aws cli에서 접속이 가능하고 권한은 CloudWatchAgentServerPolicy을 가진 User를 생성하였습니다.
+EC2에 aws cli 설정 CloudWatch로 SSH의 연결 수를 보내기 위해서 EC2에 aws cli를 설치하고, 위에서 만든 User를 설정해줍니다.</description></item><item><title>SSM와 CloudWatch로 로그인할 때, EC2가 자동 시작되게 하기</title><link>https://duinaru.github.io/posts/2019-11-18-auto-start-ec2-on-sign-in/</link><pubDate>Mon, 18 Nov 2019 11:59:58 +0000</pubDate><guid>https://duinaru.github.io/posts/2019-11-18-auto-start-ec2-on-sign-in/</guid><description>Cloud9를 수동으로 만든 EC2로 사용하다보니, 자동으로 만들 때 사용할 수 있는 EC2의 자동 시작-종료 기능을 사용할 수 없어서, 만들어 보기로 했습니다.
+다만, Cloud9이 시작할 때 EC2를 시작 시킬 수 없어서 Console에 Sign in 할 때, 시작 되도록 만들었습니다.
+AWS System Manager EC2를 실행시키기 위해 SSM을 사용할 생각입니다.
+그러기 위해서는 SSM가 EC2를 관리 할 수 있도록 설정을 해야 합니다.
+IAM의 Role 생성 : AmazonSSMManagedInstanceCore EC2를 SSM에서 사용하기 위해서 IAM role을 설정해야 합니다.</description></item><item><title>ruby on rails를 ec2에 구축해보았습니다</title><link>https://duinaru.github.io/posts/2019-11-14-set-up-ruby-on-rails-ec2/</link><pubDate>Thu, 14 Nov 2019 11:29:08 +0000</pubDate><guid>https://duinaru.github.io/posts/2019-11-14-set-up-ruby-on-rails-ec2/</guid><description>ruby를 알게 되었으니 ruby를 이용한 웹 사이트 한번 만들어보고싶어서 ruby on rails로 개발을 시작하였습니다.
+개발을 하면서 동시에 ruby on rails를 익히려는 목적이므로 기본적인 환경 구축부터 시작하였습니다.
+EC2 생성 AMI
+편하게 ubuntu(Ubuntu Server 18.04 LTS (HVM), SSD Volume Type)를 선택하였습니다.
+나머지 설정은 free-tier 가능한 설정으로 생성했습니다.
+Security groups
+SSH 접속 가능하게 22포트는 열어두고, 나머지는 나중에 설정하면서 열어주었습니다.
+클릭 몇 번에 생성이 끝났습니다. 고마워요. AWS
+설치 SSH로 접속해서, 차근차근 설치를 진행합니다.
+Ruby on Rails 의 Getting Started with Rails 를 바탕으로 진행하였습니다.</description></item></channel></rss>

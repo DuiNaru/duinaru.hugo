@@ -1,0 +1,192 @@
+<!doctype html><html lang=ko><head><meta charset=utf-8><title>Hugo로 블로그 만들기 - DuiNaru | 개발과 경험을 담는 블로그</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.74.3"><meta itemprop=name content="Hugo로 블로그 만들기"><meta itemprop=description content="Hugo를 사용하여 블로그를 만들어 보았습니다. Hugo를 설치하고 테마를 적용하는 것만으로도 바로 만들 수 있습니다.
+Hugo 설치 우선 Hugo를 설치해 주어야 합니다.
+Install Hugo
+Hugo는 기본 버전과 extended버전이 있습니다. extended버전은 SCSS/SASS를 지원하는 버전으로, SCSS/SASS를 사용하고자 하실 분은 extended버전으로 설치해야 한다고 하네요.
+ And Now: Hugo Pipes!
+Hugo is now released with two binary version: One with and one without SCSS/SASS support. At the time of writing, this is only available in the binaries on the GitHub release page."><meta itemprop=datePublished content="2020-08-23T07:08:08+00:00"><meta itemprop=dateModified content="2020-08-23T07:08:08+00:00"><meta itemprop=wordCount content="997"><meta itemprop=image content><meta itemprop=keywords content="hugo,"><meta property="og:title" content="Hugo로 블로그 만들기"><meta property="og:description" content="Hugo를 사용하여 블로그를 만들어 보았습니다. Hugo를 설치하고 테마를 적용하는 것만으로도 바로 만들 수 있습니다.
+Hugo 설치 우선 Hugo를 설치해 주어야 합니다.
+Install Hugo
+Hugo는 기본 버전과 extended버전이 있습니다. extended버전은 SCSS/SASS를 지원하는 버전으로, SCSS/SASS를 사용하고자 하실 분은 extended버전으로 설치해야 한다고 하네요.
+ And Now: Hugo Pipes!
+Hugo is now released with two binary version: One with and one without SCSS/SASS support. At the time of writing, this is only available in the binaries on the GitHub release page."><meta property="og:type" content="article"><meta property="og:url" content="https://duinaru.github.io/posts/2020-08-23-blog-with-hugo/"><meta property="og:image" content><meta property="article:published_time" content="2020-08-23T07:08:08+00:00"><meta property="article:modified_time" content="2020-08-23T07:08:08+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content><meta name=twitter:title content="Hugo로 블로그 만들기"><meta name=twitter:description content="Hugo를 사용하여 블로그를 만들어 보았습니다. Hugo를 설치하고 테마를 적용하는 것만으로도 바로 만들 수 있습니다.
+Hugo 설치 우선 Hugo를 설치해 주어야 합니다.
+Install Hugo
+Hugo는 기본 버전과 extended버전이 있습니다. extended버전은 SCSS/SASS를 지원하는 버전으로, SCSS/SASS를 사용하고자 하실 분은 extended버전으로 설치해야 한다고 하네요.
+ And Now: Hugo Pipes!
+Hugo is now released with two binary version: One with and one without SCSS/SASS support. At the time of writing, this is only available in the binaries on the GitHub release page."><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css><link rel=stylesheet href=/css/bundle.min.307f33cd8015e5bab28d6ebda9b400f8d3059bc248b4e60adf4d23469fab5a2b.css integrity="sha256-MH8zzYAV5bqyjW69qbQA+NMFm8JItOYK300jRp+rWis="><link rel=stylesheet href=/css/add-on.css></head><body><header id=site-header><nav id=site-nav><h1 class=nav-title><a href=/ class=nav>DuiNaru</a></h1><menu id=site-nav-menu class="flyout-menu menu"><a href=/ class="nav link"><i class="fa fa-home"></i>Home</a>
+<a href=/categories/ class="nav link"><i class="fa fa-sitemap"></i>Categories</a>
+<a href=/tags/ class="nav link"><i class="fa fa-tags"></i>Tags</a>
+<a href=#share-menu class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href=#search-input class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a></menu>
+<a href=#search-input class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href=#share-menu class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href=#lang-menu class="nav lang-toggle" lang=ko>ko</a>
+<a href=#site-nav class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a></nav><menu id=search class=menu><input id=search-input class="search-input menu"></input><div id=search-results class="search-results menu"></div></menu><menu id=lang-menu class="flyout-menu menu"><a href=# lang=ko class="nav link active">한국어 (ko)</a>
+<a href=https://duinaru.github.io/ja/posts/2020-08-23-blog-with-hugo/ lang=ja class="nav link">日本語 (ja)</a></menu>
+<menu id=share-menu class="flyout-menu menu"><h1>Share Post</h1><a href="//twitter.com/share?text=Hugo%eb%a1%9c%20%eb%b8%94%eb%a1%9c%ea%b7%b8%20%eb%a7%8c%eb%93%a4%ea%b8%b0&url=https%3a%2f%2fduinaru.github.io%2fposts%2f2020-08-23-blog-with-hugo%2f" target=_blank rel=noopener class="nav share-btn twitter"><p>Twitter</p></a><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fduinaru.github.io%2fposts%2f2020-08-23-blog-with-hugo%2f" target=_blank rel=noopener class="nav share-btn facebook"><p>Facebook</p></a><a href="mailto:?subject=%ec%9d%b4%20%ea%b8%80%ec%9d%84%20%ec%b2%b4%ed%81%ac%ec%95%84%ec%9b%83 %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&body=https%3a%2f%2fduinaru.github.io%2fposts%2f2020-08-23-blog-with-hugo%2f" target=_blank class="nav share-btn email" data-proofer-ignore><p>Email</p></a></menu></header><div id=wrapper><section id=site-intro><a href=/><img src=https://duinaru.github.io/img/main/logo.jpg class=circle width=100 alt="DuiNaru's Blog"></a><header><h1>DuiNaru</h1></header><main><p>IT에 대한 이런저런 경험을 담아봅니다</p></main></section><main id=site-main><article class=post><header><div class=title><h2><a href=/posts/2020-08-23-blog-with-hugo/>Hugo로 블로그 만들기</a></h2></div><div class=meta><time datetime="2020-08-23 07:08:08.179 +0000 UTC">2020-08-23</time><p>5분 소요</p></div></header><div id=socnet-share><a href="//twitter.com/share?text=Hugo%eb%a1%9c%20%eb%b8%94%eb%a1%9c%ea%b7%b8%20%eb%a7%8c%eb%93%a4%ea%b8%b0&url=https%3a%2f%2fduinaru.github.io%2fposts%2f2020-08-23-blog-with-hugo%2f" target=_blank rel=noopener class="nav share-btn twitter"><p>Twitter</p></a><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fduinaru.github.io%2fposts%2f2020-08-23-blog-with-hugo%2f" target=_blank rel=noopener class="nav share-btn facebook"><p>Facebook</p></a><a href="mailto:?subject=%ec%9d%b4%20%ea%b8%80%ec%9d%84%20%ec%b2%b4%ed%81%ac%ec%95%84%ec%9b%83 %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&body=https%3a%2f%2fduinaru.github.io%2fposts%2f2020-08-23-blog-with-hugo%2f" target=_blank class="nav share-btn email" data-proofer-ignore><p>Email</p></a></div><div class=content><a href=/posts/2020-08-23-blog-with-hugo/ class=image><img src=https://duinaru.github.io/img/uploads/hugo-logo-wide.svg alt="hugo image"></a><p>Hugo를 사용하여 블로그를 만들어 보았습니다. Hugo를 설치하고 테마를 적용하는 것만으로도 바로 만들 수 있습니다.</p><h1 id=hugo>Hugo</h1><h2 id=설치>설치</h2><p>우선 Hugo를 설치해 주어야 합니다.</p><p><a href=https://gohugo.io/getting-started/installing/>Install Hugo</a></p><p>Hugo는 기본 버전과 extended버전이 있습니다. extended버전은 SCSS/SASS를 지원하는 버전으로, SCSS/SASS를 사용하고자 하실 분은 extended버전으로 설치해야 한다고 하네요.</p><blockquote><p><a href=https://gohugo.io/news/0.43-relnotes/#notes>And Now: Hugo Pipes!</a></p><p>Hugo is now released with two binary version: One with and one without SCSS/SASS support. At the time of writing, this is only available in the binaries on the GitHub release page. Brew, Snap builds etc. will come. But note that you <strong>only need the extended version if you want to edit SCSS</strong>. For your CI server, or if you don’t use SCSS, you will most likely want the non-extended version.</p></blockquote><p>이번 글에서 사용할 테마가 SCSS를 사용하는 듯 하여, extended버전을 설치하겠습니다.</p><h3 id=패키지-매니저-설치>패키지 매니저 설치</h3><p>Windows환경에 설치할 생각이라 <a href=https://chocolatey.org/>chocolatey</a>를 이용해서 설치해 주었습니다. 다른 환경에 설치 할 생각이시라면, <a href=https://gohugo.io/getting-started/installing/>Install Hugo</a> 을 참고해주세요.</p><blockquote><p><a href=https://chocolatey.org/install>Installing Chocolatey</a></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>Set-ExecutionPolicy Bypass -Scope <span style=color:#66d9ef>Process</span> -Force; <span style=color:#66d9ef>[System.Net.ServicePointManager]</span>::SecurityProtocol = <span style=color:#66d9ef>[System.Net.ServicePointManager]</span>::SecurityProtocol <span style=color:#f92672>-bor</span> 3072; iex ((New-Object System.Net.WebClient).DownloadString(<span style=color:#e6db74>&#39;https://chocolatey.org/install.ps1&#39;</span>))
+</code></pre></div></blockquote><p>관리자 권한으로 Powershell에 해당 명령어를 실행시키면 됩니다. 보안 설정이 있을 수 있으니 Bypass 설정을 한다는 군요.</p><p><code>choco</code>나 <code>choco -?</code>로 설치된 것을 확인하였으면, Hugo를 설치하면 됩니다.</p><h3 id=hugo-설치>Hugo 설치</h3><blockquote><p><a href=https://gohugo.io/getting-started/installing/#chocolatey-windows>Install Hugo - Chocolatey (Windows)</a></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>choco install hugo-extended -confirm
+</code></pre></div></blockquote><p><code>hugo version</code>으로 설치된 것을 확인 할 수 있습니다. 0.74.3버전이 설치되었네요.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>Hugo Static Site Generator v0.74.3/extended windows/amd64
+</code></pre></div><h1 id=블로그-생성>블로그 생성</h1><p>블로그를 만들 디렉토리에서 다음 명령어를 실행하면 끝납니다. <code>new-site-name</code>은 원하는 폴더 이름을 넣어주시면 됩니다.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>hugo new site new-site-name
+</code></pre></div><p>지정한 이름의 하위 디렉토리가 생기고, hugo 폴더 구조로 만들어 진것을 확인 할 수 있습니다.</p><h2 id=빌드>빌드</h2><p>해당 폴더에서 <code>hugo</code>명령어를 실행시키면 public 폴더가 생기고, 빌드된 파일이 안에 들어있게 됩니다.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>hugo
+
+                   | EN
+-------------------+-----
+  Pages            |  3
+  Paginator pages  |  0
+  Non-page files   |  0
+  Static files     |  0
+  Processed images |  0
+  Aliases          |  0
+  Sitemaps         |  1
+  Cleaned          |  0
+</code></pre></div><h2 id=실행>실행</h2><p>그리고 <code>hugo serve</code> 로 로컬 환경에서 블로그 사이트에 접속 해 볼수 있습니다.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>hugo serve
+
+                   | EN
+-------------------+-----
+  Pages            |  3
+  Paginator pages  |  0
+  Non-page files   |  0
+  Static files     |  0
+  Processed images |  0
+  Aliases          |  0
+  Sitemaps         |  1
+  Cleaned          |  0
+
+Built <span style=color:#66d9ef>in</span> 6 ms
+Watching <span style=color:#66d9ef>for</span> changes <span style=color:#66d9ef>in</span> C:\Hugo\Sites\my-blog\{archetypes,content,data,layouts,static}
+Watching <span style=color:#66d9ef>for</span> config changes <span style=color:#66d9ef>in</span> C:\Hugo\Sites\my-blog\config.toml
+Environment<span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#e6db74>&#34;development&#34;</span>
+Serving pages from memory
+Running <span style=color:#66d9ef>in</span> Fast Render Mode. <span style=color:#66d9ef>For</span> full rebuilds on change<span style=color:#960050;background-color:#1e0010>:</span> hugo server --disableFastRender
+Web Server is available at http<span style=color:#960050;background-color:#1e0010>:</span>//localhost<span style=color:#960050;background-color:#1e0010>:</span>1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre></div><p><a href=http://localhost:1313/>http://localhost:1313/</a> 로 접속하면 빈 화면이 나오는 것을 확인 할 수 있을 것입니다.</p><h1 id=테마-설치>테마 설치</h1><p>빈 화면에서 만들어 나갈 수도 있지만, 이미 만들어진 여러 테마들이 있습니다.</p><p><a href=https://themes.gohugo.io/>Hugo Themes</a></p><p>테마 중에 하나 선택하여 적용 해 보겠습니다.</p><h2 id=다운로드>다운로드</h2><p><a href=https://themes.gohugo.io/hugo-future-imperfect-slim/>Hugo Future Imperfect Slim</a></p><p>Hugo Future Imperfect Slim라는 테마를 다운로드 하였습니다. 다운로드한 테마는 블로그 사이트 폴더 안의 themes 폴더 안에 넣어주면 됩니다.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>cd C:\Hugo\Sites\my-blog\themes
+git clone https<span style=color:#960050;background-color:#1e0010>:</span>//github.com/pacollins/hugo-future-imperfect-slim.git
+</code></pre></div><p>다른 테마라도, themes 폴더 안 에 넣어주면 됩니다.</p><p>이제, 테마 설정을 하면 블로그 완성입니다.</p><h2 id=설정>설정</h2><p>테마 설정은 테마별로 각각 다르나, 모든 설정은 블로그 사이트 폴더 안의 config.toml 의 파일에 설정하게 됩니다. 해당 파일은 hugo의 설정 파일로, 블로그 사이트의 타이틀이나 사용할 테마 등을 설정할 수 있습니다.</p><p>필자는 <a href=https://themes.gohugo.io/hugo-future-imperfect-slim/>Hugo Future Imperfect Slim</a> 를 사용하였기에, 아래와 같이 설정해주었습니다.</p><blockquote><p><a href=https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml>Hugo Future Imperfect Slim - config.toml</a></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml><span style=color:#a6e22e>baseurl</span>                 = <span style=color:#e6db74>&#34;&#34;</span>
+<span style=color:#a6e22e>DefaultContentLanguage</span>  = <span style=color:#e6db74>&#34;en&#34;</span>
+<span style=color:#a6e22e>title</span>                   = <span style=color:#e6db74>&#34;Hugo Future Imperfect Slim&#34;</span>
+<span style=color:#a6e22e>theme</span>                   = <span style=color:#e6db74>&#34;hugo-future-imperfect-slim&#34;</span>
+<span style=color:#a6e22e>paginate</span>                = <span style=color:#ae81ff>3</span>
+<span style=color:#a6e22e>disqusShortname</span>         = <span style=color:#e6db74>&#34;&#34;</span>
+<span style=color:#a6e22e>googleAnalytics</span>         = <span style=color:#e6db74>&#34;&#34;</span>
+<span style=color:#a6e22e>pluralizeListTitles</span>     = <span style=color:#66d9ef>false</span>
+<span style=color:#a6e22e>disableLanguages</span>        = []
+
+[<span style=color:#a6e22e>markup</span>.<span style=color:#a6e22e>goldmark</span>.<span style=color:#a6e22e>renderer</span>]
+  <span style=color:#a6e22e>unsafe</span>                = <span style=color:#66d9ef>true</span>
+
+[<span style=color:#a6e22e>outputs</span>]
+  <span style=color:#a6e22e>home</span>                  = [<span style=color:#e6db74>&#34;html&#34;</span>, <span style=color:#e6db74>&#34;json&#34;</span>]
+  
+[<span style=color:#a6e22e>params</span>]
+  <span style=color:#a6e22e>enableCDN</span>             = <span style=color:#66d9ef>false</span>
+  <span style=color:#a6e22e>cssFiles</span>              = [<span style=color:#e6db74>&#34;default&#34;</span>]
+  <span style=color:#a6e22e>jsFiles</span>               = [<span style=color:#e6db74>&#34;default&#34;</span>]
+  <span style=color:#a6e22e>highlightjs</span>           = <span style=color:#66d9ef>true</span>
+  <span style=color:#a6e22e>highlightjsTheme</span>      = <span style=color:#e6db74>&#34;default&#34;</span>
+  <span style=color:#a6e22e>highlightjsLang</span>       = []
+  <span style=color:#a6e22e>viewMorePostsLink</span>     = <span style=color:#e6db74>&#34;/blog/&#34;</span>
+  <span style=color:#a6e22e>readingTime</span>           = <span style=color:#66d9ef>true</span>
+  <span style=color:#a6e22e>imageStrech</span>           = <span style=color:#e6db74>&#34;&#34;</span>
+  <span style=color:#a6e22e>socialShare</span>           = [<span style=color:#e6db74>&#34;twitter&#34;</span>, <span style=color:#e6db74>&#34;facebook&#34;</span>, <span style=color:#e6db74>&#34;reddit&#34;</span>, <span style=color:#e6db74>&#34;linkedin&#34;</span>, <span style=color:#e6db74>&#34;pinterest&#34;</span>, <span style=color:#e6db74>&#34;email&#34;</span>]
+  
+[<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>meta</span>]
+	<span style=color:#a6e22e>description</span>         = <span style=color:#e6db74>&#34;A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.&#34;</span>
+	<span style=color:#a6e22e>author</span>              = <span style=color:#e6db74>&#34;HTML5UP and Hugo&#34;</span>
+	<span style=color:#a6e22e>favicon</span>             = <span style=color:#66d9ef>false</span>
+	<span style=color:#a6e22e>svg</span>                 = <span style=color:#66d9ef>true</span>
+	<span style=color:#a6e22e>faviconVersion</span>      = <span style=color:#e6db74>&#34;1&#34;</span>
+	<span style=color:#a6e22e>msColor</span>             = <span style=color:#e6db74>&#34;#ffffff&#34;</span>
+	<span style=color:#a6e22e>iOSColor</span>            = <span style=color:#e6db74>&#34;#ffffff&#34;</span>
+    
+[<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>header</span>]
+	<span style=color:#a6e22e>navbarTitle</span>         = <span style=color:#e6db74>&#34;Future Imperfect&#34;</span>
+	<span style=color:#a6e22e>dynamicTitles</span>       = <span style=color:#66d9ef>true</span>
+	<span style=color:#a6e22e>searchMenu</span>          = <span style=color:#66d9ef>true</span>
+	<span style=color:#a6e22e>shareMenu</span>           = <span style=color:#66d9ef>true</span>
+	<span style=color:#a6e22e>languageMenu</span>        = <span style=color:#66d9ef>true</span>
+
+[<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>intro</span>]
+	<span style=color:#a6e22e>header</span>                = <span style=color:#e6db74>&#34;Hugo Future Imperfect Slim&#34;</span>
+	<span style=color:#a6e22e>paragraph</span>             = <span style=color:#e6db74>&#34;Another fine, responsive site template by &lt;a href=&#39;http://html5up.net&#39;&gt;HTML5 UP&lt;/a&gt;.&#34;</span>
+	<span style=color:#a6e22e>rssIntro</span>              = <span style=color:#66d9ef>true</span>
+	<span style=color:#a6e22e>socialIntro</span>           = <span style=color:#66d9ef>true</span>
+	<span style=color:#a6e22e>hideWhenSingleColumn</span>  = <span style=color:#66d9ef>false</span>
+	<span style=color:#a6e22e>alwaysOnHomepage</span>      = <span style=color:#66d9ef>false</span>
+
+	[<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>intro</span>.<span style=color:#a6e22e>pic</span>]
+		<span style=color:#a6e22e>src</span>                 = <span style=color:#e6db74>&#34;/img/main/logo.jpg&#34;</span>
+		<span style=color:#a6e22e>shape</span>               = <span style=color:#e6db74>&#34;circle&#34;</span>
+		<span style=color:#a6e22e>width</span>               = <span style=color:#e6db74>&#34;&#34;</span>
+		<span style=color:#a6e22e>alt</span>                 = <span style=color:#e6db74>&#34;Hugo Future Imperfect Slim&#34;</span>
+        
+[<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>sidebar</span>]
+  <span style=color:#a6e22e>about</span>               = <span style=color:#e6db74>&#34;This theme was developed for Hugo static site generator.&#34;</span>
+  <span style=color:#a6e22e>postAmount</span>          = <span style=color:#ae81ff>5</span>
+  <span style=color:#a6e22e>categories</span>          = <span style=color:#66d9ef>true</span>
+  <span style=color:#a6e22e>categoriesByCount</span>   = <span style=color:#66d9ef>true</span>
+ 
+[<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>footer</span>]
+  <span style=color:#a6e22e>rssFooter</span>           = <span style=color:#66d9ef>true</span>
+  <span style=color:#a6e22e>socialFooter</span>        = <span style=color:#66d9ef>true</span>
+  
+[<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>staticman</span>]
+  <span style=color:#a6e22e>enabled</span>             = <span style=color:#66d9ef>false</span>
+  <span style=color:#a6e22e>api</span>                 = <span style=color:#e6db74>&#34;&#34;</span>  <span style=color:#75715e># No Trailing Slash</span>
+  <span style=color:#a6e22e>gitProvider</span>         = <span style=color:#e6db74>&#34;github&#34;</span>
+  <span style=color:#a6e22e>username</span>            = <span style=color:#e6db74>&#34;&#34;</span>
+  <span style=color:#a6e22e>repo</span>                = <span style=color:#e6db74>&#34;&#34;</span>
+  <span style=color:#a6e22e>branch</span>              = <span style=color:#e6db74>&#34;&#34;</span>
+
+  [<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>staticman</span>.<span style=color:#a6e22e>recaptcha</span>]
+    <span style=color:#a6e22e>siteKey</span>           = <span style=color:#e6db74>&#34;&#34;</span>
+    <span style=color:#a6e22e>encryptedKey</span>      = <span style=color:#e6db74>&#34;&#34;</span>
+    
+[<span style=color:#a6e22e>menu</span>]
+
+	[[<span style=color:#a6e22e>menu</span>.<span style=color:#a6e22e>main</span>]]
+		<span style=color:#a6e22e>name</span>              = <span style=color:#e6db74>&#34;Home&#34;</span>
+		<span style=color:#a6e22e>identifier</span>        = <span style=color:#e6db74>&#34;home&#34;</span>
+		<span style=color:#a6e22e>url</span>               = <span style=color:#e6db74>&#34;/&#34;</span>
+		<span style=color:#a6e22e>pre</span>               = <span style=color:#e6db74>&#34;&lt;i class=&#39;fa fa-home&#39;&gt;&lt;/i&gt;&#34;</span>
+		<span style=color:#a6e22e>weight</span>            = <span style=color:#ae81ff>1</span>
+
+	[[<span style=color:#a6e22e>menu</span>.<span style=color:#a6e22e>main</span>]]
+		<span style=color:#a6e22e>name</span>              = <span style=color:#e6db74>&#34;About&#34;</span>
+		<span style=color:#a6e22e>identifier</span>        = <span style=color:#e6db74>&#34;about&#34;</span>
+		<span style=color:#a6e22e>url</span>               = <span style=color:#e6db74>&#34;/about/&#34;</span>
+		<span style=color:#a6e22e>pre</span>               = <span style=color:#e6db74>&#34;&lt;i class=&#39;far fa-id-card&#39;&gt;&lt;/i&gt;&#34;</span>
+		<span style=color:#a6e22e>weight</span>            = <span style=color:#ae81ff>2</span>
+        
+[<span style=color:#a6e22e>Languages</span>]
+
+	[<span style=color:#a6e22e>Languages</span>.<span style=color:#a6e22e>en</span>]
+		<span style=color:#a6e22e>LanguageCode</span>        = <span style=color:#e6db74>&#34;en&#34;</span>
+		<span style=color:#a6e22e>LanguageName</span>        = <span style=color:#e6db74>&#34;English&#34;</span>
+		<span style=color:#a6e22e>weight</span>              = <span style=color:#ae81ff>1</span>
+
+	[<span style=color:#a6e22e>Languages</span>.<span style=color:#a6e22e>fr</span>]
+		<span style=color:#a6e22e>LanguageCode</span>        = <span style=color:#e6db74>&#34;fr&#34;</span>
+		<span style=color:#a6e22e>LanguageName</span>        = <span style=color:#e6db74>&#34;Français&#34;</span>
+		<span style=color:#a6e22e>title</span>               = <span style=color:#e6db74>&#34;Hugo Future Imperfect Slim en français&#34;</span>
+		<span style=color:#a6e22e>description</span>         = <span style=color:#e6db74>&#34;Un thème par HTML5 UP, porté par Julio Pescador. Simplifié et amélioré par Patrick Collins. Multilingue par StatnMap. Propulsé par Hugo.&#34;</span>
+		<span style=color:#a6e22e>weight</span>              = <span style=color:#ae81ff>2</span>
+
+		[[<span style=color:#a6e22e>Languages</span>.<span style=color:#a6e22e>fr</span>.<span style=color:#a6e22e>menu</span>.<span style=color:#a6e22e>main</span>]]
+		<span style=color:#a6e22e>name</span>              = <span style=color:#e6db74>&#34;Accueil&#34;</span>
+		<span style=color:#a6e22e>identifier</span>        = <span style=color:#e6db74>&#34;home&#34;</span>
+		<span style=color:#a6e22e>url</span>               = <span style=color:#e6db74>&#34;/&#34;</span>
+		<span style=color:#a6e22e>pre</span>               = <span style=color:#e6db74>&#34;&lt;i class=&#39;fas fa-home&#39;&gt;&lt;/i&gt;&#34;</span>
+		<span style=color:#a6e22e>weight</span>            = <span style=color:#ae81ff>1</span>
+        
+[<span style=color:#a6e22e>social</span>]
+	<span style=color:#75715e># Coding Communities</span>
+	<span style=color:#a6e22e>github</span>                = <span style=color:#e6db74>&#34;pacollins/hugo-future-imperfect-slim&#34;</span>
+	<span style=color:#a6e22e>gitlab</span>                = <span style=color:#e6db74>&#34;&#34;</span>
+	<span style=color:#a6e22e>stackoverflow</span>         = <span style=color:#e6db74>&#34;&#34;</span> <span style=color:#75715e># User Number</span>
+	<span style=color:#a6e22e>bitbucket</span>             = <span style=color:#e6db74>&#34;&#34;</span>
+</code></pre></div></blockquote><h2 id=확인>확인</h2><p>필요한 설정을 해주고, 다시 <code>hugo serve</code>를 실행 시켜서 <a href=http://localhost:1313/>http://localhost:1313/</a> 에 접속해 봅시다.</p><p><img src=/img/uploads/hugo-future-imperfect-slim.png alt="hugo-future-imperfect-slim main"></p><p>테마가 적용된 것을 확인 할 수 있습니다. 다만, 아무 글도 없으니 허전하네요. 글 하나 작성해봅시다.</p><h1 id=글-작성>글 작성</h1><p>아래 처럼 만들면 됩니다. 해당 파일은 markdown형식의 파일이며, 글 하나에 해당합니다.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>hugo new posts/new-post.md
+</code></pre></div><p>content/posts의 폴더 안에 new-post.md파일이 만들어 진 것을 확인 할 수 있습니다. 파일은 <code>hugo new</code> 명령어도 만들어도 되고, 직접 만들어도 됩니다. 명령어로 만들 경우, draft 설정으로 만들어 지므로 확인하기 위해서는 다음 명령어로 실행합니다.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>hugo serve -D
+</code></pre></div><p><a href=http://localhost:1313/>http://localhost:1313/</a> 에 접속하면 글이 하나 생긴 것을 확인 할 수 있습니다.</p><p><img src=/img/uploads/hugo-future-imperfect-slim_new-post.png alt="new post"></p><p>새로 생긴 파일에 내용을 적음으로써 블로그 글을 작성할 수 있게 됩니다.</p><p>그러나, 파일 하나하나를 직접 수정하고 관리하는 것은 불편함이 따르기 마련입니다. 그래서 다음에는 글을 작성하거나 관리하는 것을 보다 편하게 하기 위해 CMS을 설정하는 글을 적어보려 합니다.</p></div><footer><div class=stats><ul class=categories><li><a class=article-terms-link href=/categories/blog/>blog</a></li></ul><ul class=tags><li><a class=article-terms-link href=/tags/hugo/>hugo</a></li></ul></div></footer></article><article class=post><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
+var d=document,s=d.createElement('script');s.async=true;s.src='//'+"duinaru"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></article><div class=pagination><a href=/posts/2020-09-02-make-blog-with-netlifycms-netlify/ class="button left"><span>Netlify CMS + Netlify 로 블로그 사이트 관리 및 배포 자동화 하기</span></a>
+<a href=/posts/2020-08-22-blog-renewal/ class="button right"><span>블로그를 리뉴얼 하였습니다</span></a></div></main><section id=site-sidebar><section id=recent-posts><header><h1>최신 글</h1></header><article class=mini-post><a href=/posts/2021-05-17-aws-summit-online-day2/ class=image><img src=https://duinaru.github.io/img/uploads/aws-summit-online-2021.png alt="aws summit online japan"></a><header><h2><a href=/posts/2021-05-17-aws-summit-online-day2/>AWS summit online japan 2021 2일차 후기</a></h2><time class=published datetime="2021-05-17 14:52:17.254 +0000 UTC">2021-05-17</time></header></article><article class=mini-post><a href=/posts/2021-05-16-aws-summit-online-day1/ class=image><img src=https://duinaru.github.io/img/uploads/aws-summit-online-2021.png alt="aws summit online japan"></a><header><h2><a href=/posts/2021-05-16-aws-summit-online-day1/>AWS summit online japan 2021 1일차 후기</a></h2><time class=published datetime="2021-05-16 07:41:06.376 +0000 UTC">2021-05-16</time></header></article><article class=mini-post><a href=/posts/2020-12-11-githubuniverse2020/ class=image><img src=https://duinaru.github.io/img/uploads/github-universe-2020.jpg alt="GitHub Universe 2020"></a><header><h2><a href=/posts/2020-12-11-githubuniverse2020/>GitHub Universe 2020 후기</a></h2><time class=published datetime="2020-12-11 14:33:03.404 +0000 UTC">2020-12-11</time></header></article><article class=mini-post><a href=/posts/2020-09-11-deloy-github-pages-with-actions/ class=image><img src=https://duinaru.github.io/img/uploads/githubactions.png alt="GitHub Actions"></a><header><h2><a href=/posts/2020-09-11-deloy-github-pages-with-actions/>GitHub Actions으로 GitHub Pages에 배포하기</a></h2><time class=published datetime="2020-09-11 13:13:36.621 +0000 UTC">2020-09-11</time></header></article><article class=mini-post><a href=/posts/2020-09-02-make-blog-with-netlifycms-netlify/ class=image><img src=https://duinaru.github.io/img/uploads/netlifycms.png alt=netlifycms+netlify></a><header><h2><a href=/posts/2020-09-02-make-blog-with-netlifycms-netlify/>Netlify CMS + Netlify 로 블로그 사이트 관리 및 배포 자동화 하기</a></h2><time class=published datetime="2020-09-02 11:58:25.866 +0000 UTC">2020-09-02</time></header></article><footer><a href=/posts/ class=button>더 보기</a></footer></section><section id=categories><header><h1><a href=/categories>카테고리</a></h1></header><ul><li><a href=/categories/programming/>programming<span class=count>5</span></a><li><a href=/categories/aws/>aws<span class=count>4</span></a><li><a href=/categories/blog/>blog<span class=count>4</span></a><li><a href=/categories/event/>event<span class=count>1</span></a></li></ul></section></section><footer id=site-footer><ul class=socnet-icons><li><a href=//github.com/duinaru/duinaru.github.io target=_blank rel=noopener title=GitHub class="fab fa-github"></a></li><li><a href=mailto:duinaru@gmail.com target=_blank title=Email class="far fa-envelope"></a></li></ul><p class=copyright>© 2021 DuiNaru | 개발과 경험을 담는 블로그<br>Theme: <a href=https://github.com/pacollins/hugo-future-imperfect-slim target=_blank rel=noopener>Hugo Future Imperfect Slim</a><br>A <a href=https://html5up.net/future-imperfect target=_blank rel=noopener>HTML5 UP port</a> | Powered by <a href=https://gohugo.io/ title=0.74.3 target=_blank rel=noopener>Hugo</a></p></footer><a id=back-to-top href=# class="fas fa-arrow-up fa-2x"></a><script src=/js/highlight.js></script><script>hljs.initHighlightingOnLoad();</script><script src=/js/bundle.min.e8d7df665d6ea5bd5d98711fcf59c4b867eb1ebce468c5a71dccb61d5e671e50.js integrity="sha256-6NffZl1upb1dmHEfz1nEuGfrHrzkaMWnHcy2HV5nHlA="></script><script src=/js/add-on.js></script><script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-175500005-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></div></body></html>

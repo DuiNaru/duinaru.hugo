@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>event on DuiNaru | 開発と経験を載せるブログ</title><link>https://duinaru.github.io/ja/tags/event/</link><description>Recent content in event on DuiNaru | 開発と経験を載せるブログ</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 17 May 2021 15:09:39 +0000</lastBuildDate><atom:link href="https://duinaru.github.io/ja/tags/event/index.xml" rel="self" type="application/rss+xml"/><item><title>AWS summit online japan 2021 2日目</title><link>https://duinaru.github.io/ja/posts/2021-05-17-aws-summit-online-day2/</link><pubDate>Mon, 17 May 2021 15:09:39 +0000</pubDate><guid>https://duinaru.github.io/ja/posts/2021-05-17-aws-summit-online-day2/</guid><description>毎年開かれるAWS summit、去年からはCOVID-19でオンライン配信されている状況です。
+今年は5月12日から13日まで両日の間にライブ配信され、31日まで開催されます。
+aws summit online japan
+筆者はライブで開催される両日に参加し、各内容をまとめたいと思います。
+2日目 2日目には開発やサーバーレスなど、実際に創ってみる内容に関するセッションに参加しました。
+最後の日であって、特別講演まで長い一日でした。
+基調講演 1日目とは異なり、ほとんどが英語で行い、日本語の字幕がサポートされました。AWSのテネットについて話し始め、多様なサービスを紹介し、AWSのカスタムシリコンについて語りながら、関係会社の方々の話を聞くことができる時間でした。
+前日のpurpose-built databasesが印象的でありましたが、今回は基調講演で話されて、データの重要性を強調したことも印象深かったです。
+セッション 9つのセッションに参加、お昼も厳しかった覚えがあります。
+Web・モバイルアプリ開発を加速させる AWS Amplify タイトルのままのAWS Amplify紹介セッション
+以前、GraphQLが気になって見つけたサービスでもあります。インフラの大半が簡略化されて、バックエンドとフロントエンドのコードを自動的に生成するなど、アプリケーションの開発をしやすくするサービスです。
+今回はAdmin UIができたという話もありました。
+AWS Amplify と AWS AppSync を使ったフルスタックアプリケーションの開発 AWS Amplifyに続き、AWS AppSyncを使った具体的な開発事例の紹介セッションです。
+AWS AmplifyとAWS AppSyncを利用したアーキテクチャをもとに、認証方法、Graph APIの作成方法、reactコードの自動生成などについてビデオチャットアプリケーションの開発サンプルを見ながら聞きました。
+これは創ってみたくなりますね。
+AWS におけるネットワーク＆アプリケーション保護のすすめ 今回のセッションでは主にセキュリティーの説明でした。
+SYN floodsやSQL injection、クローラーなど、セキュリティーを害する要素をAWSではAWS Network Firewall、AWS WAF、AWS Shield Advancedでアプリケーションを保護することができるようです。
+AWS で始める Infrastructure as Code タイトルからAWS CloudFormationが思いつくセッションでして参加、思った通りにAWS CloudFormationの説明がありました。
+AWSの環境をコードで管理することについて説明と必要性、目的などを話し、CloudFormationの紹介とサンプルが続きました。
+ただ、ymlで知っていたCloudFormationが、Cloud Develop Kitを利用してプログラミング言語で作成できるということも新しかったです。
+変数などプログラミングの考え方で構築しやすく見えましたね。
+イノベーションを加速するサーバーレスアプリケーションのイベント駆動アーキテクチャ 1日目でも見たサーバーレス！見過ごせません。
+AWS Lambdaについて説明し、サーバーレスアプリケーションの必要性、そしてイベント駆動アーキテクチャの説明がありました。
+イベント駆動アーキテクチャについては初めて聞きましたが、興味深い内容でした。
+そして、Lambdaと関わるサービスの話もあったセッションでした。
+AWS でのコンテナワークロードにおける多様なビルディングブロックの選択肢 普段、コンテナの必要性と利点について疑問をもっていましたので、参加しました。</description></item><item><title>AWS summit online japan 2021 1日目</title><link>https://duinaru.github.io/ja/posts/2021-05-16-aws-summit-online-day1/</link><pubDate>Sun, 16 May 2021 09:19:12 +0000</pubDate><guid>https://duinaru.github.io/ja/posts/2021-05-16-aws-summit-online-day1/</guid><description>毎年開かれるAWS summit、去年からはCOVID-19でオンライン配信されている状況です。
+今年は5月12日から13日まで両日の間にライブ配信され、31日まで開催されます。
+aws summit online japan
+筆者はライブで開催される両日に参加し、各内容をまとめたいと思います。
+1日目 全般的にデータベースとAIについての内容でした。
+基調講演 テクノロジーが変化させる日本社会というテーマを元に、AWSの説明と成長、大阪リージョンの誕生を話しながら進化していくAWSのプレゼンテーションがありました。
+度々AWSを利用する関係会社の方々の話があり、AWSを利用することでどのように変わり、変えたということを聞けました。
+クラウドの本当の価値は価値創出に集中できるということ
+AWSは上記の目標を達成するために変化していくということを知る時間でした。
+セッション 筆者は主に業務に関わるセッションや興味を持っている技術のセッションに参加しました。
+AI と機械学習を使ったビジネス課題の解決方法 エンジニアなら知っているはずのAI、筆者も興味を持っている技術分野であったため参加しました。
+AIはどのようなものか、MLとDLについて簡単な説明があり、ビジネスでどう適用することができるかについて話がありました。
+AIとビジネスを繋ぐ多様な事例をあげて発表され、サービスの個人化やコールセンターのAI活用など、業務で考える内容でした。
+あなたのオンプレミス DWH、モダナイズしませんか？ — Amazon Redshift へのマイグレーションの手引き DWHという単語にひかれ選んだセッションです。最近、関わりが多く興味がありまして参加しました。
+データウェアハウスやデータレイクなどモダンなデータ基盤とは何か話し、Amazon Redshiftについて説明が続きました。
+その後、どのようにマイグレーションするか説明し、終了になりました。
+マイグレーションの説明からは難解なところもありましたが、モダン化について考える余地はあると思える時間でした。
+機械学習モデルの開発、学習、デプロイ AIの興味で選んだもう一つのセッションです。AIの開発はウェブ開発とはどのように異なるか、共通点はあるか気になることもありました。
+機械学習のワークフローについての説明とAmazon SageMakerがどのような機能を持ち、提供し、活用できるか知る時間でした。
+Amazon CodeGuru 〜機械学習で実現するコードレビュー自動化とアプリケーションパフォーマンス最適化〜 AIコードレビューサービス、Amazon CodeGuruについて話すセッションです。
+ソフトウェアの品質と俊敏性の向上の必要性について話しながら、自然にAmazon CodeGuru Reviewerについての説明が続きました。
+コードレビューをAIが行うことに驚きでしたが、現在はJavaとPythonのみサポートされていることは残念でした。
+後、Amazon CodeGuru Profilerの説明でアプリケーションを可視化し、追跡できるということがありました。
+このサービスを実務で適用するとどうなるか考えながら参加したセッションでした。
+【基本の AWS サービス】今日からはじめる！ AWS のデータベースと最適なサービスの選び方 AWSで提供されるデータベースサービスは何があり、各サービスについての説明がありました。
+Purpose-built databases
+状況の合うデータベースを選び、利用することができるという点を知るセッションでした。
+サーバーレスで「使いやすい」API を公開する～作る側・使う側の双方に CircleCI が提供できる価値 本セッションはCircleCI合同会社の関係者からのプレゼンテーションでした。
+CircleCIは日本で知られているCIサービスでもあり、業務に関係している話もありそうで、参加しました。
+主にCircleCIの説明と利用方法でした。</description></item></channel></rss>

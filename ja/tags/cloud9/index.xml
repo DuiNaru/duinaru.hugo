@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>cloud9 on DuiNaru | 開発と経験を載せるブログ</title><link>https://duinaru.github.io/ja/tags/cloud9/</link><description>Recent content in cloud9 on DuiNaru | 開発と経験を載せるブログ</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 18 Nov 2019 11:53:20 +0000</lastBuildDate><atom:link href="https://duinaru.github.io/ja/tags/cloud9/index.xml" rel="self" type="application/rss+xml"/><item><title>SSMとCloudWatchでログインする時、EC2が自動起動されるように設定</title><link>https://duinaru.github.io/ja/posts/2019-11-18-auto-start-ec2-on-sign-in/</link><pubDate>Mon, 18 Nov 2019 11:53:20 +0000</pubDate><guid>https://duinaru.github.io/ja/posts/2019-11-18-auto-start-ec2-on-sign-in/</guid><description>Cloud9を手動で作ったEC2で使用していまして、自動で作る時に使用できるEC2の自動起動のようにしたいと思いました。
+しかし、Cloud9が始まる時にEC2をスタートさせることはできなくてConsoleにSign inする時、起動されるようにしました。
+AWS System Manager EC2を起動させるためにSSMを利用します。
+そのため、SSMがEC2を管理できるようにセットアップをしなければなりません。
+IAM Role 作成 : AmazonSSMManagedInstanceCore EC2をSSMで使用できるようにIAM Roleを作成します。
+AmazonSSMManagedInstanceCoreのpolicyを選択し、作ります。
+作ったIAMを自動起動させようとするEC2にattachすればいいです。
+Attaching an IAM Role to an Instance
+上のリンクのようにすればいいです。
+IAM Role 作成 : AmazonSSMAutomationRole 今度はSSMを実行する時に必要なIAM Roleを作成します。
+AmazonSSMAutomationRoleのpolicyを選択し、作ります。
+このroleは後で使います。
+次はログインイベントが発生するとEC2が起動されるように設定します。
+CloudTrail 設定 ログインイベントを使用するためにはCloudTrailを設定する必要があります。
+CloudTrailの左メニューで Trails - Create Trail を選択しましょう。
+作成し、設定を見るとLoggingがONになっていることが確認できます。
+CloudTrailの設定が終わりました。
+CloudWatchのRules設定 ログインイベントをCloudWatchで感知し、処理されるようにしましょう。
+CloudWatchの左メニューで Rules - Creates rule を選択します。
+Event Source Service NameはAWS Console Sign-inを選択します。</description></item><item><title>Rails画面確認とCloud9設定</title><link>https://duinaru.github.io/ja/posts/2019-11-16-develop-using-cloud9/</link><pubDate>Sat, 16 Nov 2019 11:33:08 +0000</pubDate><guid>https://duinaru.github.io/ja/posts/2019-11-16-develop-using-cloud9/</guid><description>サンプル画面を確認し、本格的な開発にあたってIDEをCloud9で使用する設定をしました。
+blog 生成 blogという名前のrailsアプリケーションを作りました。
+rails new blog 該当のコマンドで予め用意されているblogアプリケーションがダウンロードされます。
+エラー発生 ダウンロードは完了しましたが、エラーが出ました。
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension. current directory: /tmp/bundler20191116-12860-iie6sqlite3-1.4.1/gems/sqlite3-1.4.1/ext/sqlite3 /usr/bin/ruby2.5 -r ./siteconf20191116-12860-3nvvhf.rb extconf.rb checking for sqlite3.h... no sqlite3.h is missing. Try 'brew install sqlite3', 'yum install sqlite-devel' or 'apt-get install libsqlite3-dev' and check your shared library search path (the location where your sqlite3 shared library is located). *** extconf.rb failed *** Could not create Makefile due to some reason, probably lack of necessary libraries and/or headers.</description></item></channel></rss>

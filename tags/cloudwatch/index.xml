@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>cloudwatch on DuiNaru | 개발과 경험을 담는 블로그</title><link>https://duinaru.github.io/tags/cloudwatch/</link><description>Recent content in cloudwatch on DuiNaru | 개발과 경험을 담는 블로그</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 01 Dec 2019 12:08:35 +0000</lastBuildDate><atom:link href="https://duinaru.github.io/tags/cloudwatch/index.xml" rel="self" type="application/rss+xml"/><item><title>CloudWatch를 이용하여 일정 시간 동안 SSH 연결이 없을 때, EC2 자동 종료 시키기</title><link>https://duinaru.github.io/posts/2019-12-01-stop-ec2-when-no-ssh-connection-for-a-while/</link><pubDate>Sun, 01 Dec 2019 12:08:35 +0000</pubDate><guid>https://duinaru.github.io/posts/2019-12-01-stop-ec2-when-no-ssh-connection-for-a-while/</guid><description>주로 Cloud9로 사용하는 EC2가 SSH 연결이 없을 때는 사용할 일이 없어서, 일정 시간 대기 한 뒤에 자동 종료가 되도록 만들어 보았습니다.
+EC2에서 실행되는 스크립트 만으로도 가능할 듯 하지만, AWS에서 SSH의 연결 수도 모니터링할 수 있게 하도록 CloudWatch를 이용하였습니다.
+IAM User 작성 CloudWatch로 SSH의 연결 수를 보내는 역할을 하는 User가 필요합니다.
+aws cli에서 접속이 가능하고 권한은 CloudWatchAgentServerPolicy을 가진 User를 생성하였습니다.
+EC2에 aws cli 설정 CloudWatch로 SSH의 연결 수를 보내기 위해서 EC2에 aws cli를 설치하고, 위에서 만든 User를 설정해줍니다.</description></item><item><title>SSM와 CloudWatch로 로그인할 때, EC2가 자동 시작되게 하기</title><link>https://duinaru.github.io/posts/2019-11-18-auto-start-ec2-on-sign-in/</link><pubDate>Mon, 18 Nov 2019 11:59:58 +0000</pubDate><guid>https://duinaru.github.io/posts/2019-11-18-auto-start-ec2-on-sign-in/</guid><description>Cloud9를 수동으로 만든 EC2로 사용하다보니, 자동으로 만들 때 사용할 수 있는 EC2의 자동 시작-종료 기능을 사용할 수 없어서, 만들어 보기로 했습니다.
+다만, Cloud9이 시작할 때 EC2를 시작 시킬 수 없어서 Console에 Sign in 할 때, 시작 되도록 만들었습니다.
+AWS System Manager EC2를 실행시키기 위해 SSM을 사용할 생각입니다.
+그러기 위해서는 SSM가 EC2를 관리 할 수 있도록 설정을 해야 합니다.
+IAM의 Role 생성 : AmazonSSMManagedInstanceCore EC2를 SSM에서 사용하기 위해서 IAM role을 설정해야 합니다.</description></item></channel></rss>

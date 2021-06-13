@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>netlify cms on DuiNaru | 개발과 경험을 담는 블로그</title><link>https://duinaru.github.io/tags/netlify-cms/</link><description>Recent content in netlify cms on DuiNaru | 개발과 경험을 담는 블로그</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 02 Sep 2020 11:58:25 +0000</lastBuildDate><atom:link href="https://duinaru.github.io/tags/netlify-cms/index.xml" rel="self" type="application/rss+xml"/><item><title>Netlify CMS + Netlify 로 블로그 사이트 관리 및 배포 자동화 하기</title><link>https://duinaru.github.io/posts/2020-09-02-make-blog-with-netlifycms-netlify/</link><pubDate>Wed, 02 Sep 2020 11:58:25 +0000</pubDate><guid>https://duinaru.github.io/posts/2020-09-02-make-blog-with-netlifycms-netlify/</guid><description>정적 사이트 생성기로 만든 블로그는 markdown형식의 파일로 글을 관리하고 매번 빌드해서 배포 해주어야 하죠. 이를 쉽게 하기위해 Netlify CMS 와 Netlify 를 넣어보았습니다.
+Netlify CMS Netlify CMS, Forestry.io와 같이 정적 사이트의 cms는 여러 가지가 있죠.
+Frontend Interfaces with Hugo
+어떤 서비스라도 관리를 쉽게 해주지만, Netlify 랑 같이 쓰면 좋을 거 같은 Netlify CMS를 적용해 보았습니다.
+특징 netlify cms - overview
+웹 베이스, 많은 정적 사이트 생성기와 같이 사용할 수 있는 등의 좋은 특징이 많습니다.</description></item><item><title>블로그를 리뉴얼 하였습니다</title><link>https://duinaru.github.io/posts/2020-08-22-blog-renewal/</link><pubDate>Sat, 22 Aug 2020 11:44:26 +0000</pubDate><guid>https://duinaru.github.io/posts/2020-08-22-blog-renewal/</guid><description>기존에는 Jekyll로 만들어서 Github Pages에 배포하였지만, Jekyll의 다국어 지원이 불편해서 고민하던 중에 Hugo 로 바꾸어 쓰기로 하였습니다. 그러면서 Netlify + Netlify CMS 을 넣어보기로 하고요.
+이 글에서는 리뉴얼 후기 및 과정에 대해 적어볼까 합니다.
+Hugo Hugo는 go 언어로 작성된 정적 사이트 생성기 입니다. 일반적인 동적 사이트 처럼 서버에서 웹 페이지를 만들어서 보여주는 것과 다르게 단순히 만들어져 있는 웹 페이지를 보여주게 되죠. 서버 자원을 절약할 수 있다는 점이 매력적인 부분입니다.
+Jekyll 역시 정적 사이트 생성기 이지만, 비교적 최신이기도 하고 다국어 지원에서의 편리함도 있어서 바꾸기로 하였습니다.</description></item></channel></rss>

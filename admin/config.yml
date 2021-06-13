@@ -1,0 +1,77 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+  squash_merges: true # Squash merge GitHub pull requests
+
+publish_mode: editorial_workflow
+media_folder: "/static/img/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "post" # Used in routes, e.g., /admin/collections/blog
+    label: "post" # Used in the UI
+    folder: "content/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{permalink}}.{{i18n}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: "md"
+    format: "toml-frontmatter"
+    fields: # The fields for each document, usually in front matter
+#      - {label: "Author", name: "author", widget: "hidden", default: "duinaru"}
+#      - {label: "Type", name: "type", widget: "hidden", default: "post"}
+      - label: "Categories"
+        name: "categories"
+        widget: "list"
+        required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+#      - {label: "Link Title", name: "linktitle", widget: "string", required: false}
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Permalink"
+        name: "permalink"
+        widget: "string"
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+      - label: 'Description'
+        name: 'description'
+        widget: 'string'
+        required: false
+#      - label: "Featured Image"
+#        name: "featured"
+#        widget: "image"
+#        media_library: 
+#          - name: uploadcare
+#            config: {}
+#        required: false
+#      - label: "Featured Image Alt"
+#        name: "featuredalt"
+#        widget: "string"
+#        required: false
+#      - {label: "Featured Path", name: "featuredpath", widget: "string", required: false}
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        fields: 
+          - label: Image
+            name: src
+            widget: image
+          - label: Alt
+            name: alt
+            widget: string
+      - label: "Language"
+        name: "i18n"
+        widget: "select"
+        options: 
+          - "ko"
+          - "ja"
+        default: 
+          - "ko"
+#      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+            

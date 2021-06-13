@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>rails on DuiNaru | 開発と経験を載せるブログ</title><link>https://duinaru.github.io/ja/tags/rails/</link><description>Recent content in rails on DuiNaru | 開発と経験を載せるブログ</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 16 Nov 2019 11:33:08 +0000</lastBuildDate><atom:link href="https://duinaru.github.io/ja/tags/rails/index.xml" rel="self" type="application/rss+xml"/><item><title>Rails画面確認とCloud9設定</title><link>https://duinaru.github.io/ja/posts/2019-11-16-develop-using-cloud9/</link><pubDate>Sat, 16 Nov 2019 11:33:08 +0000</pubDate><guid>https://duinaru.github.io/ja/posts/2019-11-16-develop-using-cloud9/</guid><description>サンプル画面を確認し、本格的な開発にあたってIDEをCloud9で使用する設定をしました。
+blog 生成 blogという名前のrailsアプリケーションを作りました。
+rails new blog 該当のコマンドで予め用意されているblogアプリケーションがダウンロードされます。
+エラー発生 ダウンロードは完了しましたが、エラーが出ました。
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension. current directory: /tmp/bundler20191116-12860-iie6sqlite3-1.4.1/gems/sqlite3-1.4.1/ext/sqlite3 /usr/bin/ruby2.5 -r ./siteconf20191116-12860-3nvvhf.rb extconf.rb checking for sqlite3.h... no sqlite3.h is missing. Try 'brew install sqlite3', 'yum install sqlite-devel' or 'apt-get install libsqlite3-dev' and check your shared library search path (the location where your sqlite3 shared library is located). *** extconf.rb failed *** Could not create Makefile due to some reason, probably lack of necessary libraries and/or headers.</description></item><item><title>ruby on railsをec2に実装してみました。</title><link>https://duinaru.github.io/ja/posts/2019-11-14-set-up-ruby-on-rails-ec2/</link><pubDate>Thu, 14 Nov 2019 11:18:53 +0000</pubDate><guid>https://duinaru.github.io/ja/posts/2019-11-14-set-up-ruby-on-rails-ec2/</guid><description>rubyを知りましたので、rubyでウェブサイトを開発したくてruby on railsを始めました。
+開発しながらruby on railsを学習する目的で、環境構築から始めました。
+EC2 生成 AMI
+ubuntu(Ubuntu Server 18.04 LTS (HVM), SSD Volume Type)を選びました。
+他の設定はfree-tierができるようにしました。
+Security groups
+SSHができるように22ポートは可能にし、他はその時に解放します。
+インストール SSHで接続し、インストールします。
+Ruby on Rails の Getting Started with Rails を元に進めました。
+パッケージアップデート sudo apt-get update Ruby インストール sudo apt-get install ruby-full Ruby バージョン確認 ruby -v railsで要求されるruby 2.5.0の以降のバージョンか確認します。
+2.5.xですね。
+sqlite3 インストール sudo apt-get install sqlite3 sqlite3 バージョン確認 sqlite3 --version rails インストール sudo gem install rails インストールのエラー Could not create Makefile due to some reason, probably lack of necessary libraries and/or headers.</description></item></channel></rss>

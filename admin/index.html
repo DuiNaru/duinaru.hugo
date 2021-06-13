@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+    <!-- Include the script that builds the page and powers Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+        /**
+         * Assumes a webpack project with `sass-loader` and `css-loader` installed.
+         * Takes advantage of the `toString` method in the return value of `css-loader`.
+         */
+        //import CMS from 'netlify-cms';
+        //import styles from '!css-loader!sass-loader!/scss/main.scss!css/normalize.css';
+        //CMS.registerPreviewStyle(styles.toString(), { raw: true });
+        CMS.registerPreviewStyle("/css/bundle.min.307f33cd8015e5bab28d6ebda9b400f8d3059bc248b4e60adf4d23469fab5a2b.css"); // tempolary use at local env
+    </script>
+</body>
+
+</html>

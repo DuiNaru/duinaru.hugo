@@ -1,0 +1,108 @@
+<!doctype html><html lang=ja><head><meta charset=utf-8><title>ブログにコメント機能を追加しました - DuiNaru | 開発と経験を載せるブログ</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.74.3"><meta itemprop=name content="ブログにコメント機能を追加しました"><meta itemprop=description content="使用しているMinimal Mistakes テーマは多様なコメントサービスを使えるように設定できて、使いました。
+コメントを追加するページにcomment: trueを追加し、_config.xmlには使用するサービスの情報を入力すればできます。
+筆者はdisqusというコメントサービスを使ってみました。
+disqusに会員登録してサイトを生成し、ShortNameを分かればできます。
+shortnameはサイトを生成する時や、生成した後に設定ページでも分かります。
+ site生成
+site設定
+ 後は_config.xmlに設定すればできます。
+会員登録と使用設定すれば終わるので、簡単ですね。
+確認してみましょう。
+ 出ない。
+ 理由を探してみましょう。
+おかしいです。どう見ても今までの設定でできそうです。
+それで、Minimal Mistakesでdisqusと関係したcommentのソースコードを探してみました。
+ _includes\comments.html
+ disqusのためにsectionを作っていることが確認できます。
+それで、該当のhtmlをincludeしているファイルを探してみました。
+ _layouts\single.html
+ singleのレイアウトページの一部です。
+何かの条件でincludeをしていることが確認できます。
+site.comments.providerは_config.xmlで設定し、page.commentsはtrueに設定しておきました。
+ jekyll.environment == &lsquo;production&rsquo;は？
+ あ、Minimal Mistakes comment設定のNoteがこの内容のようですね！
+jekyllをproduction環境でbuildする jekyll build オプションでEnvironmentを設定できます。
+コードからはjekyll.environmentで読み取れ、buildの設定に分けて異なる結果物を作ることができるようになります。
+Minimal Mistakesはproductionでbuildした場合のみ、commentを使用できるようにしてありますので、buildの時にEnvironmentをproductionに設定しなければなりません。
+GitHub Pagesでbuildする場合なら、自動的にproductionに設定されてbuildされますが、筆者はlocalでbuildをしているので設定する必要がありました。
+linuxの環境でしたら、Environmentで説明しているようにすればいいですが、windowsなら別です。
+cmdの場合
+set JEKYLL_ENV=production powershellの場合
+$env:JEKYLL_ENV = 'production' 上記のコマンドを実行した後にbuildやserveをしたら、productionで作られます。
+これで、Minimal Mistakesにコメント機能を追加することができました。"><meta itemprop=datePublished content="2019-11-03T11:06:13+00:00"><meta itemprop=dateModified content="2019-11-03T11:06:13+00:00"><meta itemprop=wordCount content="51"><meta itemprop=image content="https://duinaru.github.io/img/main/logo.jpg"><meta itemprop=keywords content="jekyll,ruby,"><meta property="og:title" content="ブログにコメント機能を追加しました"><meta property="og:description" content="使用しているMinimal Mistakes テーマは多様なコメントサービスを使えるように設定できて、使いました。
+コメントを追加するページにcomment: trueを追加し、_config.xmlには使用するサービスの情報を入力すればできます。
+筆者はdisqusというコメントサービスを使ってみました。
+disqusに会員登録してサイトを生成し、ShortNameを分かればできます。
+shortnameはサイトを生成する時や、生成した後に設定ページでも分かります。
+ site生成
+site設定
+ 後は_config.xmlに設定すればできます。
+会員登録と使用設定すれば終わるので、簡単ですね。
+確認してみましょう。
+ 出ない。
+ 理由を探してみましょう。
+おかしいです。どう見ても今までの設定でできそうです。
+それで、Minimal Mistakesでdisqusと関係したcommentのソースコードを探してみました。
+ _includes\comments.html
+ disqusのためにsectionを作っていることが確認できます。
+それで、該当のhtmlをincludeしているファイルを探してみました。
+ _layouts\single.html
+ singleのレイアウトページの一部です。
+何かの条件でincludeをしていることが確認できます。
+site.comments.providerは_config.xmlで設定し、page.commentsはtrueに設定しておきました。
+ jekyll.environment == &lsquo;production&rsquo;は？
+ あ、Minimal Mistakes comment設定のNoteがこの内容のようですね！
+jekyllをproduction環境でbuildする jekyll build オプションでEnvironmentを設定できます。
+コードからはjekyll.environmentで読み取れ、buildの設定に分けて異なる結果物を作ることができるようになります。
+Minimal Mistakesはproductionでbuildした場合のみ、commentを使用できるようにしてありますので、buildの時にEnvironmentをproductionに設定しなければなりません。
+GitHub Pagesでbuildする場合なら、自動的にproductionに設定されてbuildされますが、筆者はlocalでbuildをしているので設定する必要がありました。
+linuxの環境でしたら、Environmentで説明しているようにすればいいですが、windowsなら別です。
+cmdの場合
+set JEKYLL_ENV=production powershellの場合
+$env:JEKYLL_ENV = 'production' 上記のコマンドを実行した後にbuildやserveをしたら、productionで作られます。
+これで、Minimal Mistakesにコメント機能を追加することができました。"><meta property="og:type" content="article"><meta property="og:url" content="https://duinaru.github.io/ja/posts/2019-11-03-experience-using-comments-with-minimal-mistakes/"><meta property="og:image" content="https://duinaru.github.io/img/main/logo.jpg"><meta property="article:published_time" content="2019-11-03T11:06:13+00:00"><meta property="article:modified_time" content="2019-11-03T11:06:13+00:00"><meta property="og:site_name" content="DuiNaru | 開発と経験を載せるブログ"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://duinaru.github.io/img/main/logo.jpg"><meta name=twitter:title content="ブログにコメント機能を追加しました"><meta name=twitter:description content="使用しているMinimal Mistakes テーマは多様なコメントサービスを使えるように設定できて、使いました。
+コメントを追加するページにcomment: trueを追加し、_config.xmlには使用するサービスの情報を入力すればできます。
+筆者はdisqusというコメントサービスを使ってみました。
+disqusに会員登録してサイトを生成し、ShortNameを分かればできます。
+shortnameはサイトを生成する時や、生成した後に設定ページでも分かります。
+ site生成
+site設定
+ 後は_config.xmlに設定すればできます。
+会員登録と使用設定すれば終わるので、簡単ですね。
+確認してみましょう。
+ 出ない。
+ 理由を探してみましょう。
+おかしいです。どう見ても今までの設定でできそうです。
+それで、Minimal Mistakesでdisqusと関係したcommentのソースコードを探してみました。
+ _includes\comments.html
+ disqusのためにsectionを作っていることが確認できます。
+それで、該当のhtmlをincludeしているファイルを探してみました。
+ _layouts\single.html
+ singleのレイアウトページの一部です。
+何かの条件でincludeをしていることが確認できます。
+site.comments.providerは_config.xmlで設定し、page.commentsはtrueに設定しておきました。
+ jekyll.environment == &lsquo;production&rsquo;は？
+ あ、Minimal Mistakes comment設定のNoteがこの内容のようですね！
+jekyllをproduction環境でbuildする jekyll build オプションでEnvironmentを設定できます。
+コードからはjekyll.environmentで読み取れ、buildの設定に分けて異なる結果物を作ることができるようになります。
+Minimal Mistakesはproductionでbuildした場合のみ、commentを使用できるようにしてありますので、buildの時にEnvironmentをproductionに設定しなければなりません。
+GitHub Pagesでbuildする場合なら、自動的にproductionに設定されてbuildされますが、筆者はlocalでbuildをしているので設定する必要がありました。
+linuxの環境でしたら、Environmentで説明しているようにすればいいですが、windowsなら別です。
+cmdの場合
+set JEKYLL_ENV=production powershellの場合
+$env:JEKYLL_ENV = 'production' 上記のコマンドを実行した後にbuildやserveをしたら、productionで作られます。
+これで、Minimal Mistakesにコメント機能を追加することができました。"><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css><link rel=stylesheet href=/css/bundle.min.307f33cd8015e5bab28d6ebda9b400f8d3059bc248b4e60adf4d23469fab5a2b.css integrity="sha256-MH8zzYAV5bqyjW69qbQA+NMFm8JItOYK300jRp+rWis="><link rel=stylesheet href=/css/add-on.css></head><body><header id=site-header><nav id=site-nav><h1 class=nav-title><a href=/ja/ class=nav>DuiNaru</a></h1><menu id=site-nav-menu class="flyout-menu menu"><a href=/ja/ class="nav link"><i class="fa fa-home"></i>Home</a>
+<a href=/ja/categories/ class="nav link"><i class="fa fa-sitemap"></i>Categories</a>
+<a href=/ja/tags/ class="nav link"><i class="fa fa-tags"></i>Tags</a>
+<a href=#share-menu class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href=#search-input class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a></menu>
+<a href=#search-input class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href=#share-menu class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href=#lang-menu class="nav lang-toggle" lang=ja>ja</a>
+<a href=#site-nav class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a></nav><menu id=search class=menu><input id=search-input class="search-input menu"></input><div id=search-results class="search-results menu"></div></menu><menu id=lang-menu class="flyout-menu menu"><a href=# lang=ja class="nav link active">日本語 (ja)</a>
+<a href=https://duinaru.github.io/posts/2019-11-03-experience-using-comments-with-minimal-mistakes/ lang=ko class="nav link">한국어 (ko)</a></menu>
+<menu id=share-menu class="flyout-menu menu"><h1>Share Post</h1><a href="//twitter.com/share?text=%e3%83%96%e3%83%ad%e3%82%b0%e3%81%ab%e3%82%b3%e3%83%a1%e3%83%b3%e3%83%88%e6%a9%9f%e8%83%bd%e3%82%92%e8%bf%bd%e5%8a%a0%e3%81%97%e3%81%be%e3%81%97%e3%81%9f&url=https%3a%2f%2fduinaru.github.io%2fja%2fposts%2f2019-11-03-experience-using-comments-with-minimal-mistakes%2f" target=_blank rel=noopener class="nav share-btn twitter"><p>Twitter</p></a><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fduinaru.github.io%2fja%2fposts%2f2019-11-03-experience-using-comments-with-minimal-mistakes%2f" target=_blank rel=noopener class="nav share-btn facebook"><p>Facebook</p></a><a href="mailto:?subject=%e3%81%93%e3%81%ae%e6%8a%95%e7%a8%bf%e3%82%92%e3%83%81%e3%82%a7%e3%83%83%e3%82%af%e3%81%99%e3%82%8b %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&body=https%3a%2f%2fduinaru.github.io%2fja%2fposts%2f2019-11-03-experience-using-comments-with-minimal-mistakes%2f" target=_blank class="nav share-btn email" data-proofer-ignore><p>Email</p></a></menu></header><div id=wrapper><section id=site-intro><a href=/ja/><img src=https://duinaru.github.io/img/main/logo.jpg class=circle width=100 alt="DuiNaru's Blog"></a><header><h1>DuiNaru</h1></header><main><p>ITについての色々な経験を載せます。</p></main></section><main id=site-main><article class=post><header><div class=title><h2><a href=/ja/posts/2019-11-03-experience-using-comments-with-minimal-mistakes/>ブログにコメント機能を追加しました</a></h2></div><div class=meta><time datetime="2019-11-03 11:06:13.766 +0000 UTC">2019-11-03</time><p>1 分で読めます</p></div></header><div id=socnet-share><a href="//twitter.com/share?text=%e3%83%96%e3%83%ad%e3%82%b0%e3%81%ab%e3%82%b3%e3%83%a1%e3%83%b3%e3%83%88%e6%a9%9f%e8%83%bd%e3%82%92%e8%bf%bd%e5%8a%a0%e3%81%97%e3%81%be%e3%81%97%e3%81%9f&url=https%3a%2f%2fduinaru.github.io%2fja%2fposts%2f2019-11-03-experience-using-comments-with-minimal-mistakes%2f" target=_blank rel=noopener class="nav share-btn twitter"><p>Twitter</p></a><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fduinaru.github.io%2fja%2fposts%2f2019-11-03-experience-using-comments-with-minimal-mistakes%2f" target=_blank rel=noopener class="nav share-btn facebook"><p>Facebook</p></a><a href="mailto:?subject=%e3%81%93%e3%81%ae%e6%8a%95%e7%a8%bf%e3%82%92%e3%83%81%e3%82%a7%e3%83%83%e3%82%af%e3%81%99%e3%82%8b %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&body=https%3a%2f%2fduinaru.github.io%2fja%2fposts%2f2019-11-03-experience-using-comments-with-minimal-mistakes%2f" target=_blank class="nav share-btn email" data-proofer-ignore><p>Email</p></a></div><div class=content><p>使用しているMinimal Mistakes テーマは多様なコメントサービスを使えるように<a href=https://mmistakes.github.io/minimal-mistakes/docs/configuration/#comments>設定</a>できて、使いました。</p><p>コメントを追加するページに<code>comment: true</code>を追加し、<code>_config.xml</code>には使用するサービスの情報を入力すればできます。</p><p>筆者はdisqusというコメントサービスを使ってみました。</p><p><a href=https://disqus.com/>disqus</a>に会員登録してサイトを<a href=http://disqus.com/admin/create>生成</a>し、<a href=https://help.disqus.com/en/articles/1717111-what-s-a-shortname>ShortName</a>を分かればできます。</p><p>shortnameはサイトを生成する時や、生成した後に設定ページでも分かります。</p><blockquote><p><a href=http://disqus.com/admin/create>site生成</a></p><p><img src=/img/uploads/create-site.png alt="create site"></p><p><a href=https://disqus.com/admin/settings/general/>site設定</a></p><p><img src=/img/uploads/shortname.png alt=shortname></p></blockquote><p>後は<code>_config.xml</code>に<a href=https://mmistakes.github.io/minimal-mistakes/docs/configuration/#disqus>設定</a>すればできます。</p><p>会員登録と使用設定すれば終わるので、簡単ですね。</p><p>確認してみましょう。</p><blockquote><p>出ない。</p></blockquote><p><strong>理由を探してみましょう。</strong></p><p>おかしいです。どう見ても今までの設定でできそうです。</p><p>それで、Minimal Mistakesでdisqusと関係したcommentのソースコードを探してみました。</p><blockquote><p>_includes\comments.html</p><p><img src=/img/uploads/comments.png alt=comments></p></blockquote><p>disqusのためにsectionを作っていることが確認できます。</p><p>それで、該当のhtmlをincludeしているファイルを探してみました。</p><blockquote><p>_layouts\single.html</p><p><img src=/img/uploads/single.png alt=single></p></blockquote><p>singleのレイアウトページの一部です。</p><p>何かの条件でincludeをしていることが確認できます。</p><p><code>site.comments.provider</code>は<code>_config.xml</code>で設定し、<code>page.comments</code>は<code>true</code>に設定しておきました。</p><blockquote><p>jekyll.environment == &lsquo;production&rsquo;は？</p></blockquote><p>あ、Minimal Mistakes <a href=https://mmistakes.github.io/minimal-mistakes/docs/configuration/#comments>comment設定</a>のNoteがこの内容のようですね！</p><h1 id=jekyllをproduction環境でbuildする>jekyllをproduction環境でbuildする</h1><p><a href=https://jekyllrb.com/docs/configuration/options/#build-command-options>jekyll build オプション</a>で<a href=https://jekyllrb.com/docs/configuration/environments/>Environment</a>を設定できます。</p><p>コードからは<code>jekyll.environment</code>で読み取れ、buildの設定に分けて異なる結果物を作ることができるようになります。</p><p>Minimal Mistakesはproductionでbuildした場合のみ、commentを使用できるようにしてありますので、buildの時にEnvironmentをproductionに設定しなければなりません。</p><p>GitHub Pagesでbuildする場合なら、自動的にproductionに設定されてbuildされますが、筆者はlocalでbuildをしているので設定する必要がありました。</p><p>linuxの環境でしたら、<a href=https://jekyllrb.com/docs/configuration/environments/>Environment</a>で説明しているようにすればいいですが、windowsなら別です。</p><p><em>cmdの場合</em></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>set JEKYLL_ENV<span style=color:#f92672>=</span>production
+</code></pre></div><p><em>powershellの場合</em></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>$env:JEKYLL_ENV = <span style=color:#e6db74>&#39;production&#39;</span>
+</code></pre></div><p>上記のコマンドを実行した後にbuildやserveをしたら、productionで作られます。</p><p>これで、Minimal Mistakesにコメント機能を追加することができました。</p></div><footer><div class=stats><ul class=categories><li><a class=article-terms-link href=/ja/categories/programming/>programming</a></li></ul><ul class=tags><li><a class=article-terms-link href=/ja/tags/jekyll/>jekyll</a></li><li><a class=article-terms-link href=/ja/tags/ruby/>ruby</a></li></ul></div></footer></article><article class=post><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
+var d=document,s=d.createElement('script');s.async=true;s.src='//'+"duinaru"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></article><div class=pagination><a href=/ja/posts/2019-11-14-set-up-ruby-on-rails-ec2/ class="button left"><span>ruby on railsをec2に実装してみました。</span></a>
+<a href=/ja/posts/2019-10-26-how-to-make-a-github-pages-work-with-an-unsupported-plugin/ class="button right"><span>GitHub PagesでサポートされないPluginを使う方法</span></a></div></main><section id=site-sidebar><section id=recent-posts><header><h1>最近の投稿</h1></header><article class=mini-post><a href=/ja/posts/2021-05-17-aws-summit-online-day2/ class=image><img src=https://duinaru.github.io/img/uploads/aws-summit-online-2021.png alt="aws summit online japan"></a><header><h2><a href=/ja/posts/2021-05-17-aws-summit-online-day2/>AWS summit online japan 2021 2日目</a></h2><time class=published datetime="2021-05-17 15:09:39.914 +0000 UTC">2021-05-17</time></header></article><article class=mini-post><a href=/ja/posts/2021-05-16-aws-summit-online-day1/ class=image><img src=https://duinaru.github.io/img/uploads/aws-summit-online-2021.png alt="aws summit online japan"></a><header><h2><a href=/ja/posts/2021-05-16-aws-summit-online-day1/>AWS summit online japan 2021 1日目</a></h2><time class=published datetime="2021-05-16 09:19:12.609 +0000 UTC">2021-05-16</time></header></article><article class=mini-post><a href=/ja/posts/2020-12-11-githubuniverse2020/ class=image><img src=https://duinaru.github.io/img/uploads/github-universe-2020.jpg alt="GitHub Universe 2020"></a><header><h2><a href=/ja/posts/2020-12-11-githubuniverse2020/>GitHub Universe 2020を見てみました。</a></h2><time class=published datetime="2020-12-11 14:48:24.294 +0000 UTC">2020-12-11</time></header></article><article class=mini-post><a href=/ja/posts/2020-09-11-deloy-github-pages-with-actions/ class=image><img src=https://duinaru.github.io/img/uploads/githubactions.png alt="GitHub Actions"></a><header><h2><a href=/ja/posts/2020-09-11-deloy-github-pages-with-actions/>GitHub ActionsでGitHub Pagesにデプロイ</a></h2><time class=published datetime="2020-09-11 13:52:18.336 +0000 UTC">2020-09-11</time></header></article><article class=mini-post><a href=/ja/posts/2020-09-02-make-blog-with-netlifycms-netlify/ class=image><img src=https://duinaru.github.io/img/uploads/netlifycms.png alt=netlifycms+netlify></a><header><h2><a href=/ja/posts/2020-09-02-make-blog-with-netlifycms-netlify/>Netlify CMS + Netlifyでブログサイト管理とデプロイを自動化</a></h2><time class=published datetime="2020-09-02 16:00:24.529 +0000 UTC">2020-09-02</time></header></article><footer><a href=/ja/posts/ class=button>続きを見る</a></footer></section><section id=categories><header><h1><a href=/ja/categories>カテゴリー</a></h1></header><ul><li><a href=/ja/categories/programming/>programming<span class=count>5</span></a><li><a href=/ja/categories/aws/>aws<span class=count>4</span></a><li><a href=/ja/categories/blog/>blog<span class=count>4</span></a><li><a href=/ja/categories/event/>event<span class=count>1</span></a></li></ul></section></section><footer id=site-footer><ul class=socnet-icons><li><a href=//github.com/duinaru/duinaru.github.io target=_blank rel=noopener title=GitHub class="fab fa-github"></a></li><li><a href=mailto:duinaru@gmail.com target=_blank title=Email class="far fa-envelope"></a></li></ul><p class=copyright>© 2021 DuiNaru | 開発と経験を載せるブログ<br>Theme: <a href=https://github.com/pacollins/hugo-future-imperfect-slim target=_blank rel=noopener>Hugo Future Imperfect Slim</a><br>A <a href=https://html5up.net/future-imperfect target=_blank rel=noopener>HTML5 UP port</a> | Powered by <a href=https://gohugo.io/ title=0.74.3 target=_blank rel=noopener>Hugo</a></p></footer><a id=back-to-top href=# class="fas fa-arrow-up fa-2x"></a><script src=/js/highlight.js></script><script>hljs.initHighlightingOnLoad();</script><script src=/js/bundle.min.e8d7df665d6ea5bd5d98711fcf59c4b867eb1ebce468c5a71dccb61d5e671e50.js integrity="sha256-6NffZl1upb1dmHEfz1nEuGfrHrzkaMWnHcy2HV5nHlA="></script><script src=/js/add-on.js></script><script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-175500005-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></div></body></html>
